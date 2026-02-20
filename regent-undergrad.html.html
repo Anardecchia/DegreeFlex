@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undergraduate Degree Programs | Regent University | DegreeFlex</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold-dark: #c8640a;
+  --gold-mid: #e07c1a;
+  --gold-light: #f5a623;
+  --gold-pale: #ffd27a;
+  --orange: #e8620a;
+  --dark: #1a1a1a;
+  --dark-2: #2d2d2d;
+  --gray: #555;
+  --gray-light: #f7f7f7;
+  --white: #ffffff;
+  --grad: linear-gradient(135deg, #c8640a 0%, #f5a623 60%, #e8620a 100%);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Open Sans', sans-serif; color: var(--dark); background: #fff; }
+.nav { background: var(--dark); padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.nav-logo img { height: 32px; }
+.nav-cta { background: var(--grad); color: #fff; padding: 10px 24px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; }
+.breadcrumb { background: var(--gray-light); padding: 12px 40px; font-size: 13px; color: var(--gray); }
+.breadcrumb a { color: var(--gold-dark); text-decoration: none; }
+.breadcrumb span { margin: 0 8px; }
+
+/* HERO */
+.hero { background: var(--dark); padding: 80px 40px 70px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 60%, rgba(245,166,35,0.1) 0%, transparent 65%); }
+.hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; position: relative; z-index: 1; }
+.hero-badge { display: inline-block; background: rgba(245,166,35,0.15); border: 1px solid rgba(245,166,35,0.4); color: var(--gold-light); font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; border-radius: 3px; margin-bottom: 20px; }
+.hero h1 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 42px; line-height: 1.1; color: #fff; margin-bottom: 8px; }
+.hero h1 span { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-school { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 16px; color: var(--gold-pale); margin-bottom: 20px; opacity: 0.85; }
+.hero p { color: rgba(255,255,255,0.75); font-size: 16px; line-height: 1.7; margin-bottom: 28px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 0; }
+.btn-primary { background: var(--grad); color: #fff; padding: 14px 32px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; }
+.btn-secondary { background: transparent; border: 2px solid rgba(245,166,35,0.5); color: var(--gold-light); padding: 14px 32px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; }
+/* FORM PLACEHOLDER */
+.form-placeholder { background: rgba(255,255,255,0.05); border: 2px dashed rgba(245,166,35,0.4); border-radius: 12px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+.form-placeholder-label { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: var(--gold-light); margin-bottom: 2px; }
+.form-placeholder-title { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 20px; color: #fff; margin-bottom: 6px; }
+.form-field-mock { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 6px; padding: 12px 14px; font-size: 13px; color: rgba(255,255,255,0.35); font-style: italic; }
+.form-btn-mock { background: var(--grad); color: #fff; padding: 14px 20px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; text-align: center; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.75; }
+.form-note { font-size: 11px; color: rgba(255,255,255,0.3); text-align: center; font-style: italic; margin-top: 4px; }
+/* HERO STATS ROW */
+.hero-stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; margin-top: 28px; }
+.hero-stat { background: rgba(255,255,255,0.04); padding: 18px 10px; text-align: center; }
+.hero-stat-num { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 22px; background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }
+.hero-stat-label { color: rgba(255,255,255,0.55); font-size: 11px; margin-top: 5px; line-height: 1.4; }
+
+/* STATS BAR */
+.stats-bar { background: var(--grad); padding: 32px 40px; }
+.stats-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.stat-item { text-align: center; }
+.stat-num { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px; color: #fff; }
+.stat-label { font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 4px; }
+
+/* SECTIONS */
+.section { padding: 70px 40px; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-label { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: var(--gold-mid); margin-bottom: 12px; }
+.section h2 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; color: var(--dark); margin-bottom: 20px; line-height: 1.2; }
+.section p { font-size: 16px; line-height: 1.8; color: #444; }
+
+/* PROGRAMS GRID */
+.programs-intro { margin-bottom: 40px; max-width: 720px; }
+.category-section { margin-bottom: 48px; }
+.category-label { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 15px; text-transform: uppercase; letter-spacing: 1px; color: var(--gold-dark); border-bottom: 2px solid var(--gold-light); padding-bottom: 10px; margin-bottom: 20px; }
+.programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.program-card { background: var(--gray-light); border-radius: 8px; padding: 16px 18px; border-top: 3px solid var(--gold-mid); transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; }
+.program-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(200,100,10,0.12); }
+.program-card h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 13px; color: var(--dark); line-height: 1.4; }
+.program-card .degree { font-size: 11px; color: var(--gold-dark); font-weight: 600; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* WHY REGENT */
+.bg-dark-section { background: var(--dark); }
+.bg-dark-section .section-label { color: var(--gold-pale); }
+.bg-dark-section h2 { color: #fff; }
+.bg-dark-section p { color: rgba(255,255,255,0.75); }
+.reasons-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+.reason { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 28px; }
+.reason-icon { font-size: 28px; margin-bottom: 14px; }
+.reason h4 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; color: #fff; margin-bottom: 10px; }
+.reason p { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+/* TESTIMONIALS */
+.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+.testimonial { background: var(--gray-light); border-radius: 10px; padding: 28px; border-left: 4px solid var(--gold-mid); }
+.testimonial blockquote { font-size: 15px; line-height: 1.7; color: var(--dark); font-style: italic; margin-bottom: 14px; }
+.testimonial cite { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; color: var(--gold-dark); }
+
+/* CTA */
+.cta-section { background: var(--grad); padding: 70px 40px; text-align: center; }
+.cta-section h2 { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 38px; color: #fff; margin-bottom: 14px; }
+.cta-section p { color: rgba(255,255,255,0.9); font-size: 17px; margin-bottom: 36px; max-width: 560px; margin-left: auto; margin-right: auto; }
+.cta-btn { display: inline-block; background: #fff; color: var(--gold-dark); padding: 16px 44px; border-radius: 4px; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 15px; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; }
+.footer { background: var(--dark-2); padding: 32px 40px; text-align: center; }
+.footer p { font-size: 13px; color: rgba(255,255,255,0.4); }
+.footer a { color: var(--gold-light); text-decoration: none; }
+
+@media (max-width: 768px) {
+  .stats-inner, .programs-grid, .reasons-grid, .testimonials-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1 { font-size: 32px; }
+}
+@media (max-width: 480px) {
+  .stats-inner, .programs-grid, .reasons-grid, .testimonials-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="https://degreeflex.com" class="nav-logo">
+    <img src="https://degreeflex.com/wp-content/uploads/2022/11/logo-250x40.png" alt="DegreeFlex">
+  </a>
+  <a href="#get-info" class="nav-cta">Find My Program</a>
+</nav>
+
+<div class="breadcrumb">
+  <a href="https://degreeflex.com">Home</a>
+  <span>›</span>
+  <a href="https://degreeflex.com/degrees/bachelors-degree/">Bachelor's Degrees</a>
+  <span>›</span>
+  Undergraduate Programs — Regent University
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Undergraduate Degrees</div>
+      <h1>Launch Your Future with a <span>Regent University</span> Degree</h1>
+      <div class="hero-school">Regent University · Virginia Beach, Virginia · Online & On Campus</div>
+      <p>Choose from over 150 areas of study at one of the nation's top-ranked Christian universities. Whether you want to study on the beautiful Virginia Beach campus or fully online, Regent has a program built for your goals and schedule.</p>
+      <div class="hero-actions">
+        <a href="#programs" class="btn-primary">Browse Programs</a>
+        <a href="#get-info" class="btn-secondary">Learn More</a>
+      </div>
+      <!-- PROGRAM AT A GLANCE — horizontal -->
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <div class="hero-stat-num">150+</div>
+          <div class="hero-stat-label">Areas of Study</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">#1</div>
+          <div class="hero-stat-label">Online Bachelor's in Virginia — 14 Yrs</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">90</div>
+          <div class="hero-stat-label">Transfer Credit Hours Accepted</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">$23M</div>
+          <div class="hero-stat-label">In Scholarships & Aid Awarded</div>
+        </div>
+      </div>
+    </div>
+    <!-- FORM PLACEHOLDER -->
+    <div class="form-placeholder">
+      <div>
+        <div class="form-placeholder-label">Get Program Info</div>
+        <div class="form-placeholder-title">Request Information</div>
+      </div>
+      <div class="form-field-mock">First Name</div>
+      <div class="form-field-mock">Last Name</div>
+      <div class="form-field-mock">Email Address</div>
+      <div class="form-field-mock">Phone Number</div>
+      <div class="form-field-mock">Zip Code</div>
+      <div class="form-field-mock">Degree of Interest</div>
+      <div class="form-btn-mock">Request Information →</div>
+      <div class="form-note">[ LeadHoop form integration goes here ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">150+</div><div class="stat-label">Areas of Study</div></div>
+    <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Undergraduate Minors</div></div>
+    <div class="stat-item"><div class="stat-num">#1</div><div class="stat-label">Best Online Bachelor's in Virginia — 14 Years Running</div></div>
+    <div class="stat-item"><div class="stat-num">$23M</div><div class="stat-label">Institutional Scholarships & Aid Awarded</div></div>
+  </div>
+</div>
+
+<!-- PROGRAMS -->
+<section class="section" id="programs">
+  <div class="section-inner">
+    <div class="section-label">Explore Degrees</div>
+    <h2>Undergraduate Programs at Regent University</h2>
+    <p class="programs-intro">Regent offers bachelor's degrees across a wide range of fields — available online, on campus, or a combination of both. All programs feature 8-week and 15-week session options and a generous transfer policy allowing up to 90 credit hours transferred in.</p>
+
+    <div class="category-section">
+      <div class="category-label">Business & Leadership</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.S.</div><h4>Accounting</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Business</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Business Analytics</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Financial Management</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Human Resource Management</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Marketing</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Management</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Christian Leadership & Management</h4></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-label">Technology & STEM</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.S.</div><h4>Computer Science</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Computer Engineering</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Cybersecurity</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Information Systems Technology</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Cyber & Digital Forensics</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Mathematics</h4></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-label">Arts, Communication & Humanities</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.A.</div><h4>Communication Studies</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>English</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>Film & Television</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>Journalism</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>Theatre</h4></div>
+        <div class="program-card"><div class="degree">BFA</div><h4>Graphic Design</h4></div>
+        <div class="program-card"><div class="degree">BFA</div><h4>Acting</h4></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-label">Law, Government & Criminal Justice</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.A.</div><h4>Government</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>History</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>Law</h4></div>
+        <div class="program-card"><div class="degree">B.A.</div><h4>Law & National Security</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Criminal Justice</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Paralegal Studies</h4></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-label">Nursing, Healthcare & Psychology</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.S.</div><h4>Nursing — RN to BS</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Healthcare Management</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Psychology</h4></div>
+        <div class="program-card"><div class="degree">B.S.</div><h4>Gerontology</h4></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <div class="category-label">Education</div>
+      <div class="programs-grid">
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Early & Primary Education</h4></div>
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Elementary Education</h4></div>
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Secondary English</h4></div>
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Secondary Mathematics</h4></div>
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Secondary Science, Biology</h4></div>
+        <div class="program-card"><div class="degree">B.Ed.</div><h4>Secondary History & Social Science</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY REGENT -->
+<section class="section bg-dark-section">
+  <div class="section-inner">
+    <div class="section-label">The Regent Advantage</div>
+    <h2>Why Students Choose Regent University</h2>
+    <div class="reasons-grid">
+      <div class="reason">
+        <div class="reason-icon">🏆</div>
+        <h4>Top National University Rankings</h4>
+        <p>Ranked among Top National Universities by U.S. News & World Report for seven consecutive years (2019–2026). Named #1 Best Online Bachelor's Programs in Virginia 14 years in a row.</p>
+      </div>
+      <div class="reason">
+        <div class="reason-icon">🎓</div>
+        <h4>Prestigious Accreditations</h4>
+        <p>SACSCOC accredited with additional program credentials from ABA, ABET, ACBSP, APA, CACREP, CAEP, CCNE, NSA, and more — recognized by top employers nationwide.</p>
+      </div>
+      <div class="reason">
+        <div class="reason-icon">🌐</div>
+        <h4>Flexible Learning Options</h4>
+        <p>Study online, on the beautiful Virginia Beach campus, or both. Convenient 8-week and 15-week course sessions fit working adults and traditional students alike.</p>
+      </div>
+      <div class="reason">
+        <div class="reason-icon">💸</div>
+        <h4>Transfer-Friendly & Affordable</h4>
+        <p>Transfer up to 90 credit hours toward your degree. With nearly $23 million in institutional scholarships awarded, financial barriers don't have to stand between you and your future.</p>
+      </div>
+      <div class="reason">
+        <div class="reason-icon">🎖️</div>
+        <h4>Military-Friendly</h4>
+        <p>A consistently recognized top military-friendly school offering special resources, flexible scheduling, and support for active duty service members, veterans, and their families.</p>
+      </div>
+      <div class="reason">
+        <div class="reason-icon">👩‍🏫</div>
+        <h4>World-Class Faculty</h4>
+        <p>Learn from scholars and practitioners who are genuinely invested in your success. Faculty at Regent don't just teach — they mentor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Student Success</div>
+    <h2>Regent Graduates in Their Own Words</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <blockquote>"There's an atmosphere of excellence at Regent. You feel it the moment you arrive."</blockquote>
+        <cite>Sharon Byrdsong, Ed.D. · K-12 School Leadership, Class of 2008</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"Regent prepared me to step into the unknown with confidence and skill."</blockquote>
+        <cite>Jonathan Holman, B.S. in Business · Director of Business Intelligence, Hreda, Class of 2019</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"I visited Regent during my brother's first semester, toured the gorgeous campus, and realized I was called to Regent too."</blockquote>
+        <cite>Abbie Braswell, B.S. in Business · Class of 2020</cite>
+      </div>
+      <div class="testimonial">
+        <blockquote>"At Regent, I became interested in social justice and leveraging the market to do good."</blockquote>
+        <cite>Kyle Westaway, J.D. · Lecturer, Harvard Law School; Managing Partner, Westaway, Class of 2006</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="get-info">
+  <h2>Find Your Program at Regent University</h2>
+  <p>DegreeFlex will match you with the right Regent University undergraduate program based on your interests, goals, and learning preference.</p>
+  <a href="https://degreeflex.com/" class="cta-btn">Start Your Match at DegreeFlex</a>
+</section>
+
+<footer class="footer">
+  <p>This page is presented by <a href="https://degreeflex.com">DegreeFlex</a>. Program details sourced from <a href="https://www.regent.edu/academic-degrees/" target="_blank">Regent University</a>. Information subject to change — verify directly with the institution.<br>
+  <a href="https://degreeflex.com/privacy-policy/">Privacy Policy</a> · <a href="https://degreeflex.com/terms-and-conditions/">Terms & Conditions</a></p>
+</footer>
+
+</body>
+</html>
