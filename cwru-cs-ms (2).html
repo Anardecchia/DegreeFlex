@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master of Science in Computer Science | Case Western Reserve University | DegreeFlex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cwru-blue: #003071;
+            --cwru-true-blue: #09143A;
+            --cwru-force-blue: #2359ef;
+            --cwru-bright-blue: #007AB8;
+            --cwru-light-blue: #A6D2E6;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --dark-gray: #4A4A4A;
+            --text-gray: #333333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-gray);
+        }
+
+        /* Header */
+        header {
+            background: var(--cwru-blue);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .cwru-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .degreeflex-logo {
+            height: 35px;
+            width: auto;
+        }
+
+        .cta-button {
+            background: var(--cwru-force-blue);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            background: var(--cwru-bright-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 0.5rem 2rem;
+            border-bottom: 3px solid var(--cwru-force-blue);
+        }
+
+        nav a {
+            color: var(--cwru-blue);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--cwru-force-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--cwru-blue) 0%, var(--cwru-force-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .program-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--cwru-light-blue);
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--cwru-light-blue);
+        }
+
+        .hero-description {
+            max-width: 900px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-button {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .hero-button.primary {
+            background: var(--white);
+            color: var(--cwru-blue);
+        }
+
+        .hero-button.secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .hero-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--white);
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: -3rem auto 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--cwru-blue);
+        }
+
+        .stat-label {
+            color: var(--cwru-force-blue);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--cwru-blue);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Form Section */
+        .form-section {
+            background: var(--light-gray);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--cwru-blue);
+            font-weight: 500;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .submit-button {
+            background: var(--cwru-force-blue);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .submit-button:hover {
+            background: var(--cwru-bright-blue);
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--cwru-force-blue);
+            margin-bottom: 2rem;
+        }
+
+        .content-section h3 {
+            color: var(--cwru-blue);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Concentrations Grid */
+        .concentrations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .concentration-card {
+            background: var(--white);
+            border: 2px solid var(--cwru-light-blue);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .concentration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-color: var(--cwru-force-blue);
+        }
+
+        .concentration-card h4 {
+            color: var(--cwru-blue);
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .concentration-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--cwru-force-blue);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--cwru-force-blue);
+        }
+
+        .feature-card h3 {
+            color: var(--cwru-blue);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--cwru-blue);
+            color: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .testimonial-quote {
+            font-style: italic;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: var(--cwru-light-blue);
+            font-weight: bold;
+        }
+
+        /* Admissions List */
+        .admissions-list {
+            background: var(--light-gray);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .admissions-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .admissions-list li {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: var(--white);
+            border-left: 4px solid var(--cwru-force-blue);
+            border-radius: 4px;
+        }
+
+        .admissions-list li::before {
+            content: "✓";
+            color: var(--cwru-force-blue);
+            font-weight: bold;
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--cwru-blue) 0%, var(--cwru-true-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            background: var(--white);
+            color: var(--cwru-blue);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--cwru-blue);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--cwru-light-blue);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="https://dudbm6bcnmy8e.cloudfront.net/cwru/img/cwru_logo_primary_white.svg" alt="Case Western Reserve University" class="cwru-logo">
+                <img src="https://degreeflex.com/wp-content/uploads/2022/11/logo-250x40.png" alt="DegreeFlex" class="degreeflex-logo">
+            </div>
+            <a href="#get-info" class="cta-button">Get Program Info</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="https://degreeflex.com">Home</a> › 
+        <a href="https://degreeflex.com/programs/computer-tech/">Computer & Tech</a> › 
+        Master of Science in Computer Science — Case Western Reserve University
+    </nav>
+
+    <section class="hero">
+        <div class="program-label">Graduate Program</div>
+        <h1>Master of Science in Computer Science</h1>
+        <p class="hero-subtitle">Case Western Reserve University · Cleveland, Ohio</p>
+        <p class="hero-description">Earn your graduate degree from one of the nation's most established engineering schools. Case School of Engineering's 30-credit M.S. program combines rigorous coursework with hands-on co-ops and research — preparing you to lead in the most in-demand field in tech.</p>
+        <div class="hero-buttons">
+            <a href="#program-overview" class="hero-button primary">Explore Program</a>
+            <a href="#get-info" class="hero-button secondary">Learn More</a>
+        </div>
+    </section>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">30</div>
+            <div class="stat-label">Credit Hours to Complete</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">5:1</div>
+            <div class="stat-label">Student-to-Faculty Ratio</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">12%</div>
+            <div class="stat-label">Job Market Growth (2018–2028)</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="get-info" class="form-section">
+            <h2>Get Program Info</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Request Information</p>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="text" id="zipCode" name="zipCode" required>
+                    </div>
+                    <button type="submit" class="submit-button">Request Information →</button>
+                </form>
+                <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #666;">
+                    [ LeadHoop form integration goes here ]
+                </p>
+            </div>
+        </section>
+
+        <section id="program-overview">
+            <h2>About the Program</h2>
+            <div class="content-section">
+                <h3>Where Rigor Meets Real-World Application</h3>
+                <p>In the Department of Computer and Data Sciences, you'll be surrounded by top faculty dedicated to deepening your knowledge of computer science and preparing you for a career that matters. Through this 30-credit-hour program, you gain experiential and applied learning through co-ops and research tailored to your interests.</p>
+                <p>You can choose to pursue either a course-focused or research-focused master's degree — building the exact foundation your career requires, whether that's industry or academia.</p>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-quote">"I valued working with professors on interesting projects for my final project requirement. Being given the opportunity to build them from scratch and have them serve useful purposes made the work fulfilling while also emulating real-world software development."</p>
+                <p class="testimonial-author">Mohammad Doleh (CSE '17) · Software Developer Engineer, Expedia Group</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Areas of Focus</h2>
+            <h3 style="text-align: center; color: var(--cwru-force-blue); margin-bottom: 2rem;">10 Concentration Areas</h3>
+            <p style="text-align: center; margin-bottom: 2rem;">Tailor your degree to your interests across cutting-edge disciplines:</p>
+            
+            <div class="concentrations-grid">
+                <div class="concentration-card">
+                    <h4>Machine Learning & AI</h4>
+                    <p>Deep learning, neural networks, applied AI systems</p>
+                </div>
+                <div class="concentration-card">
+                    <h4>Cybersecurity & Privacy</h4>
+                    <p>Secure systems, privacy engineering, threat analysis</p>
+                </div>
+                <div class="concentration-card">
+                    <h4>Data Science</h4>
+                    <p>Data mining, databases, analytics at scale</p>
+                </div>
+                <div class="concentration-card">
+                    <h4>Bioinformatics</h4>
+                    <p>Computational biology, genomics, medical data</p>
+                </div>
+                <div class="concentration-card">
+                    <h4>Software Engineering</h4>
+                    <p>Architecture, design patterns, development methods</p>
+                </div>
+                <div class="concentration-card">
+                    <h4>High-Performance Computing</h4>
+                    <p>Distributed systems, networking, parallel processing</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Beyond the Classroom</h2>
+            <h3 style="text-align: center; color: var(--cwru-force-blue); margin-bottom: 2rem;">Paid Co-ops. Real Research. Real Results.</h3>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Paid Co-op Experiences</h3>
+                    <p>Full-time, two-semester paid co-ops paired with companies matching your interests and skill set. These often serve as pipelines to full-time job offers.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Research Opportunities</h3>
+                    <p>Significant research experience in AI, machine learning, security, and privacy through an extensive network of on- and off-campus research initiatives.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Two Degree Tracks</h3>
+                    <p>Choose course-focused for industry preparation, or research-focused if you're aiming for advanced study or academic careers. Your path, your choice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Admissions</h2>
+            <h3 style="text-align: center; color: var(--cwru-force-blue); margin-bottom: 2rem;">How to Apply</h3>
+            <p style="text-align: center; margin-bottom: 2rem;">Case Western Reserve's graduate admissions process is straightforward. Here's what you'll need to submit to be considered for the M.S. in Computer Science:</p>
+            
+            <div class="admissions-list">
+                <ul>
+                    <li>Completed online application</li>
+                    <li>Background knowledge in data structures, algorithms, and operating systems</li>
+                    <li>Official transcripts from all prior institutions</li>
+                    <li>Three letters of recommendation</li>
+                    <li>GRE test scores</li>
+                    <li>TOEFL or IELTS scores (international students)</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="cta-section">
+            <h2>Ready to Advance Your Career?</h2>
+            <p>Let DegreeFlex match you with the right program and connect you with Case Western Reserve University's admissions team.</p>
+            <a href="https://degreeflex.com/" class="cta-button">Find My Program at DegreeFlex</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>This page is presented by <a href="https://degreeflex.com">DegreeFlex</a>. Program details sourced from <a href="https://case.edu/programs/computer-science-ms">Case Western Reserve University</a>. Information subject to change — verify directly with the institution.</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://degreeflex.com/privacy-policy/">Privacy Policy</a> · 
+            <a href="https://degreeflex.com/terms-and-conditions/">Terms & Conditions</a>
+        </p>
+    </footer>
+</body>
+</html>
