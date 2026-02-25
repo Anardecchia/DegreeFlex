@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Training Program | UEI College | DegreeFlex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* UEI Brand Colors */
+        :root {
+            --uei-teal: #008b8b;
+            --uei-dark-teal: #006666;
+            --uei-gold: #f7941d;
+            --uei-navy: #1a3a52;
+            --text-gray: #666;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .cta-button {
+            background: var(--uei-teal);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: var(--uei-gold);
+        }
+        
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 1rem 0;
+        }
+        
+        .breadcrumb-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+        
+        .breadcrumb a {
+            color: var(--uei-teal);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--uei-gold);
+        }
+        
+        /* Hero section with two-column layout */
+        .hero {
+            background: linear-gradient(135deg, var(--uei-teal) 0%, var(--uei-dark-teal) 100%);
+            color: white;
+            padding: 4rem 2rem;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        /* Form on the LEFT */
+        .hero-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 100px;
+        }
+        
+        .hero-form h2 {
+            color: var(--uei-teal);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .hero-form h3 {
+            color: var(--text-gray);
+            font-size: 1rem;
+            font-weight: normal;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--uei-gold);
+        }
+        
+        .form-submit {
+            width: 100%;
+            padding: 0.9rem;
+            background: var(--uei-gold);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .form-submit:hover {
+            background: #e08318;
+        }
+        
+        .form-note {
+            margin-top: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-gray);
+        }
+        
+        /* Content on the RIGHT */
+        .hero-content {
+            padding-top: 0;
+        }
+        
+        .program-type {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        h1 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .university-location {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+        }
+        
+        .hero-description {
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .hero-highlights {
+            list-style: none;
+            margin: 1.5rem 0 2rem 0;
+        }
+        
+        .hero-highlights li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.75rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        
+        .hero-highlights li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--uei-gold);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            background: var(--uei-gold);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #e08318;
+        }
+        
+        .stats {
+            background: var(--uei-navy);
+            color: white;
+            padding: 3rem 2rem;
+        }
+        
+        .stats-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--uei-gold);
+        }
+        
+        .stat-label {
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .content-section h2 {
+            color: var(--uei-teal);
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content-section h3 {
+            color: var(--uei-teal);
+            font-size: 1.75rem;
+            margin: 2.5rem 0 1rem 0;
+        }
+        
+        .content-section h4 {
+            color: var(--uei-teal);
+            font-size: 1.3rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .topic-card {
+            background: #f8f9fa;
+            padding: 1.75rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--uei-gold);
+            transition: transform 0.3s;
+        }
+        
+        .topic-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .topic-card h4 {
+            margin-top: 0;
+        }
+        
+        .topic-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+        
+        .curriculum-list {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .curriculum-list ol {
+            counter-reset: module-counter;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .curriculum-list li {
+            counter-increment: module-counter;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .curriculum-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .curriculum-list li:before {
+            content: counter(module-counter, decimal-leading-zero);
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            background: var(--uei-teal);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+        
+        .job-titles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .job-title {
+            background: var(--uei-teal);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .locations-section {
+            background: #f8f9fa;
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .location-group h4 {
+            color: var(--uei-teal);
+            margin-bottom: 1rem;
+        }
+        
+        .location-group ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .location-group li {
+            padding: 0.5rem 0;
+            color: var(--text-gray);
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--uei-teal) 0%, var(--uei-dark-teal) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section .btn-primary {
+            margin-top: 1rem;
+        }
+        
+        footer {
+            background: var(--uei-navy);
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+        
+        footer a {
+            color: var(--uei-gold);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-form {
+                position: static;
+                order: 2;
+            }
+            
+            .hero-content {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .content-section h2 {
+                font-size: 1.75rem;
+            }
+            
+            .stats-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-primary {
+                width: 100%;
+                text-align: center;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://degreeflex.com">
+                    <img src="https://degreeflex.com/wp-content/uploads/2022/11/logo-250x40.png" alt="DegreeFlex">
+                </a>
+            </div>
+            <a href="#get-info" class="cta-button">Get Program Info</a>
+        </nav>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="https://degreeflex.com">Home</a> › 
+            <a href="https://degreeflex.com/programs/trade-careers/">Trade Careers</a> › 
+            HVAC Training Program — UEI College
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-container">
+            <!-- FORM ON LEFT -->
+            <div id="get-info" class="hero-form">
+                <h2>Get Program Info</h2>
+                <h3>Request Information</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Preferred Campus</option>
+                            <option>Mesa, AZ</option>
+                            <option>Phoenix, AZ</option>
+                            <option>Bakersfield, CA</option>
+                            <option>Chula Vista, CA</option>
+                            <option>Fresno, CA</option>
+                            <option>Garden Grove, CA</option>
+                            <option>Gardena, CA</option>
+                            <option>Huntington Park, CA</option>
+                            <option>Oceanside, CA</option>
+                            <option>Ontario, CA</option>
+                            <option>Reseda, CA</option>
+                            <option>Riverside, CA</option>
+                            <option>Sacramento, CA</option>
+                            <option>West Covina, CA</option>
+                            <option>Morrow, GA</option>
+                            <option>Stone Mountain, GA</option>
+                            <option>Las Vegas, NV</option>
+                            <option>Albuquerque, NM</option>
+                            <option>Dallas, TX</option>
+                            <option>Houston, TX</option>
+                            <option>Tacoma, WA</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="form-submit">Request Information →</button>
+                </form>
+                <p class="form-note">[ LeadHoop form integration goes here ]</p>
+            </div>
+            
+            <!-- CONTENT ON RIGHT -->
+            <div class="hero-content">
+                <div class="program-type">Trade Career Program</div>
+                <h1>HVAC Technician Training Program</h1>
+                <div class="university-location">UEI College · 20+ Campus Locations Nationwide</div>
+                <p class="hero-description">
+                    Launch your career as an HVAC technician in as few as 10 months. UEI's hands-on program teaches you to install, service, troubleshoot, and repair heating, ventilation, air conditioning, and refrigeration systems — and prepares you for EPA certifications employers require.
+                </p>
+                <ul class="hero-highlights">
+                    <li>Graduate in as few as 10 months</li>
+                    <li>Hands-on lab training with real HVAC equipment</li>
+                    <li>Hybrid online + in-person learning available</li>
+                    <li>Prepares you for EPA Section 608 Certification</li>
+                    <li>Financial aid available for those who qualify</li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#program-overview" class="btn-primary">Explore Program</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-content">
+            <div class="stat-item">
+                <div class="stat-value">10 Mo.</div>
+                <div class="stat-label">To Earn Your Diploma</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">$75K+</div>
+                <div class="stat-label">Median HVAC Salary (BLS)</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">20+</div>
+                <div class="stat-label">Campus Locations Nationwide</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="program-overview" class="content-section">
+        <h2>Program Overview</h2>
+        <h3>What You'll Learn at UEI</h3>
+        <p>
+            UEI's HVAC Technician Training Program provides the knowledge, skills, and hands-on training needed for an entry-level HVAC career. You'll work with real systems in the lab — not just textbooks — so you're ready for the field from day one.
+        </p>
+        <p>
+            The program prepares you for two important industry certifications: the EPA Section 608 Certification (required for graduation) and the Low GWP Refrigerant Safety Certification. HVAC systems have become highly complex, and employers increasingly prefer candidates with post-secondary training who can handle modern residential and commercial equipment.
+        </p>
+        
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h4>Installation & Maintenance</h4>
+                <p>Install, maintain, troubleshoot, and repair residential and commercial HVAC systems</p>
+            </div>
+            <div class="topic-card">
+                <h4>Electricity & Controls</h4>
+                <p>Electrical components, household wiring, series/parallel circuits, HVAC control devices</p>
+            </div>
+            <div class="topic-card">
+                <h4>Refrigeration Systems</h4>
+                <p>Basic refrigeration principles, refrigerant handling, system evacuation and charging</p>
+            </div>
+            <div class="topic-card">
+                <h4>Heating Systems</h4>
+                <p>Gas, electric, and oil heating in residential applications; combustion principles</p>
+            </div>
+            <div class="topic-card">
+                <h4>Duct Design & Blueprint Reading</h4>
+                <p>Air distribution, ductwork sizing, load calculations, blueprint interpretation</p>
+            </div>
+            <div class="topic-card">
+                <h4>Commercial Refrigeration</h4>
+                <p>Commercial equipment components, installation, defrost cycles, safety protocols</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" style="background: #f8f9fa;">
+        <h2>Curriculum</h2>
+        <h3>9 Course Modules</h3>
+        <p>Each module builds progressively toward a complete foundation in HVAC systems — from basic electrical theory to commercial equipment and EPA certification prep.</p>
+        
+        <div class="curriculum-list">
+            <ol>
+                <li>Basic Electricity, Motors, and HVAC Controls</li>
+                <li>Basic Refrigeration Theory and Application</li>
+                <li>Air Conditioning, Troubleshooting and Heat Pump Systems</li>
+                <li>Heating Systems</li>
+                <li>Duct Design, Blueprint Reading, and Load Calculation</li>
+                <li>Commercial Refrigeration Systems</li>
+                <li>Specialized Commercial Equipment and Green Awareness</li>
+                <li>Regulation and Building Automation</li>
+                <li>Electrical and Mechanical Troubleshooting</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h2>Career Outcomes</h2>
+        <h3>Job Titles You Can Pursue After Graduation</h3>
+        <p>Graduates enter the workforce ready for entry-level positions installing and maintaining HVAC equipment. Possible career titles include:</p>
+        
+        <div class="job-titles">
+            <div class="job-title">HVAC Technician</div>
+            <div class="job-title">HVAC Installer</div>
+            <div class="job-title">HVAC Specialist</div>
+            <div class="job-title">HVAC Mechanic</div>
+            <div class="job-title">HVAC Service Technician</div>
+            <div class="job-title">A/C Tech</div>
+            <div class="job-title">Refrigeration Mechanic</div>
+            <div class="job-title">Refrigeration Technician</div>
+            <div class="job-title">Engineering Specialist</div>
+        </div>
+    </section>
+
+    <section class="content-section locations-section">
+        <h2>Available Locations</h2>
+        <h3>Find a UEI Campus Near You</h3>
+        <p>UEI's HVAC program is offered at campuses across the Southwest, Southeast, and Pacific Northwest.</p>
+        
+        <div class="location-grid">
+            <div class="location-group">
+                <h4>Arizona</h4>
+                <ul>
+                    <li>Mesa</li>
+                    <li>Phoenix</li>
+                </ul>
+            </div>
+            <div class="location-group">
+                <h4>California</h4>
+                <ul>
+                    <li>Bakersfield</li>
+                    <li>Chula Vista</li>
+                    <li>Fresno</li>
+                    <li>Garden Grove</li>
+                    <li>Gardena</li>
+                    <li>Huntington Park</li>
+                    <li>Oceanside</li>
+                    <li>Ontario</li>
+                    <li>Reseda</li>
+                    <li>Riverside</li>
+                    <li>Sacramento</li>
+                    <li>West Covina</li>
+                </ul>
+            </div>
+            <div class="location-group">
+                <h4>Georgia · Nevada · New Mexico · Texas · Washington</h4>
+                <ul>
+                    <li>Morrow, GA</li>
+                    <li>Stone Mountain, GA</li>
+                    <li>Las Vegas, NV</li>
+                    <li>Albuquerque, NM</li>
+                    <li>Dallas, TX</li>
+                    <li>Houston, TX</li>
+                    <li>Tacoma, WA</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Start Your HVAC Career in 10 Months</h2>
+        <p>DegreeFlex will connect you with a UEI admissions advisor at the campus nearest you — find your location and get started today.</p>
+        <a href="https://degreeflex.com/" class="btn-primary">Find a UEI Campus at DegreeFlex</a>
+    </section>
+
+    <footer>
+        <p>This page is presented by <a href="https://degreeflex.com">DegreeFlex</a>. Program details sourced from <a href="https://www.uei.edu/trade-school-programs/heating-ventilation-air-conditioning/">UEI College</a>. Information subject to change — verify directly with the institution. UEI does not promise or guarantee employment to any student or graduate.</p>
+        <p>
+            <a href="https://degreeflex.com/privacy-policy/">Privacy Policy</a> · 
+            <a href="https://degreeflex.com/terms-and-conditions/">Terms & Conditions</a>
+        </p>
+    </footer>
+</body>
+</html>
