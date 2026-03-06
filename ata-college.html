@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare Career Programs | ATA College</title>
+  <meta name="description" content="Launch your healthcare career with ATA College — ABHES-accredited programs in Practical Nursing, Medical Assisting, Dental Assisting, Medical Coding, and more. Day, evening & online classes available." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Jornaya LeadID -->
+  <script id="LeadiDscript" type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.id = 'LeadiDscript_campaign';
+      s.type = 'text/javascript'; s.async = true;
+      s.src = '//create.lidstatic.com/campaign/INSERT_JORNAYA_TOKEN.js?snippet_version=2';
+      var LeadiDscript = document.getElementById('LeadiDscript');
+      LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+    })();
+  </script>
+
+  <!-- TrustedForm -->
+  <script type="text/javascript">
+    (function() {
+      var field = 'xxTrustedFormCertUrl';
+      var tf = document.createElement('script');
+      tf.type = 'text/javascript'; tf.async = true;
+      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+        '://api.trustedform.com/trustedform.js?provide_referrer=false&field=' + escape(field) +
+        '&l=' + new Date().getTime() + Math.random() + '&invert_field_sensitivity=false';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+    })();
+  </script>
+
+  <style>
+    /* ===== ATA BRAND COLORS (from actual site) ===== */
+    :root {
+      /* Exact ATA brand colors extracted from official SVG logo */
+      --ata-amber:       #F6A01A;   /* logo cross icon — primary accent */
+      --ata-amber-dark:  #D4870E;   /* hover/pressed state */
+      --ata-amber-light: #FEF3DC;   /* tinted backgrounds */
+      --ata-warm-gray:   #959484;   /* logo wordmark color */
+      --ata-dark-gray:   #4A4A42;   /* darker variant for type */
+      --ata-charcoal:    #2E2E29;   /* deepest dark — hero, stats bar */
+      --ata-mid-gray:    #6E6D5E;   /* secondary text */
+      --ata-light-gray:  #F4F4F1;   /* section backgrounds */
+      --ata-border-gray: #DDDDD8;   /* input borders */
+      --ata-white:       #FFFFFF;
+      --font-display:    'Oswald', sans-serif;
+      --font-body:       'Open Sans', sans-serif;
+      --shadow-sm:  0 1px 4px rgba(0,0,0,0.10);
+      --shadow-md:  0 4px 18px rgba(0,0,0,0.13);
+      --shadow-lg:  0 12px 40px rgba(0,0,0,0.18);
+      --radius: 6px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--ata-charcoal); background: var(--ata-white); line-height: 1.6; }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--ata-charcoal);
+      color: rgba(255,255,255,0.85);
+      text-align: center;
+      padding: 9px 16px;
+      font-family: var(--font-body);
+      font-size: 0.81rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .trust-bar span { color: var(--ata-amber); font-weight: 700; }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: var(--ata-white);
+      border-bottom: 3px solid var(--ata-amber);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+    .header-logo { display: flex; align-items: center; gap: 12px; }
+
+    /* ATA logo SVG — matches their actual logo style: "ata" text + cross icon */
+    .ata-logo-svg { width: 90px; height: 52px; }
+
+    .logo-text-block .school-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--ata-charcoal);
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+    }
+    .logo-text-block .school-tagline {
+      font-size: 0.7rem;
+      color: var(--ata-mid-gray);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .header-cta {
+      background: var(--ata-amber);
+      color: var(--ata-charcoal);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 10px 24px;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .header-cta:hover { background: var(--ata-amber-dark); transform: translateY(-1px); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(140deg, var(--ata-charcoal) 0%, var(--ata-charcoal) 65%, #4A4A4A 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 60px 24px 70px;
+    }
+    /* Subtle dot texture */
+    .hero::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='1' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
+      background-size: 20px 20px;
+    }
+    /* Yellow accent bar on left */
+    .hero::after {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 6px;
+      background: var(--ata-amber);
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 400px 1fr;
+      gap: 50px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(245,168,0,0.15);
+      border: 1px solid rgba(245,168,0,0.4);
+      color: var(--ata-amber);
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 5px 12px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .hero-badge::before { content: '✦'; font-size: 0.55rem; }
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 4.5vw, 3.7rem);
+      font-weight: 700;
+      color: var(--ata-white);
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .hero-headline .accent { color: var(--ata-amber); display: block; }
+    .hero-subhead {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.78);
+      margin-bottom: 28px;
+      line-height: 1.65;
+      max-width: 520px;
+    }
+    .hero-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .hero-bullets li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.88);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+    .hero-bullets li::before {
+      content: '✓';
+      background: var(--ata-amber);
+      color: var(--ata-charcoal);
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.68rem; font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* ===== FORM CARD ===== */
+    .form-card {
+      background: var(--ata-white);
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+    .form-card-header {
+      background: var(--ata-amber);
+      padding: 18px 24px;
+      text-align: center;
+    }
+    .form-card-header .form-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--ata-charcoal);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+    .form-card-header .form-subtitle {
+      font-size: 0.8rem;
+      color: rgba(37,37,37,0.72);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+    .form-body { padding: 20px 24px 22px; }
+    .form-group { margin-bottom: 13px; }
+    .form-group label {
+      display: block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--ata-charcoal);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 13px;
+      border: 1.5px solid var(--ata-border-gray);
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.93rem;
+      color: var(--ata-charcoal);
+      background: var(--ata-white);
+      transition: border-color 0.2s;
+      appearance: none; -webkit-appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--ata-amber);
+      box-shadow: 0 0 0 3px rgba(245,168,0,0.15);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-submit {
+      width: 100%;
+      background: var(--ata-amber);
+      color: var(--ata-charcoal);
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 14px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      margin-top: 6px;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+    }
+    .form-submit:hover {
+      background: var(--ata-amber-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(245,168,0,0.4);
+    }
+    .form-disclaimer {
+      font-size: 0.67rem;
+      color: var(--ata-mid-gray);
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    #leadid_token, #xxTrustedFormCertUrl { display: none !important; }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar { background: #2E2E29; }
+    .stats-bar-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .stat-item {
+      padding: 26px 20px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.4rem; font-weight: 700;
+      color: var(--ata-amber);
+      line-height: 1; letter-spacing: -0.01em;
+    }
+    .stat-label {
+      font-size: 0.75rem; font-weight: 600;
+      color: rgba(255,255,255,0.6);
+      text-transform: uppercase; letter-spacing: 0.08em; margin-top: 5px;
+    }
+
+    /* ===== SHARED SECTION ===== */
+    .section { padding: 64px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.74rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--ata-amber-dark); margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 700; text-transform: uppercase;
+      color: var(--ata-charcoal); line-height: 1.1;
+      letter-spacing: 0.02em; margin-bottom: 16px;
+    }
+    .section-body { font-size: 0.98rem; color: #4A4A4A; line-height: 1.75; max-width: 680px; }
+
+    /* ===== PROGRAMS ===== */
+    .programs-section { background: var(--ata-light-gray); }
+    .programs-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 18px; margin-top: 36px;
+    }
+    .program-card {
+      background: var(--ata-white);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      border-top: 4px solid var(--ata-charcoal);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex; flex-direction: column;
+    }
+    .program-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .program-card.featured { border-top-color: var(--ata-amber); }
+    .program-icon { font-size: 1.8rem; margin-bottom: 10px; line-height: 1; }
+    .program-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase;
+      letter-spacing: 0.02em; margin-bottom: 7px; line-height: 1.2;
+    }
+    .program-desc { font-size: 0.86rem; color: #555; line-height: 1.65; margin-bottom: 14px; flex: 1; }
+    .program-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .program-chip {
+      background: var(--ata-amber-light);
+      color: var(--ata-charcoal);
+      font-size: 0.69rem; font-weight: 700;
+      padding: 3px 8px; border-radius: 3px;
+      text-transform: uppercase; letter-spacing: 0.05em;
+    }
+
+    /* ===== ATA ADVANTAGE ===== */
+    .advantage-section { background: var(--ata-white); }
+    .advantage-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 22px; margin-top: 40px;
+    }
+    .advantage-card {
+      padding: 30px 22px; border-radius: var(--radius);
+      background: var(--ata-light-gray);
+      border: 1px solid var(--ata-border-gray);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .advantage-card:hover { border-color: var(--ata-amber); box-shadow: var(--shadow-sm); }
+    .advantage-icon {
+      width: 52px; height: 52px;
+      background: var(--ata-amber);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px; font-size: 1.4rem;
+    }
+    .advantage-title {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase;
+      letter-spacing: 0.03em; margin-bottom: 8px;
+    }
+    .advantage-text { font-size: 0.87rem; color: #555; line-height: 1.65; }
+
+    /* ===== SALARY SECTION ===== */
+    .salary-section { background: #2E2E29; }
+    .salary-section .section-title { color: var(--ata-white); }
+    .salary-section .section-label { color: var(--ata-amber); }
+    .salary-section .section-body { color: rgba(255,255,255,0.7); }
+    .salary-callout {
+      background: rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 40px;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center; margin-top: 36px;
+    }
+    .salary-big {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 5.5vw, 5rem);
+      font-weight: 700; color: var(--ata-amber);
+      line-height: 1; letter-spacing: -0.02em;
+    }
+    .salary-label { font-size: 0.98rem; color: rgba(255,255,255,0.75); margin-top: 10px; line-height: 1.5; }
+    .salary-label strong { color: var(--ata-white); }
+    .salary-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .salary-list li {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 11px 16px;
+      background: rgba(255,255,255,0.07);
+      border-radius: var(--radius);
+      color: rgba(255,255,255,0.82); font-size: 0.88rem;
+    }
+    .salary-list li .role { font-weight: 500; }
+    .salary-list li .pay {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 700; color: var(--ata-amber);
+    }
+
+    /* ===== ACCREDITATION ===== */
+    .accred-section { background: var(--ata-light-gray); }
+    .accred-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 16px; margin-top: 36px;
+    }
+    .accred-card {
+      background: var(--ata-white); border-radius: var(--radius);
+      padding: 22px 16px; text-align: center;
+      box-shadow: var(--shadow-sm); border-bottom: 3px solid var(--ata-amber);
+    }
+    .accred-icon { font-size: 1.8rem; margin-bottom: 10px; }
+    .accred-name {
+      font-family: var(--font-display); font-size: 0.85rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase;
+      letter-spacing: 0.04em; line-height: 1.3; margin-bottom: 6px;
+    }
+    .accred-desc { font-size: 0.77rem; color: var(--ata-mid-gray); line-height: 1.5; }
+
+    /* ===== FINANCIAL AID ===== */
+    .finaid-section { background: var(--ata-white); }
+    .finaid-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; margin-top: 36px; align-items: start;
+    }
+    /* Mimic ATA's own checkmark list style from their site */
+    .finaid-list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
+    .finaid-list li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.93rem; color: #444; font-weight: 500;
+    }
+    .check-icon {
+      width: 28px; height: 28px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .check-icon svg { width: 28px; height: 28px; }
+    .finaid-cta-box {
+      background: var(--ata-amber-light);
+      border: 1.5px solid rgba(245,168,0,0.3);
+      border-radius: 8px; padding: 32px 28px; text-align: center;
+    }
+    .finaid-cta-box .cta-icon { font-size: 2.4rem; margin-bottom: 12px; }
+    .finaid-cta-box h3 {
+      font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase;
+      letter-spacing: 0.03em; margin-bottom: 10px; line-height: 1.2;
+    }
+    .finaid-cta-box p { font-size: 0.88rem; color: #4A4A4A; line-height: 1.65; margin-bottom: 20px; }
+    .finaid-cta-btn {
+      display: inline-block; background: var(--ata-amber);
+      color: var(--ata-charcoal); font-family: var(--font-display);
+      font-weight: 700; font-size: 1rem; text-transform: uppercase;
+      letter-spacing: 0.05em; padding: 13px 32px; border-radius: var(--radius);
+      transition: background 0.2s, transform 0.15s;
+    }
+    .finaid-cta-btn:hover { background: var(--ata-amber-dark); transform: translateY(-1px); }
+
+    /* ===== PROCESS ===== */
+    .process-section { background: var(--ata-light-gray); }
+    .process-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 20px; margin-top: 40px; position: relative;
+    }
+    .process-steps::before {
+      content: ''; position: absolute;
+      top: 27px; left: 12.5%; right: 12.5%; height: 2px;
+      background: linear-gradient(to right, var(--ata-charcoal), var(--ata-amber)); z-index: 0;
+    }
+    .process-step { text-align: center; position: relative; z-index: 1; }
+    .step-number {
+      width: 54px; height: 54px;
+      background: var(--ata-charcoal); color: var(--ata-white);
+      border-radius: 50%;
+      font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+      border: 3px solid var(--ata-white);
+      box-shadow: 0 0 0 2px var(--ata-charcoal);
+    }
+    .process-step.active .step-number {
+      background: var(--ata-amber); color: var(--ata-charcoal);
+      box-shadow: 0 0 0 2px var(--ata-amber-dark);
+    }
+    .step-title {
+      font-family: var(--font-display); font-size: 0.98rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase;
+      letter-spacing: 0.03em; margin-bottom: 6px;
+    }
+    .step-desc { font-size: 0.82rem; color: var(--ata-mid-gray); line-height: 1.5; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section { background: var(--ata-white); }
+    .testimonials-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; margin-top: 40px;
+    }
+    .testimonial-card {
+      background: var(--ata-light-gray); border-radius: var(--radius);
+      padding: 26px 22px; border-left: 4px solid var(--ata-amber);
+    }
+    .stars { color: var(--ata-amber); font-size: 0.85rem; margin-bottom: 10px; letter-spacing: 2px; }
+    .testimonial-quote {
+      font-size: 0.92rem; color: #3D3D3D; line-height: 1.72;
+      margin-bottom: 18px; font-style: italic;
+    }
+    .testimonial-quote::before {
+      content: '\201C'; font-size: 1.6rem; color: var(--ata-amber);
+      line-height: 0; vertical-align: -0.35em; margin-right: 2px; font-style: normal;
+    }
+    .testimonial-author {
+      font-family: var(--font-display); font-size: 0.9rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase; letter-spacing: 0.03em;
+    }
+    .testimonial-role { font-size: 0.77rem; color: var(--ata-mid-gray); margin-top: 2px; }
+
+    /* ===== BOTTOM CTA ===== */
+    .bottom-cta {
+      background: var(--ata-amber);
+      padding: 60px 24px; text-align: center;
+    }
+    .bottom-cta .cta-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; text-transform: uppercase;
+      color: var(--ata-charcoal); line-height: 1.1; margin-bottom: 12px;
+      letter-spacing: 0.02em;
+    }
+    .bottom-cta .cta-subtitle {
+      font-size: 1.05rem; color: rgba(37,37,37,0.75); margin-bottom: 28px;
+    }
+    .cta-btn {
+      display: inline-block; background: var(--ata-charcoal); color: var(--ata-white);
+      font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      padding: 16px 48px; border-radius: var(--radius);
+      transition: background 0.2s, transform 0.15s;
+    }
+    .cta-btn:hover { background: var(--ata-charcoal); transform: translateY(-2px); }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--ata-charcoal); color: rgba(255,255,255,0.45);
+      padding: 32px 24px; text-align: center;
+      font-size: 0.77rem; line-height: 1.8;
+    }
+    .site-footer a { color: rgba(255,255,255,0.55); text-decoration: underline; }
+    .footer-school { color: var(--ata-amber); font-weight: 700; margin-bottom: 8px; font-size: 0.87rem; }
+
+    /* ===== STICKY MOBILE CTA ===== */
+    .sticky-mobile-cta {
+      display: none; position: fixed;
+      bottom: 0; left: 0; right: 0; z-index: 200;
+      background: var(--ata-amber); padding: 13px 20px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+    }
+    .sticky-mobile-cta a {
+      display: block; text-align: center;
+      font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+      color: var(--ata-charcoal); text-transform: uppercase; letter-spacing: 0.04em;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+      .form-card { max-width: 480px; margin: 0 auto; }
+      .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      .programs-grid { grid-template-columns: repeat(2, 1fr); }
+      .advantage-grid { grid-template-columns: repeat(2, 1fr); }
+      .accred-grid { grid-template-columns: repeat(2, 1fr); }
+      .salary-callout { grid-template-columns: 1fr; padding: 28px 24px; gap: 28px; }
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+      .testimonials-grid { grid-template-columns: 1fr; max-width: 560px; }
+      .finaid-grid { grid-template-columns: 1fr; }
+      .finaid-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .hero { padding: 36px 16px 48px; }
+      .section { padding: 44px 16px; }
+      .programs-grid { grid-template-columns: 1fr; }
+      .advantage-grid { grid-template-columns: 1fr; }
+      .accred-grid { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr; }
+      .header-cta { display: none; }
+      .sticky-mobile-cta { display: block; }
+      body { padding-bottom: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <span>ABHES-Accredited</span> &nbsp;·&nbsp; Healthcare Career Programs &nbsp;·&nbsp;
+    Day, Evening &amp; Online Classes &nbsp;·&nbsp; <span>Monthly Start Dates</span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-logo">
+      <!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --> <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="110" height="84" viewBox="0 0 267.005 204.987" enable-background="new 0 0 267.005 204.987" xml:space="preserve"> <g> <g> <path fill="#959484" d="M10.998,74.822c7.934-4.727,17.391-8.1,28.354-8.1c24.642,0,34.594,12.148,34.594,35.6v35.615 c0,9.789,0.342,14.344,0.677,16.87H59.777V143.68h-0.342c-3.709,5.221-12.152,13.148-26.663,13.148 c-18.56,0-31.555-8.097-31.555-26.824c0-21.602,23.624-28.351,39.997-28.351c6.24,0,10.629,0,16.878,0.332 c0-14.848-5.405-22.435-21.27-22.435c-8.943,0-18.562,3.371-24.976,8.773L10.998,74.822z M58.091,113.807 c-3.38,0-6.759-0.349-10.129-0.349c-8.609,0-29.871,1.354-29.871,16.545c0,9.117,8.778,14.009,16.03,14.009 c15.696,0,23.97-9.792,23.97-22.619V113.807z"/> <path fill="#959484" d="M135.53,81.572h-22.785v47.083c0,9.951,6.077,15.358,13.333,15.358c4.896,0,8.436-1.524,10.798-3.037v13.5 c-3.535,1.004-8.438,2.352-13.495,2.352c-16.373,0-26.497-7.759-26.497-24.97V81.572H77.477V68.745h19.407V48.831l15.861-5.059 v24.972h22.785V81.572z"/> <path fill="#959484" d="M152.006,74.822c7.934-4.727,17.384-8.1,28.35-8.1c24.64,0,34.597,12.148,34.597,35.6v35.615 c0,9.789,0.338,14.344,0.673,16.87h-14.854V143.68h-0.337c-3.706,5.221-12.149,13.148-26.662,13.148 c-18.562,0-31.555-8.097-31.555-26.824c0-21.602,23.626-28.351,39.999-28.351c6.239,0,10.632,0,16.878,0.332 c0-14.848-5.402-22.435-21.27-22.435c-8.946,0-18.568,3.371-24.981,8.773L152.006,74.822z M199.095,113.807 c-3.381,0-6.757-0.349-10.13-0.349c-8.609,0-29.873,1.354-29.873,16.545c0,9.117,8.78,14.009,16.032,14.009 c15.691,0,23.971-9.792,23.971-22.619V113.807z"/> </g> <path fill="#F6A01A" d="M241.871,0c0,13.88,11.255,25.13,25.134,25.13V0H241.871z"/> <path fill="#F6A01A" d="M209.08,25.13c0-13.878,11.255-25.129,25.134-25.129V25.13H209.08z"/> <path fill="#F6A01A" d="M241.876,57.881c13.88,0,25.129-11.254,25.129-25.136h-25.129V57.881z"/> <path fill="#F6A01A" d="M234.213,57.878c-13.88,0-25.133-11.251-25.133-25.133h25.133V57.878z"/> <g> <path fill="#959484" d="M23.339,204.041c-2.197,0.516-4.565,0.946-6.847,0.946C6.76,204.987,0,200.121,0,189.96 c0-10.292,6.286-16.063,16.492-16.063c1.981,0,4.608,0.389,6.804,1.249l-0.431,5.081c-2.282-1.291-4.349-1.592-6.502-1.592 c-6.201,0-10.077,4.736-10.077,10.894c0,6.114,3.79,10.722,10.206,10.722c2.368,0,5.167-0.516,6.588-1.249L23.339,204.041z"/> <path fill="#959484" d="M47.713,173.896c9.431,0,14.728,6.374,14.728,15.459c0,9.087-5.21,15.632-14.728,15.632 c-9.645,0-14.727-6.416-14.727-15.632C32.986,180.142,38.153,173.896,47.713,173.896z M47.713,200.25 c6.158,0,8.44-5.468,8.44-10.895c0-5.296-2.455-10.721-8.44-10.721c-5.985,0-8.44,5.425-8.44,10.721 C39.273,194.782,41.556,200.25,47.713,200.25z"/> <path fill="#959484" d="M73.192,174.414h6.029v25.32h11.669v4.736H73.192V174.414z"/> <path fill="#959484" d="M102.116,174.414h6.029v25.32h11.669v4.736h-17.698V174.414z"/> <path fill="#959484" d="M131.04,174.414h17.741v4.736h-11.712v7.407h10.723v4.736h-10.723v8.44h11.799v4.736H131.04V174.414z"/> <path fill="#959484" d="M185.127,180.227c-2.325-1.076-5.339-1.592-7.75-1.592c-7.021,0-10.896,4.736-10.896,10.894 c0,6.114,3.789,10.722,10.205,10.722c1.637,0,2.929-0.172,3.962-0.43v-7.838h-6.373v-4.736h12.143v16.192 c-3.186,0.86-6.501,1.549-9.732,1.549c-9.73,0-16.492-4.866-16.492-15.027c0-10.292,6.287-16.063,16.492-16.063 c3.488,0,6.244,0.474,8.827,1.249L185.127,180.227z"/> <path fill="#959484" d="M199.424,174.414h17.741v4.736h-11.712v7.407h10.723v4.736h-10.723v8.44h11.799v4.736h-17.828V174.414z"/> </g> </g> </svg>
+    </div>
+    <a href="#lead-form" class="header-cta">Get Program Info</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <!-- Lead Form -->
+      <div class="form-card" id="lead-form">
+        <div class="form-card-header">
+          <div class="form-title">Get Your Free Program Info</div>
+          <div class="form-subtitle">No obligation · Takes under 60 seconds</div>
+        </div>
+        <div class="form-body">
+          <form id="ata-lead-form" novalidate>
+            <input type="hidden" name="universal_leadid" id="leadid_token" value="" />
+            <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" value="" />
+            <input type="hidden" name="utm_source"   id="f_utm_source" />
+            <input type="hidden" name="utm_medium"   id="f_utm_medium" />
+            <input type="hidden" name="utm_campaign" id="f_utm_campaign" />
+            <input type="hidden" name="utm_content"  id="f_utm_content" />
+            <input type="hidden" name="utm_term"     id="f_utm_term" />
+            <input type="hidden" name="subid"        id="f_subid" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name" placeholder="Jane" required />
+              </div>
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="zip">ZIP Code</label>
+              <input type="text" id="zip" name="zip" placeholder="40223" maxlength="5" required />
+            </div>
+            <div class="form-group">
+              <label for="program_interest">Program Interest</label>
+              <select id="program_interest" name="program_interest">
+                <option value="">Select a program...</option>
+                <option value="practical_nursing">Practical Nursing (LPN)</option>
+                <option value="medical_assisting">Medical Assisting</option>
+                <option value="dental_assisting">Dental Assisting</option>
+                <option value="medical_coding">Medical Coding</option>
+                <option value="diagnostic_medical_sonography">Diagnostic Medical Sonography</option>
+                <option value="echocardiography">Echocardiography Technology</option>
+                <option value="surgical_technician">Surgical Technician</option>
+                <option value="healthcare_management">Healthcare Management &amp; Leadership</option>
+                <option value="limited_medical_radiography">Limited Medical Radiography</option>
+                <option value="undecided">Not Sure Yet</option>
+              </select>
+            </div>
+
+            <button type="submit" class="form-submit">Get Free Program Info →</button>
+            <p class="form-disclaimer">
+              By submitting, you consent to be contacted by ATA College and its partners about education programs.
+              See <a href="https://www.ata.edu/privacy-policy/" target="_blank" style="color:var(--ata-amber-dark);">Privacy Policy</a>.
+              Msg &amp; data rates may apply.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">ABHES-Accredited Institution</div>
+        <h1 class="hero-headline">
+          Start Your Career in
+          <span class="accent">Healthcare</span>
+        </h1>
+        <p class="hero-subhead">
+          ATA College has trained healthcare professionals for over 20 years. Hands-on programs, monthly start dates, and real career placement support — your next chapter starts here.
+        </p>
+        <ul class="hero-bullets">
+          <li>Accredited by the Accrediting Bureau of Health Education Schools (ABHES)</li>
+          <li>8 in-demand healthcare programs to choose from</li>
+          <li>Day, evening, and online class options available</li>
+          <li>Financial aid available for those who qualify</li>
+          <li>Graduate career placement assistance included</li>
+          <li>Monthly start dates — begin almost immediately</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="stats-bar">
+    <div class="stats-bar-inner">
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Years Training Healthcare Pros</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">8</div>
+        <div class="stat-label">In-Demand Programs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Acceptance Rate</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">ABHES</div>
+        <div class="stat-label">Institutional Accreditation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programs Section -->
+  <section class="section programs-section">
+    <div class="section-inner">
+      <div class="section-label">What You'll Train For</div>
+      <h2 class="section-title">Healthcare Programs at ATA College</h2>
+      <p class="section-body">
+        Every ATA program is built around real-world, hands-on training. You won't just study healthcare — you'll practice it in clinical settings with instructors who've worked in the field.
+      </p>
+      <div class="programs-grid">
+        <div class="program-card featured">
+          <div class="program-icon">🩺</div>
+          <div class="program-name">Practical Nursing (LPN)</div>
+          <p class="program-desc">One of ATA's most popular programs. Graduate prepared to sit for the NCLEX-PN and step into LPN roles in hospitals, clinics, and long-term care. Kentucky Board of Nursing — Full Approval.</p>
+          <div class="program-chips">
+            <span class="program-chip">KY Board Approved</span>
+            <span class="program-chip">NCLEX-PN Prep</span>
+            <span class="program-chip">Clinical Hours</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🏥</div>
+          <div class="program-name">Medical Assisting</div>
+          <p class="program-desc">One of the most versatile roles in healthcare. Medical Assistants handle both clinical and administrative duties — essential in virtually every type of medical practice.</p>
+          <div class="program-chips">
+            <span class="program-chip">Diploma &amp; AOS Options</span>
+            <span class="program-chip">Externship Included</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🦷</div>
+          <div class="program-name">Dental Assisting</div>
+          <p class="program-desc">Work alongside dentists in one of the most stable healthcare sectors. Graduates have placed at private practices and specialty clinics across ATA's markets.</p>
+          <div class="program-chips">
+            <span class="program-chip">Hands-On Lab</span>
+            <span class="program-chip">Career Placement</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">💻</div>
+          <div class="program-name">Medical Coding</div>
+          <p class="program-desc">Translate diagnoses and procedures into standardized codes used for insurance reimbursement — a growing field with strong remote work potential and clear certification pathways.</p>
+          <div class="program-chips">
+            <span class="program-chip">Remote-Friendly</span>
+            <span class="program-chip">CPC Exam Prep</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🔬</div>
+          <div class="program-name">Diagnostic Medical Sonography</div>
+          <p class="program-desc">Use ultrasound technology to help diagnose patients. DMS is one of the highest-paying ATA programs and one of the highest-demand imaging specialties in the country ($31,850 program cost).</p>
+          <div class="program-chips">
+            <span class="program-chip">High-Demand Specialty</span>
+            <span class="program-chip">ARDMS Prep</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">❤️</div>
+          <div class="program-name">Echocardiography Technology</div>
+          <p class="program-desc">Specialize in cardiac imaging. Echo techs work in hospitals and cardiology practices — a highly specialized and well-compensated healthcare career path.</p>
+          <div class="program-chips">
+            <span class="program-chip">Cardiac Specialty</span>
+            <span class="program-chip">Strong Salary Outlook</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">🔪</div>
+          <div class="program-name">Surgical Technician</div>
+          <p class="program-desc">Work as part of a lifesaving surgical team in hospitals, medical centers, and surgical centers. ATA's Associate of Applied Science program prepares you for the NBSTSA certification exam — completable in as fast as 24 months.</p>
+          <div class="program-chips">
+            <span class="program-chip">AAS Degree</span>
+            <span class="program-chip">NBSTSA Exam Prep</span>
+            <span class="program-chip">24 Months</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">📋</div>
+          <div class="program-name">Healthcare Management &amp; Leadership</div>
+          <p class="program-desc">For healthcare workers ready to move into management. This Bachelor of Science completer program is offered fully online — designed for working professionals looking to advance.</p>
+          <div class="program-chips">
+            <span class="program-chip">Bachelor's Degree</span>
+            <span class="program-chip">100% Online</span>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-icon">📡</div>
+          <div class="program-name">Limited Medical Radiography</div>
+          <p class="program-desc">Learn to perform diagnostic X-ray procedures. Radiography technologists are needed in urgent care centers, outpatient clinics, and physicians' offices across every market.</p>
+          <div class="program-chips">
+            <span class="program-chip">Imaging Technology</span>
+            <span class="program-chip">Blended Format</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATA Advantage -->
+  <section class="section advantage-section">
+    <div class="section-inner">
+      <div class="section-label">Why ATA College</div>
+      <h2 class="section-title">The ATA Advantage</h2>
+      <p class="section-body">
+        ATA isn't a big university — that's the point. Smaller classes, instructors who know your name, and a laser focus on getting you employed in healthcare.
+      </p>
+      <div class="advantage-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon">📅</div>
+          <div class="advantage-title">Monthly Start Dates</div>
+          <p class="advantage-text">Don't wait for a semester to open up. ATA's monthly enrollment means you can begin your program almost immediately after acceptance.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">👩‍⚕️</div>
+          <div class="advantage-title">Hands-On, Real-World Training</div>
+          <p class="advantage-text">Every program combines classroom instruction with clinical lab work and externship experience — so you're ready for the job, not just the exam.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">🎯</div>
+          <div class="advantage-title">Career Placement Support</div>
+          <p class="advantage-text">ATA's Career Services team works with every graduate to assist with job placement, connecting students with employer partners before graduation.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">🏫</div>
+          <div class="advantage-title">Small Class Sizes</div>
+          <p class="advantage-text">A 14:1 student-faculty ratio means you actually get attention. Instructors know students individually and provide real tutoring support.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">🌐</div>
+          <div class="advantage-title">Multiple Campus Locations</div>
+          <p class="advantage-text">Louisville, KY · Cincinnati, OH · Tulsa, OK · Spring Hill, FL — with blended and online options available depending on program.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">💰</div>
+          <div class="advantage-title">Financial Aid Available</div>
+          <p class="advantage-text">ATA participates in federal Title IV programs. Grants, loans, and other funding may be available — ATA's FA team walks you through every option.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salary Section -->
+  <section class="section salary-section">
+    <div class="section-inner">
+      <div class="section-label">The Financial Case</div>
+      <h2 class="section-title">Healthcare Careers Pay Well</h2>
+      <p class="section-body">Here's what BLS data shows for ATA's core program career paths — jobs with long-term stability regardless of the economy.</p>
+      <div class="salary-callout">
+        <div>
+          <div class="salary-big">$57,800</div>
+          <div class="salary-label">
+            <strong>Median Annual Salary</strong><br>
+            Medical &amp; Health Services workers<br>
+            <small style="opacity:0.6">Source: U.S. Bureau of Labor Statistics</small>
+          </div>
+        </div>
+        <ul class="salary-list">
+          <li><span class="role">LPN / Practical Nurse</span><span class="pay">$54K–$65K</span></li>
+          <li><span class="role">Diagnostic Medical Sonographer</span><span class="pay">$75K–$95K</span></li>
+          <li><span class="role">Echocardiography Technologist</span><span class="pay">$68K–$88K</span></li>
+          <li><span class="role">Medical Coder (CPC)</span><span class="pay">$48K–$68K</span></li>
+          <li><span class="role">Medical Assistant</span><span class="pay">$38K–$48K</span></li>
+          <li><span class="role">Dental Assistant</span><span class="pay">$38K–$50K</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditation -->
+  <section class="section accred-section">
+    <div class="section-inner">
+      <div class="section-label">Credentials &amp; Compliance</div>
+      <h2 class="section-title">Fully Accredited &amp; State-Licensed</h2>
+      <p class="section-body">
+        ATA's accreditation is recognized by the U.S. Secretary of Education — meaning your diploma carries real weight with employers, and federal financial aid is available.
+      </p>
+      <div class="accred-grid">
+        <div class="accred-card">
+          <div class="accred-icon">🏛️</div>
+          <div class="accred-name">ABHES</div>
+          <p class="accred-desc">Institutional accreditation by the Accrediting Bureau of Health Education Schools — recognized by the U.S. Dept. of Education.</p>
+        </div>
+        <div class="accred-card">
+          <div class="accred-icon">🩺</div>
+          <div class="accred-name">Kentucky Board of Nursing</div>
+          <p class="accred-desc">Practical Nursing program holds Full Approval. LPN to RN Bridge also approved. OH Board of Nursing approval also in place.</p>
+        </div>
+        <div class="accred-card">
+          <div class="accred-icon">📋</div>
+          <div class="accred-name">Multi-State Licensed</div>
+          <p class="accred-desc">Licensed in KY (KCPE), OH (OSBCCS), FL (CIE), and OK (OBPVS) — all active campus locations covered.</p>
+        </div>
+        <div class="accred-card">
+          <div class="accred-icon">🏅</div>
+          <div class="accred-name">Industry Certifications</div>
+          <p class="accred-desc">Graduates are eligible to sit for nationally recognized industry certifications in their field of study upon completing the program.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financial Aid — mirrors ATA's own page layout -->
+  <section class="section finaid-section">
+    <div class="section-inner">
+      <div class="section-label">Paying for School</div>
+      <h2 class="section-title">Financial Aid Options</h2>
+      <p class="section-body" style="max-width:100%;margin-bottom:32px;">
+        Students may be eligible for a wide range of financial assistance through Title IV funding programs provided by the U.S. Department of Education. ATA's financial aid team guides you through every step of the process.
+      </p>
+      <div class="finaid-grid">
+        <div>
+          <ul class="finaid-list">
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Federal Pell Grants
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Federal Direct Unsubsidized Loans
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              State Grants and Scholarships
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Federal Direct PLUS Loans
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Federal Direct Subsidized Loans
+            </li>
+            <li>
+              <span class="check-icon"><svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="4" fill="#F6A01A"/><path d="M7 14l5 5 9-9" stroke="#252525" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              Veterans' Education Benefits
+            </li>
+          </ul>
+        </div>
+        <div class="finaid-cta-box">
+          <div class="cta-icon">📝</div>
+          <h3>Find Out What You Qualify For</h3>
+          <p>During enrollment, ATA's team helps you complete your FAFSA and reviews your award letter before you sign anything. There's no pressure — just clarity on what's available to you.</p>
+          <a href="#lead-form" class="finaid-cta-btn">Talk to a Financial Aid Advisor →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section process-section">
+    <div class="section-inner">
+      <div class="section-label">Getting Started</div>
+      <h2 class="section-title">Your Path to a Healthcare Career</h2>
+      <div class="process-steps">
+        <div class="process-step active">
+          <div class="step-number">1</div>
+          <div class="step-title">Request Info</div>
+          <p class="step-desc">Fill out the form above. An ATA admissions advisor will follow up within one business day.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-title">Campus Visit</div>
+          <p class="step-desc">Tour a campus near you or meet virtually. See the labs and meet the instructors before you commit.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-title">Apply &amp; Fund</div>
+          <p class="step-desc">Complete your application and work with ATA's financial aid team on FAFSA and available funding options.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-title">Start &amp; Launch</div>
+          <p class="step-desc">Monthly start dates mean no long wait. Graduate with hands-on experience and career placement support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials-section">
+    <div class="section-inner">
+      <div class="section-label">Student Stories</div>
+      <h2 class="section-title">Real Results From ATA Graduates</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">ATA gave me the tools I needed to succeed. They changed my life and my children's life as well. The instructors truly care about your success.</p>
+          <div class="testimonial-author">Former Student</div>
+          <div class="testimonial-role">Medical Assisting Program · Louisville, KY</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">Not only do I feel confident in my knowledge after graduating, but I already had a job lined up before I finished. Friendly environment and knowledgeable staff.</p>
+          <div class="testimonial-author">ATA Graduate</div>
+          <div class="testimonial-role">Limited Medical Radiography · Cincinnati, OH</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">The monthly start dates were huge for me. I didn't have to wait around — I started building toward my future almost immediately after deciding to enroll.</p>
+          <div class="testimonial-author">ATA Student</div>
+          <div class="testimonial-role">Practical Nursing Program</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bottom-cta">
+    <div class="cta-title">Ready to Start Your Healthcare Career?</div>
+    <p class="cta-subtitle">Request your free program information — no obligation, takes less than a minute.</p>
+    <a href="#lead-form" class="cta-btn">Get Free Program Info →</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-school">ATA College</div>
+    <p>This page is operated by DegreeFlex in partnership with ATA College.</p>
+    <p style="margin-top:6px;">
+      <a href="https://www.ata.edu/privacy-policy/" target="_blank">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="https://www.ata.edu" target="_blank">ATA College Official Website</a>
+    </p>
+    <p style="margin-top:12px;">Financial aid is available for those who qualify. Program availability varies by campus. Salary figures sourced from U.S. Bureau of Labor Statistics and may vary by location, experience, and employer. ATA College is accredited by the Accrediting Bureau of Health Education Schools (ABHES).</p>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-mobile-cta">
+    <a href="#lead-form">Get Free Program Info — Takes 60 Seconds →</a>
+  </div>
+
+  <script>
+    // ── UTM passthrough ──────────────────────────────────────────────
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var fields = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','subid'];
+      fields.forEach(function(key) {
+        var val = params.get(key);
+        if (val) {
+          var el = document.getElementById('f_' + key);
+          if (el) el.value = val;
+          sessionStorage.setItem(key, val);
+        } else {
+          var stored = sessionStorage.getItem(key);
+          var el = document.getElementById('f_' + key);
+          if (stored && el) el.value = stored;
+        }
+      });
+    })();
+
+    // ── Form submission ──────────────────────────────────────────────
+    document.getElementById('ata-lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('.form-submit');
+      btn.textContent = 'Submitting...';
+      btn.disabled = true;
+
+      var data = {
+        first_name:           document.getElementById('first_name').value,
+        last_name:            document.getElementById('last_name').value,
+        email:                document.getElementById('email').value,
+        phone:                document.getElementById('phone').value,
+        zip:                  document.getElementById('zip').value,
+        program_interest:     document.getElementById('program_interest').value,
+        school:               'ATA College',
+        program:              'Healthcare Career Programs',
+        universal_leadid:     document.getElementById('leadid_token').value,
+        xxTrustedFormCertUrl: document.getElementById('xxTrustedFormCertUrl').value,
+        utm_source:           document.getElementById('f_utm_source').value,
+        utm_medium:           document.getElementById('f_utm_medium').value,
+        utm_campaign:         document.getElementById('f_utm_campaign').value,
+        utm_content:          document.getElementById('f_utm_content').value,
+        utm_term:             document.getElementById('f_utm_term').value,
+        subid:                document.getElementById('f_subid').value,
+      };
+
+      fetch('https://growthengineerpro.app.n8n.cloud/webhook/form-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+      .then(function(res) { return res.json(); })
+      .then(function() {
+        window.location.href = '?submitted=1#lead-form';
+      })
+      .catch(function(err) {
+        console.error('Submission error:', err);
+        btn.textContent = 'Submit Error — Try Again';
+        btn.disabled = false;
+      });
+    });
+
+    // ── Thank-you state ──────────────────────────────────────────────
+    if (new URLSearchParams(window.location.search).get('submitted') === '1') {
+      var formCard = document.getElementById('lead-form');
+      if (formCard) {
+        formCard.innerHTML =
+          '<div style="padding:48px 24px;text-align:center;">' +
+          '<div style="font-size:3rem;margin-bottom:16px;">✅</div>' +
+          '<div style="font-family:Oswald,sans-serif;font-size:1.8rem;font-weight:700;color:#3D3D3D;text-transform:uppercase;margin-bottom:10px;">Request Received!</div>' +
+          '<p style="color:#4A4A4A;font-size:0.95rem;line-height:1.65;">An ATA program advisor will be in touch within one business day to answer your questions and walk you through your next steps.</p>' +
+          '</div>';
+      }
+    }
+
+    // ── Smooth scroll ────────────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+</body>
+</html>
