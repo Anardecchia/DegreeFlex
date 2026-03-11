@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DegreeFlex — Ad to Lead Flow</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --df-orange: #F5A800;
+    --df-orange-dark: #D48F00;
+    --df-green: #5B8C3E;
+    --df-navy: #1A2440;
+    --df-gray: #6B7280;
+    --df-light: #F9FAFB;
+    --df-border: #E5E7EB;
+    --df-white: #FFFFFF;
+    --font: 'DM Sans', sans-serif;
+    --mono: 'DM Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--font);
+    background: var(--df-light);
+    color: var(--df-navy);
+    padding: 40px 32px;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--df-border);
+  }
+  .header-left {}
+  .doc-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--df-orange);
+    margin-bottom: 6px;
+  }
+  .doc-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--df-navy);
+    line-height: 1.15;
+  }
+  .doc-subtitle {
+    font-size: 0.85rem;
+    color: var(--df-gray);
+    margin-top: 5px;
+  }
+  .df-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--df-orange);
+  }
+  .df-logo svg { width: 32px; height: 32px; }
+
+  /* ── FLOW WRAPPER ── */
+  .flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── STAGE ROW ── */
+  .stage-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 0;
+    position: relative;
+  }
+
+  /* ── STAGE LABEL ── */
+  .stage-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 28px;
+    position: relative;
+  }
+  .stage-number {
+    width: 32px; height: 32px;
+    background: var(--df-navy);
+    color: var(--df-white);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.78rem; font-weight: 700;
+    z-index: 2;
+    position: relative;
+  }
+  .stage-number.orange { background: var(--df-orange); color: var(--df-navy); }
+  .stage-number.green { background: var(--df-green); color: var(--df-white); }
+
+  .stage-line {
+    width: 2px;
+    flex: 1;
+    background: var(--df-border);
+    margin-top: 6px;
+    min-height: 40px;
+  }
+  .stage-line.last { display: none; }
+
+  .stage-name {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--df-gray);
+    margin-top: 6px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  /* ── STAGE CONTENT ── */
+  .stage-content {
+    padding: 20px 0 28px 0;
+  }
+
+  /* ── CARDS ── */
+  .cards {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card {
+    background: var(--df-white);
+    border: 1.5px solid var(--df-border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    flex: 1;
+    min-width: 160px;
+    position: relative;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--df-orange); }
+  .card-icon {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .card-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--df-navy);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .card-desc {
+    font-size: 0.75rem;
+    color: var(--df-gray);
+    line-height: 1.6;
+  }
+  .card-tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    background: var(--df-light);
+    border: 1px solid var(--df-border);
+    color: var(--df-gray);
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+  .card-tag.orange { background: #FFF8E6; border-color: #F5D07A; color: var(--df-orange-dark); }
+  .card-tag.green { background: #EEF5EA; border-color: #A5C990; color: var(--df-green); }
+  .card-tag.navy { background: #EEF0F5; border-color: #B0B8CE; color: var(--df-navy); }
+
+  .card.highlight {
+    border-color: var(--df-orange);
+    border-width: 2px;
+  }
+  .card.highlight::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--df-orange);
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* ── FORM STEPS BLOCK ── */
+  .form-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: var(--df-white);
+    border: 1.5px solid var(--df-border);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .form-step {
+    position: relative;
+  }
+  .form-step::after {
+    content: '→';
+    position: absolute;
+    right: -12px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--df-orange);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .form-step:last-child::after { display: none; }
+  .step-num {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--df-orange);
+    margin-bottom: 5px;
+  }
+  .step-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--df-navy);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  .step-fields {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .step-fields li {
+    font-size: 0.7rem;
+    color: var(--df-gray);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1.4;
+  }
+  .step-fields li::before {
+    content: '';
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--df-border);
+    flex-shrink: 0;
+  }
+
+  /* ── UTM / TRACKING BLOCK ── */
+  .tracking-block {
+    background: var(--df-white);
+    border: 1.5px solid var(--df-border);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .tracking-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--df-navy);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tracking-title span {
+    font-size: 0.9rem;
+  }
+  .tracking-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .tracking-item {
+    background: var(--df-light);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .tracking-item-label {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--df-orange-dark);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .tracking-item-desc {
+    font-size: 0.7rem;
+    color: var(--df-gray);
+    line-height: 1.4;
+  }
+
+  /* ── DESTINATION BLOCK ── */
+  .destination-block {
+    background: var(--df-navy);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .dest-item {}
+  .dest-item-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--df-orange);
+    margin-bottom: 6px;
+  }
+  .dest-item-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--df-white);
+    margin-bottom: 4px;
+  }
+  .dest-item-desc {
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+  }
+  .dest-divider {
+    width: 1px;
+    background: rgba(255,255,255,0.1);
+    align-self: stretch;
+  }
+
+  /* ── ARROW CONNECTOR ── */
+  .connector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0 6px 0;
+    margin-left: 160px;
+  }
+  .connector-line {
+    height: 2px;
+    flex: 1;
+    background: linear-gradient(90deg, var(--df-border), var(--df-orange));
+    border-radius: 1px;
+  }
+  .connector-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--df-orange);
+    white-space: nowrap;
+  }
+  .connector-arrow {
+    color: var(--df-orange);
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  /* ── COMPLIANCE ROW ── */
+  .compliance-row {
+    display: flex;
+    gap: 10px;
+  }
+  .compliance-pill {
+    background: var(--df-white);
+    border: 1.5px solid var(--df-border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .compliance-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--df-green);
+    flex-shrink: 0;
+  }
+  .compliance-text {}
+  .compliance-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--df-navy);
+  }
+  .compliance-desc {
+    font-size: 0.7rem;
+    color: var(--df-gray);
+    margin-top: 1px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--df-gray);
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--df-border);
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--df-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-note {
+    font-size: 0.72rem;
+    color: var(--df-gray);
+  }
+  .footer-date {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    color: var(--df-gray);
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 28px;
+    padding: 12px 16px;
+    background: var(--df-white);
+    border: 1.5px solid var(--df-border);
+    border-radius: 8px;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.72rem;
+    color: var(--df-gray);
+    font-weight: 500;
+  }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="doc-label">Internal One-Sheeter</div>
+    <div class="doc-title">Ad → Lead Flow</div>
+    <div class="doc-subtitle">DegreeFlex — Full funnel from paid media to school delivery</div>
+  </div>
+  <div class="df-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 4L36 12V20C36 28.837 28.837 36 20 36C11.163 36 4 28.837 4 20V12L20 4Z" fill="#F5A800" opacity="0.15"/>
+      <path d="M20 8L32 14V20C32 26.627 26.627 32 20 32C13.373 32 8 26.627 8 20V14L20 8Z" stroke="#F5A800" stroke-width="2" fill="none"/>
+      <path d="M13 20L17 24L27 16" stroke="#F5A800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    DEGREEFLEX
+  </div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#1A2440"></div> Paid Channel</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#F5A800"></div> DegreeFlex Asset</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#5B8C3E"></div> Compliance / Tracking</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#6B7280"></div> Backend / Delivery</div>
+</div>
+
+<!-- FLOW -->
+<div class="flow">
+
+  <!-- ── STAGE 1: AD CHANNELS ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number orange">1</div>
+      <div class="stage-name">Paid<br>Channels</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Where the user sees the ad</div>
+      <div class="cards">
+        <div class="card highlight">
+          <span class="card-icon">🎵</span>
+          <div class="card-title">TikTok</div>
+          <div class="card-desc">In-feed video ads. Authentic testimonials + salary hooks perform best.</div>
+          <div class="card-tag orange">Top Channel</div>
+        </div>
+        <div class="card highlight">
+          <span class="card-icon">▶️</span>
+          <div class="card-title">YouTube</div>
+          <div class="card-desc">Pre-roll & in-stream. Career outcome messaging, skippable 15–30s.</div>
+          <div class="card-tag orange">Top Channel</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">🔍</span>
+          <div class="card-title">Google Search</div>
+          <div class="card-desc">Intent-based. Users actively searching trade programs, salary, enrollment.</div>
+          <div class="card-tag navy">Search</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">💬</span>
+          <div class="card-title">Discord</div>
+          <div class="card-desc">Community + display placements targeting trade & vocational interest servers.</div>
+          <div class="card-tag navy">Display</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">UTMs fired on click</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 2: UTM PARAMETERS ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number">2</div>
+      <div class="stage-name">UTM<br>Params</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Passed in URL on ad click — tracked throughout session</div>
+      <div class="tracking-block">
+        <div class="tracking-title"><span>🔗</span> URL Parameter Structure</div>
+        <div class="tracking-grid">
+          <div class="tracking-item">
+            <div class="tracking-item-label">utm_source</div>
+            <div class="tracking-item-desc">Ad platform — tiktok, google, youtube, discord</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">utm_medium</div>
+            <div class="tracking-item-desc">Ad type — cpc, video, display, paid_social</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">utm_campaign</div>
+            <div class="tracking-item-desc">Campaign name — ties to school or program</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">utm_content</div>
+            <div class="tracking-item-desc">Creative ID — maps specific ad to lead quality</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">utm_term</div>
+            <div class="tracking-item-desc">Keyword (Search) or audience segment</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">subid</div>
+            <div class="tracking-item-desc">Partner attribution — source · medium · content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">User lands on page</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 3: LANDING PAGE ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number orange">3</div>
+      <div class="stage-name">Landing<br>Page</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">School-specific page — hosted on DegreeFlex / GitHub Pages</div>
+      <div class="cards" style="margin-bottom:12px;">
+        <div class="card">
+          <span class="card-icon">🏫</span>
+          <div class="card-title">School Landing Pages</div>
+          <div class="card-desc">AIM Aviation, ATA College, Berkeley College + 15 more in pipeline. Each page: hero, programs, salary data, accreditation, form.</div>
+          <div class="card-tag orange">School-Specific</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">🌐</span>
+          <div class="card-title">DegreeFlex Main Site</div>
+          <div class="card-desc">General traffic lands here. Multi-step form matches users to schools based on interests and location.</div>
+          <div class="card-tag navy">degreeflex.com</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">User fills out form</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 4: FORM ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number">4</div>
+      <div class="stage-name">Lead<br>Form</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">4-step progressive form — reduces friction vs. single long form</div>
+      <div class="form-steps">
+        <div class="form-step">
+          <div class="step-num">Step 1 of 4</div>
+          <div class="step-title">Tell Us About Yourself</div>
+          <ul class="step-fields">
+            <li>First &amp; Last Name</li>
+            <li>Email Address</li>
+            <li>Cell Phone</li>
+            <li>TCPA Consent</li>
+          </ul>
+        </div>
+        <div class="form-step">
+          <div class="step-num">Step 2 of 4</div>
+          <div class="step-title">About Yourself</div>
+          <ul class="step-fields">
+            <li>Education Level</li>
+            <li>HS Grad Year</li>
+            <li>Street Address</li>
+            <li>Zip Code</li>
+          </ul>
+        </div>
+        <div class="form-step">
+          <div class="step-num">Step 3 of 4</div>
+          <div class="step-title">More Info</div>
+          <ul class="step-fields">
+            <li>Online or Campus</li>
+            <li>U.S. Citizen</li>
+            <li>Military Affiliation</li>
+            <li>Start Date</li>
+            <li>Has Computer</li>
+          </ul>
+        </div>
+        <div class="form-step">
+          <div class="step-num">Step 4 of 4</div>
+          <div class="step-title">Interests</div>
+          <ul class="step-fields">
+            <li>Up to 3 areas of study</li>
+            <li>Trade &amp; Technical</li>
+            <li>Health &amp; Medical</li>
+            <li>Business, IT, etc.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">On submit — compliance tokens captured</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 5: COMPLIANCE ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number green">5</div>
+      <div class="stage-name">Compliance<br>Tokens</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Captured at submit — required for school acceptance</div>
+      <div class="compliance-row">
+        <div class="compliance-pill">
+          <div class="compliance-dot"></div>
+          <div class="compliance-text">
+            <div class="compliance-name">Jornaya LeadID</div>
+            <div class="compliance-desc">Records the session — proof of user intent and consent at time of form fill</div>
+          </div>
+        </div>
+        <div class="compliance-pill">
+          <div class="compliance-dot"></div>
+          <div class="compliance-text">
+            <div class="compliance-name">TrustedForm</div>
+            <div class="compliance-desc">Certifies the lead — schools require this token for TCPA compliance on contact</div>
+          </div>
+        </div>
+        <div class="compliance-pill">
+          <div class="compliance-dot" style="background: var(--df-orange)"></div>
+          <div class="compliance-text">
+            <div class="compliance-name">UTM Passthrough</div>
+            <div class="compliance-desc">All UTM params + subid carried through sessionStorage into the form payload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">Webhook fires to n8n</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 6: n8n WORKFLOW ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number">6</div>
+      <div class="stage-name">n8n<br>Workflow</div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Automation layer — routes, stores, and distributes the lead</div>
+      <div class="cards">
+        <div class="card">
+          <span class="card-icon">⚡</span>
+          <div class="card-title">Webhook Trigger</div>
+          <div class="card-desc">Form POSTs JSON payload to n8n cloud. Includes all fields + compliance tokens + UTMs.</div>
+          <div class="card-tag navy">growthengineerpro.app.n8n.cloud</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">🗄️</span>
+          <div class="card-title">Supabase Storage</div>
+          <div class="card-desc">Full lead record written to Supabase. Source of truth for all lead data and attribution.</div>
+          <div class="card-tag navy">Database</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">🔀</span>
+          <div class="card-title">leadHOOP Delivery</div>
+          <div class="card-desc">Lead posted to leadHOOP for school distribution. Webhook returns accept / reject status.</div>
+          <div class="card-tag green">Accept / Reject</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONNECTOR -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label">School receives lead</div>
+    <div class="connector-arrow">↓</div>
+  </div>
+
+  <!-- ── STAGE 7: SCHOOL DELIVERY ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number green">7</div>
+      <div class="stage-name">School<br>Delivery</div>
+      <div class="stage-line last"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Lead delivered + acceptance status fed back for optimization</div>
+      <div class="destination-block">
+        <div class="dest-item">
+          <div class="dest-item-label">School Receives</div>
+          <div class="dest-item-title">Lead Delivered via leadHOOP</div>
+          <div class="dest-item-desc">AIM, Berkeley, UEI, ATA + active school partners. Matched by program interest + zip.</div>
+        </div>
+        <div class="dest-divider"></div>
+        <div class="dest-item">
+          <div class="dest-item-label">Feedback Loop</div>
+          <div class="dest-item-title">Accept / Reject Status</div>
+          <div class="dest-item-desc">leadHOOP webhook fires status back to n8n → written to Supabase against original utm_content.</div>
+        </div>
+        <div class="dest-divider"></div>
+        <div class="dest-item">
+          <div class="dest-item-label">Optimization Signal</div>
+          <div class="dest-item-title">Creative → Quality Mapping</div>
+          <div class="dest-item-desc">Acceptance rate by utm_content reveals which ad creatives drive the highest quality leads for each school.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-note">DegreeFlex · Lightning Bolt Media · Confidential</div>
+  <div class="footer-date">March 2026</div>
+</div>
+
+</body>
+</html>
