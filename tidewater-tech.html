@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skilled Trades Programs | Tidewater Tech | Norfolk, VA</title>
+  <meta name="description" content="Train for a trades career at Tidewater Tech in Norfolk, VA. HVAC, Welding, Maritime Welding, Auto Technician, and Building & Construction programs. Graduate in months, not years. Financial aid available for those who qualify." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Jornaya LeadID -->
+  <script id="LeadiDscript" type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.id = 'LeadiDscript_campaign';
+      s.type = 'text/javascript'; s.async = true;
+      s.src = '//create.lidstatic.com/campaign/INSERT_JORNAYA_TOKEN.js?snippet_version=2';
+      var LeadiDscript = document.getElementById('LeadiDscript');
+      LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+    })();
+  </script>
+
+  <!-- TrustedForm -->
+  <script type="text/javascript">
+    (function() {
+      var field = 'xxTrustedFormCertUrl';
+      var tf = document.createElement('script');
+      tf.type = 'text/javascript'; tf.async = true;
+      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+        '://api.trustedform.com/trustedform.js?provide_referrer=false&field=' + escape(field) +
+        '&l=' + new Date().getTime() + Math.random() + '&invert_field_sensitivity=false';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+    })();
+  </script>
+
+  <style>
+    /* ===== TIDEWATER TECH BRAND =====
+       Primary: Deep teal/navy #1C5162
+       Accent:  Burnt orange #F47920
+       Sourced from site header, button, and icon colors
+    */
+    :root {
+      --tt-teal:         #1C5162;
+      --tt-teal-dark:    #123240;
+      --tt-teal-deeper:  #0D2530;
+      --tt-teal-mid:     #1a4455;
+      --tt-teal-light:   #E8F2F5;
+      --tt-orange:       #F47920;
+      --tt-orange-dark:  #D4641A;
+      --tt-orange-light: #FEF2E8;
+      --tt-black:        #111111;
+      --tt-charcoal:     #222222;
+      --tt-dark-gray:    #3D3D3D;
+      --tt-gray:         #6B7280;
+      --tt-light-gray:   #F5F6F7;
+      --tt-border:       #E2E8ED;
+      --tt-steel:        #E8EAEC;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      color: var(--tt-charcoal);
+      background: #fff;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+    a { color: var(--tt-teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--tt-black);
+      color: #999;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 8px 16px;
+      text-transform: uppercase;
+    }
+    .trust-bar strong { color: var(--tt-orange); }
+
+    /* ===== STICKY HEADER ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--tt-teal-dark);
+      border-bottom: 3px solid var(--tt-orange);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 70px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .header-logo { display: flex; align-items: center; }
+
+    /* Tidewater Tech inline SVG logo — faithful to the actual white wordmark on dark bg */
+    .logo-svg { height: 44px; width: auto; }
+
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .header-phone {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.03em;
+    }
+    .header-cta {
+      background: var(--tt-orange);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: var(--tt-orange-dark); text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--tt-teal-deeper) 0%, var(--tt-teal-dark) 45%, var(--tt-teal-mid) 100%);
+      color: #fff;
+      padding: 52px 32px 56px;
+    }
+    .hero-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 52px;
+      align-items: start;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--tt-orange);
+      color: #fff;
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 13px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+    .hero-headline {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.08;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+    .hero-headline span { color: var(--tt-orange); }
+    .hero-subhead {
+      font-size: 1.05rem;
+      color: #b8d8e2;
+      margin-bottom: 24px;
+      max-width: 540px;
+      line-height: 1.65;
+    }
+    .hero-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 0;
+    }
+    .hero-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      font-size: 0.97rem;
+      color: #d0e8ef;
+      line-height: 1.45;
+    }
+    .check-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      background: var(--tt-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .check-icon svg { width: 11px; height: 11px; }
+
+    /* ===== LEAD FORM ===== */
+    .form-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 28px 26px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .form-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+    .form-sub {
+      font-size: 0.8rem;
+      color: var(--tt-gray);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-group { margin-bottom: 11px; }
+    .form-group label {
+      display: block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--tt-charcoal);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid var(--tt-border);
+      border-radius: 4px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      color: var(--tt-charcoal);
+      background: #fff;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus { outline: none; border-color: var(--tt-orange); box-shadow: 0 0 0 3px rgba(244,121,32,0.1); }
+    .form-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--tt-orange);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 4px;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--tt-orange-dark); }
+    .form-legal {
+      font-size: 0.67rem;
+      color: #aaa;
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.45;
+    }
+    .form-legal a { color: #aaa; text-decoration: underline; }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 28px 16px;
+    }
+    .success-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--tt-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .form-success h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.4rem;
+      color: var(--tt-black);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .form-success p { font-size: 0.9rem; color: var(--tt-gray); line-height: 1.6; }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar { background: var(--tt-orange); padding: 22px 32px; }
+    .stats-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      text-align: center;
+    }
+    .stat-divider { border-right: 1px solid rgba(255,255,255,0.3); }
+    .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .stat-lbl {
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.85);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 5px;
+    }
+
+    /* ===== GENERIC SECTION ===== */
+    .section { padding: 68px 32px; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tt-orange);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      font-weight: 700;
+      color: var(--tt-black);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+    .section-body {
+      font-size: 1.02rem;
+      color: var(--tt-gray);
+      max-width: 680px;
+      margin-bottom: 42px;
+      line-height: 1.7;
+    }
+
+    /* ===== PROGRAMS GRID ===== */
+    .programs-section { background: var(--tt-light-gray); }
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .program-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 26px;
+      border: 1.5px solid var(--tt-border);
+      border-top: 4px solid var(--tt-teal);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .program-card.orange-accent { border-top-color: var(--tt-orange); }
+    .program-card:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+      transform: translateY(-3px);
+    }
+    .prog-icon {
+      width: 46px; height: 46px;
+      background: var(--tt-teal);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .prog-icon.orange { background: var(--tt-orange); }
+    .prog-icon svg { width: 24px; height: 24px; }
+    .prog-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+    }
+    .prog-desc {
+      font-size: 0.91rem;
+      color: var(--tt-gray);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+    .prog-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .chip-gray { background: var(--tt-steel); color: var(--tt-dark-gray); border: 1px solid var(--tt-border); }
+    .chip-teal { background: var(--tt-teal-light); color: var(--tt-teal-dark); border: 1px solid #b5d2db; }
+    .chip-orange { background: var(--tt-orange-light); color: var(--tt-orange-dark); border: 1px solid #f5c8a0; }
+
+    /* ===== WHY TIDEWATER TECH ===== */
+    .why-section { background: var(--tt-teal-dark); }
+    .why-section .section-eyebrow { color: var(--tt-orange); }
+    .why-section .section-title { color: #fff; }
+    .why-section .section-body { color: #8fbfcc; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .why-card {
+      background: var(--tt-teal-mid);
+      border-radius: 8px;
+      padding: 26px;
+      border-left: 3px solid var(--tt-orange);
+    }
+    .why-icon {
+      width: 46px; height: 46px;
+      background: var(--tt-orange);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+    }
+    .why-icon svg { width: 24px; height: 24px; }
+    .why-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.03em;
+    }
+    .why-text { font-size: 0.88rem; color: #a8cdd8; line-height: 1.6; }
+
+    /* ===== SALARY ===== */
+    .salary-section { background: #fff; }
+    .salary-wrap {
+      background: var(--tt-light-gray);
+      border-radius: 8px;
+      border-left: 5px solid var(--tt-teal);
+      padding: 36px 40px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .salary-hero { text-align: center; }
+    .salary-amount {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3.4rem;
+      font-weight: 700;
+      color: var(--tt-teal);
+      line-height: 1;
+    }
+    .salary-caption {
+      font-size: 0.82rem;
+      color: var(--tt-gray);
+      margin-top: 8px;
+      max-width: 200px;
+      line-height: 1.5;
+    }
+    .salary-rows { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .salary-rows li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 11px 16px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid var(--tt-border);
+    }
+    .sal-role { font-size: 0.9rem; font-weight: 600; color: var(--tt-charcoal); }
+    .sal-pay { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; color: var(--tt-teal); }
+    .salary-disclaimer {
+      font-size: 0.68rem;
+      color: #bbb;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    /* ===== ACCREDITATION ===== */
+    .accred-section { background: var(--tt-light-gray); }
+    .accred-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .accred-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 26px 20px;
+      text-align: center;
+      border: 1.5px solid var(--tt-border);
+    }
+    .accred-badge {
+      width: 52px; height: 52px;
+      background: var(--tt-teal-light);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 14px;
+    }
+    .accred-badge svg { width: 24px; height: 24px; }
+    .accred-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .accred-desc { font-size: 0.8rem; color: var(--tt-gray); line-height: 1.55; }
+
+    /* ===== FINANCIAL AID ===== */
+    .aid-section { background: #fff; }
+    .aid-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .aid-card {
+      background: var(--tt-light-gray);
+      border-radius: 8px;
+      padding: 28px 24px;
+      border-top: 4px solid var(--tt-teal);
+    }
+    .aid-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .aid-text { font-size: 0.89rem; color: var(--tt-gray); line-height: 1.6; }
+
+    /* ===== CAMPUSES ===== */
+    .campus-section { background: var(--tt-teal-deeper); }
+    .campus-section .section-eyebrow { color: var(--tt-orange); }
+    .campus-section .section-title { color: #fff; }
+    .campus-section .section-body { color: #8fbfcc; }
+    .campus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .campus-card {
+      background: var(--tt-teal-dark);
+      border-radius: 8px;
+      padding: 30px 26px;
+      border-top: 3px solid var(--tt-orange);
+    }
+    .campus-pin {
+      width: 42px; height: 42px;
+      background: var(--tt-orange);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 18px;
+    }
+    .campus-pin svg { width: 20px; height: 20px; }
+    .campus-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .campus-addr { font-size: 0.83rem; color: var(--tt-orange); font-weight: 700; margin-bottom: 12px; }
+    .campus-detail { font-size: 0.87rem; color: #8fbfcc; line-height: 1.65; }
+    .campus-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+    .campus-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(244,121,32,0.15);
+      color: #f5a870;
+      border: 1px solid rgba(244,121,32,0.28);
+    }
+
+    /* ===== PROCESS ===== */
+    .process-section { background: var(--tt-light-gray); }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+    .process-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 30px 22px 26px;
+      text-align: center;
+      border: 1.5px solid var(--tt-border);
+      position: relative;
+    }
+    .step-num {
+      width: 46px; height: 46px;
+      background: var(--tt-teal);
+      color: #fff;
+      border-radius: 50%;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .step-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .step-text { font-size: 0.86rem; color: var(--tt-gray); line-height: 1.6; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section { background: #fff; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .testimonial-card {
+      background: var(--tt-light-gray);
+      border-radius: 8px;
+      padding: 26px;
+      border-left: 4px solid var(--tt-orange);
+    }
+    .stars { color: var(--tt-orange); font-size: 1rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .t-quote {
+      font-size: 0.91rem;
+      color: var(--tt-charcoal);
+      font-style: italic;
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+    .t-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--tt-black);
+      text-transform: uppercase;
+    }
+    .t-role { font-size: 0.78rem; color: var(--tt-gray); margin-top: 3px; }
+
+    /* ===== BOTTOM CTA ===== */
+    .bottom-cta {
+      background: linear-gradient(135deg, var(--tt-teal-deeper) 0%, var(--tt-teal-dark) 100%);
+      padding: 60px 32px;
+      text-align: center;
+    }
+    .cta-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .cta-title span { color: var(--tt-orange); }
+    .cta-sub { font-size: 1.05rem; color: #8fbfcc; margin-bottom: 30px; }
+    .cta-btn {
+      display: inline-block;
+      background: var(--tt-orange);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 16px 42px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover { background: var(--tt-orange-dark); text-decoration: none; }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--tt-black);
+      padding: 36px 32px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: #555;
+      line-height: 1.8;
+    }
+    .site-footer strong { color: #888; }
+    .site-footer a { color: #666; }
+    .site-footer a:hover { color: #999; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .form-card { max-width: 480px; margin: 0 auto; }
+      .why-grid,
+      .programs-grid,
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .accred-grid { grid-template-columns: repeat(2, 1fr); }
+      .process-grid { grid-template-columns: repeat(2, 1fr); }
+      .campus-grid { grid-template-columns: 1fr; }
+      .salary-wrap { grid-template-columns: 1fr; gap: 28px; }
+    }
+    @media (max-width: 600px) {
+      .section { padding: 48px 20px; }
+      .hero { padding: 40px 20px 48px; }
+      .site-header { padding: 0 18px; }
+      .header-phone { display: none; }
+      .programs-grid,
+      .why-grid,
+      .testimonials-grid,
+      .accred-grid,
+      .aid-grid,
+      .process-grid { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <strong>COE Accredited</strong> &nbsp;&middot;&nbsp;
+  AWS Accredited Testing Facility &nbsp;&middot;&nbsp;
+  <strong>Training Since 1969 &middot; Norfolk, VA</strong> &nbsp;&middot;&nbsp;
+  VA Benefits Accepted &nbsp;&middot;&nbsp; Financial Aid Available for Those Who Qualify
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-logo">
+    <!-- Tidewater Tech logo — recreated inline SVG wordmark (white on dark) -->
+    <svg class="logo-svg" viewBox="0 0 300 52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tidewater Tech">
+      <!-- Orange gear/wrench icon block -->
+      <rect x="0" y="2" width="48" height="48" rx="5" fill="#F47920"/>
+      <!-- Wrench icon -->
+      <path d="M29 13.5c-3.3-1.4-7.1-.6-9.7 2s-3.4 6.4-2 9.7l-7.8 7.8 2.5 2.5 7.8-7.8c3.3 1.4 7.1.6 9.7-2s3.4-6.4 2-9.7l-3.8 3.8-2.5-2.5 3.8-3.8z" fill="white"/>
+      <!-- TT initials fallback text (hidden behind icon at normal size) -->
+      <!-- Wordmark: TIDEWATER TECH stacked -->
+      <text x="62" y="22" font-family="Oswald, sans-serif" font-size="17" font-weight="700" fill="white" letter-spacing="2">TIDEWATER</text>
+      <text x="62" y="42" font-family="Oswald, sans-serif" font-size="17" font-weight="700" fill="#F47920" letter-spacing="5">TECH</text>
+    </svg>
+  </div>
+  <div class="header-right">
+    <span class="header-phone">(757) 858-8324</span>
+    <a class="header-cta" href="#lead-form">Get Program Info</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Norfolk, VA &mdash; Main &amp; Branch Campus &mdash; Est. 1969</div>
+      <h1 class="hero-headline">
+        Train in <span>Months,</span><br>Not Years.
+      </h1>
+      <p class="hero-subhead">
+        Tidewater Tech is Hampton Roads' trade school — built for people who want to roll up their sleeves and get to work. HVAC, Welding, Maritime Welding, Auto Technician, and Building &amp; Construction programs with real hands-on training from day one. Ready for an essential new career? You can get the training you need in months, not years.
+      </p>
+      <ul class="hero-bullets">
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          5 skilled trades programs: HVAC, Welding, Maritime Welding, Auto Tech &amp; Construction
+        </li>
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          AWS Accredited Testing Facility — one of only 4 approved locations in Virginia
+        </li>
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          90+ welding bays, auto lifts with alignment rack, dedicated HVAC labs
+        </li>
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          EPA, OSHA, ASE, AWS &amp; DPOR certifications prep built into every program
+        </li>
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Day, evening &amp; weekend classes — train around your life
+        </li>
+        <li>
+          <span class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Financial aid available &middot; VA benefits accepted &middot; Scholarship Match Program
+        </li>
+      </ul>
+    </div>
+
+    <div id="lead-form">
+      <div class="form-card">
+        <div id="form-fields-wrap">
+          <div class="form-title">Get Program Info</div>
+          <div class="form-sub">No obligation &mdash; takes 60 seconds</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="First name" required />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required />
+          </div>
+          <div class="form-group">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" placeholder="Zip code" required />
+          </div>
+          <div class="form-group">
+            <label for="program_interest">Program of Interest</label>
+            <select id="program_interest" name="program_interest" required>
+              <option value="" disabled selected>Select a program&hellip;</option>
+              <option value="HVAC">Heating, Ventilation &amp; Air Conditioning (HVAC)</option>
+              <option value="Combination Welding">Combination Welding</option>
+              <option value="Combination Maritime Welding">Combination Maritime Welding</option>
+              <option value="Auto Technician">Auto Technician</option>
+              <option value="Building and Construction Trades">Building &amp; Construction Trades</option>
+              <option value="Not Sure">Not Sure Yet — Help Me Choose</option>
+            </select>
+          </div>
+          <!-- Compliance tokens -->
+          <input type="hidden" id="leadid_token" name="universal_leadid" />
+          <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" />
+          <button class="form-submit" type="button" onclick="handleSubmit()">Request Program Info &rarr;</button>
+          <p class="form-legal">
+            By submitting, I give consent to Tidewater Tech and their agents to contact me by email or telephone (mobile and home, including pre-recorded and/or auto-dialers) regarding programs and offers. Consent is not required to enroll. I may call (757) 858-8324 instead. &nbsp;<a href="https://tidewatertechtrades.edu/about-tidewater-tech/privacy/" target="_blank">Privacy Policy</a>
+          </p>
+        </div>
+        <div class="form-success" id="form-success">
+          <div class="success-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3>You're All Set!</h3>
+          <p>A Tidewater Tech admissions advisor will be in touch shortly to walk you through program options, scheduling, and financial aid — no pressure, no commitment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-divider">
+      <div class="stat-num">55+</div>
+      <div class="stat-lbl">Years Training Tradespeople</div>
+    </div>
+    <div class="stat-divider">
+      <div class="stat-num">33 Wks</div>
+      <div class="stat-lbl">Fastest Program Completion</div>
+    </div>
+    <div class="stat-divider">
+      <div class="stat-num">90+</div>
+      <div class="stat-lbl">Welding Bays On Campus</div>
+    </div>
+    <div>
+      <div class="stat-num">5</div>
+      <div class="stat-lbl">Skilled Trades Programs</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="section programs-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Skilled Trades Programs</div>
+    <h2 class="section-title">Real Training for Real Careers</h2>
+    <p class="section-body">Every Tidewater Tech program is designed by industry leaders, taught by instructors who've done the work, and built around hands-on time in real labs. Get the training employers in Hampton Roads are actively looking for — and graduate in months, not years.</p>
+
+    <div class="programs-grid">
+
+      <!-- HVAC -->
+      <div class="program-card">
+        <div class="prog-icon">
+          <!-- HVAC thermometer/fan icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/>
+          </svg>
+        </div>
+        <div class="prog-name">Heating, Ventilation &amp; Air Conditioning (HVAC)</div>
+        <p class="prog-desc">
+          Nearly every home, office, and building relies on HVAC systems to stay safe and comfortable — and skilled technicians are essential for keeping them running. At Tidewater Tech's HVAC program, you'll gain hands-on experience with commercial refrigeration, electrical components, and airflow dynamics. You'll develop skills troubleshooting faulty AC units, repairing heating systems, and installing ductwork. Course areas include: Air Conditioning &amp; Refrigeration, Heating Systems, Commercial A/C &amp; Refrigeration, Heat Pumps, Comfort &amp; Psychometrics, and Advanced Troubleshooting. As a full-time student, you could graduate in 48 weeks. BLS projects 9% growth for HVAC mechanics through 2033. Available at the Branch Campus.
+        </p>
+        <div class="prog-chips">
+          <span class="chip chip-teal">Branch Campus</span>
+          <span class="chip chip-orange">48 Weeks</span>
+          <span class="chip chip-gray">EPA 608 Certification</span>
+          <span class="chip chip-gray">OSHA-10</span>
+          <span class="chip chip-gray">DPOR Journeyman Prep</span>
+          <span class="chip chip-orange">9% BLS Growth</span>
+        </div>
+      </div>
+
+      <!-- COMBINATION WELDING -->
+      <div class="program-card orange-accent">
+        <div class="prog-icon orange">
+          <!-- Welding/flame icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="prog-name">Combination Welding</div>
+        <p class="prog-desc">
+          If you enjoy working with your hands, machines, and metals, welding offers opportunities across automobiles, ships, appliances, bridges, buildings, and cutting-edge processes using lasers and ultrasonic waves. Tidewater Tech's Combination Welding program teaches metal fabrication and repair — MIG (GMAW), TIG (GTAW), and Stick (SMAW) welding plus plasma and oxy-fuel cutting, blueprint reading, measurement, and hazard assessment. Train at an AWS Accredited Testing Facility — one of only 4 in Virginia. Graduate in as few as 33 weeks. Certifications available: FCAW 3G/4G, GTAW 2G/3G/4G, SMAW 3G/4G, and AWS Pipe 6G. Available at the Main Campus.
+        </p>
+        <div class="prog-chips">
+          <span class="chip chip-teal">Main Campus</span>
+          <span class="chip chip-orange">33 Weeks</span>
+          <span class="chip chip-gray">AWS Accredited Facility</span>
+          <span class="chip chip-gray">MIG / TIG / Stick</span>
+          <span class="chip chip-gray">FCAW · GTAW · SMAW</span>
+        </div>
+      </div>
+
+      <!-- COMBINATION MARITIME WELDING -->
+      <div class="program-card orange-accent">
+        <div class="prog-icon orange">
+          <!-- Anchor/ship icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="5" r="3"/>
+            <line x1="12" y1="22" x2="12" y2="8"/>
+            <path d="M5 12H2a10 10 0 0 0 20 0h-3"/>
+          </svg>
+        </div>
+        <div class="prog-name">Combination Maritime Welding</div>
+        <p class="prog-desc">
+          Hampton Roads is one of the nation's biggest shipping ports, and certified maritime welders keep those massive ships and barges seaworthy every day. Tidewater Tech's Maritime Welding program teaches welding fundamentals with a focus on the specialized processes used in shipbuilding — including SMAW in 3G/4G on carbon steel plate and 1-inch AASHTO M plate, FCAW 3G/4G, and GTAW in the 6G pipe position. You'll also master blueprint reading, measurement, and hazard assessment. Train at our state-of-the-art AWS Accredited Testing Facility and graduate in 48 weeks ready for shipyards locally and around the world. Additional certifications: OSHA 10-Hour Maritime Shipyard Employment Safety and AWS D1.1 Structural Welding Code. Available at the Main Campus.
+        </p>
+        <div class="prog-chips">
+          <span class="chip chip-teal">Main Campus</span>
+          <span class="chip chip-orange">48 Weeks</span>
+          <span class="chip chip-gray">AWS D1.1 Cert</span>
+          <span class="chip chip-gray">OSHA Maritime</span>
+          <span class="chip chip-gray">FCAW · GTAW 6G · SMAW</span>
+        </div>
+      </div>
+
+      <!-- AUTO TECHNICIAN -->
+      <div class="program-card">
+        <div class="prog-icon">
+          <!-- Car/wrench icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 3v5h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <div class="prog-name">Auto Technician</div>
+        <p class="prog-desc">
+          Tidewater Tech's Auto Technician program provides the skills you need for an entry-level automotive repair career. You'll gain hands-on experience in vehicle maintenance, inspection, diagnosis, and repair — developing expertise in areas like performing pre-alignment system checks, flushing a power steering system, and diagnosing an automatic transmission. Instruction covers: electrical and electronic systems, heating and A/C systems, brake systems, suspension and steering, engine diagnosis and repair, automatic and manual transmissions, and Vehicle Safety Inspection prep. The on-campus auto lab features vehicle lifts, an alignment rack, and modern diagnostic equipment. Graduate in 48 weeks with prep for ASE certification. Available at the Main Campus.
+        </p>
+        <div class="prog-chips">
+          <span class="chip chip-teal">Main Campus</span>
+          <span class="chip chip-orange">48 Weeks</span>
+          <span class="chip chip-gray">ASE Student Cert</span>
+          <span class="chip chip-gray">EPA Section 609</span>
+          <span class="chip chip-gray">OSHA-10</span>
+        </div>
+      </div>
+
+      <!-- BUILDING & CONSTRUCTION -->
+      <div class="program-card" style="grid-column: 1 / -1; max-width: 680px;">
+        <div class="prog-icon">
+          <!-- Building/hammer icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="prog-name">Building &amp; Construction Trades</div>
+        <p class="prog-desc">
+          Building and Construction Trades opens doors to careers in new construction, hospitality, apartment complexes, and commercial and residential buildings. You'll learn structural, mechanical, and electrical skills from experienced instructors — including installing electrical wiring and switches, putting up sheetrock, maintaining HVAC systems, tiling, flooring, plumbing, and construction code compliance. As a full-time student, you could graduate in as few as 33 weeks and start working in a field with strong, ongoing demand. Certifications include the EPA Section 608 Refrigerant Transition Certification and OSHA-10. Available at the Branch Campus.
+        </p>
+        <div class="prog-chips">
+          <span class="chip chip-teal">Branch Campus</span>
+          <span class="chip chip-orange">33 Weeks</span>
+          <span class="chip chip-gray">EPA 608</span>
+          <span class="chip chip-gray">OSHA-10</span>
+          <span class="chip chip-gray">Electrical · Plumbing · Carpentry</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY TIDEWATER TECH ===== -->
+<section class="section why-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Why Tidewater Tech</div>
+    <h2 class="section-title">Doers Train Here. Hampton Roads Hires Here.</h2>
+    <p class="section-body">Tidewater Tech has been part of Norfolk and Hampton Roads since 1969. The focus has never changed: career education that connects directly to the workforce, led by instructors who've actually worked in the field.</p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="why-title">Hands-On Labs from Day One</div>
+        <p class="why-text">You're not sitting through drawn-out lectures. You're in the welding bay, under the hood, or working HVAC systems from the start. Tidewater Tech's facilities are designed to replicate real workplace conditions — 90+ welding bays, vehicle lifts with alignment rack, and dedicated HVAC labs — because that's what actually prepares you for the job.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="why-title">Graduate in as Few as 33 Weeks</div>
+        <p class="why-text">The fastest programs — Combination Welding and Building &amp; Construction — can be completed in just 33 weeks as a full-time student. You don't need four years and a mountain of debt to land a career that pays well. Tidewater Tech gets you there in a fraction of the time.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        </div>
+        <div class="why-title">AWS Accredited Testing Facility</div>
+        <p class="why-text">Tidewater Tech is one of only four AWS Accredited Testing Facilities in the entire state of Virginia. Welding students can earn industry credentials — FCAW, GTAW, SMAW, and AWS D1.1 certs — without ever leaving campus. That's a real competitive edge when you're applying for jobs.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="why-title">Industry Certifications Built In</div>
+        <p class="why-text">Every program is designed so you can earn recognized credentials before you graduate — EPA Section 608 or 609 for HVAC and auto, OSHA-10 across programs, ASE student certification for auto tech, DPOR Journeyman prep for HVAC, and AWS welding certifications. Employers know what these mean, and they look for them on every resume.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="why-title">Career Services &amp; Local Employer Ties</div>
+        <p class="why-text">Tidewater Tech has spent over five decades building real relationships with Norfolk and Hampton Roads employers — shipyards, HVAC contractors, auto shops, and construction firms. Career Services advisors help with resume writing, interview prep, and job placement assistance. That network matters when you're ready to start working.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+            <line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+        </div>
+        <div class="why-title">VA Benefits &amp; Military-Friendly</div>
+        <p class="why-text">Tidewater Tech honors those who've served. VA education benefits are accepted, and full-time advisors stay connected with military students from enrollment through graduation. Whether you're transitioning out of service or continuing to serve, Tidewater Tech has the support infrastructure to keep you on track.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SALARY CALLOUT ===== -->
+<section class="section salary-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Earning Potential</div>
+    <h2 class="section-title">Trades Careers in Hampton Roads Pay Well</h2>
+    <p class="section-body">Virginia's industrial base — shipbuilding, construction, defense, automotive — drives strong, steady demand for qualified trades workers. Here's what BLS and industry data show for the careers Tidewater Tech trains you for.</p>
+
+    <div class="salary-wrap">
+      <div class="salary-hero">
+        <div class="salary-amount">$55K+</div>
+        <div class="salary-caption">Experienced trades worker median range across programs. Entry wages are competitive; mid-career earnings climb quickly with certification and experience.</div>
+      </div>
+      <div>
+        <ul class="salary-rows">
+          <li><span class="sal-role">HVAC Technician (Entry-Level)</span><span class="sal-pay">$40K–$55K</span></li>
+          <li><span class="sal-role">HVAC Technician (Experienced)</span><span class="sal-pay">$60K–$80K</span></li>
+          <li><span class="sal-role">Combination Welder (Entry-Level)</span><span class="sal-pay">$38K–$52K</span></li>
+          <li><span class="sal-role">Maritime Welder (Offshore Entry)</span><span class="sal-pay">$40K–$60K</span></li>
+          <li><span class="sal-role">Maritime Welder (Experienced / Specialty)</span><span class="sal-pay">$65K–$90K+</span></li>
+          <li><span class="sal-role">Auto Technician (ASE Certified)</span><span class="sal-pay">$45K–$65K</span></li>
+          <li><span class="sal-role">Construction Trades Worker (Experienced)</span><span class="sal-pay">$48K–$70K</span></li>
+        </ul>
+        <p class="salary-disclaimer">Source: U.S. Bureau of Labor Statistics · Industry salary guides · Salaries vary by location, experience, certifications, and employer. Tidewater Tech does not guarantee employment or specific salary upon completion of any program.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACCREDITATION ===== -->
+<section class="section accred-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Accreditation &amp; Approvals</div>
+    <h2 class="section-title">Credentials Employers and the Government Recognize</h2>
+    <p class="section-body">Tidewater Tech's accreditation and approvals are what employers look for on a resume — and what unlock your financial aid eligibility. This isn't a fly-by-night operation; it's 55+ years of verifiable career education.</p>
+
+    <div class="accred-grid">
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="accred-name">COE Accredited</div>
+        <p class="accred-desc">Accredited by the Commission of the Council on Occupational Education since 1988 — the nationally recognized standard for career and technical schools.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="accred-name">SCHEV Certified</div>
+        <p class="accred-desc">Certified to operate by the State Council of Higher Education for Virginia (SCHEV), confirming program quality and legitimacy for Virginia students and employers.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="accred-name">AWS Accredited Facility</div>
+        <p class="accred-desc">One of only four American Welding Society Accredited Testing Facilities in Virginia. Welding students test for industry certifications right on campus — no separate testing site needed.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2"/>
+            <line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+        </div>
+        <div class="accred-name">Title IV &amp; VA Benefits</div>
+        <p class="accred-desc">Certified by the U.S. Department of Education to participate in Federal Title IV financial aid programs. VA education benefits accepted. Associated Builders &amp; Contractors member.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINANCIAL AID ===== -->
+<section class="section aid-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Paying for School</div>
+    <h2 class="section-title">Don't Let Cost Be the Reason You Don't Start</h2>
+    <p class="section-body">Tidewater Tech has dedicated Financial Aid Representatives on campus to walk you through every option available — before you commit to anything. Financial aid is available for those who qualify.</p>
+
+    <div class="aid-grid">
+
+      <div class="aid-card">
+        <div class="aid-title">Federal Financial Aid</div>
+        <p class="aid-text">Tidewater Tech participates in Federal Title IV financial aid programs. Eligible students may qualify for grants, loans, and work-study through FAFSA. A designated Financial Aid Representative will walk you through the entire process one-on-one at no charge.</p>
+      </div>
+
+      <div class="aid-card">
+        <div class="aid-title">Scholarship Match Program</div>
+        <p class="aid-text">Tidewater Tech's Scholarship Match Program helps students identify and apply for scholarships that match their background, program of study, and financial situation — reducing out-of-pocket costs before training even begins. Speak with an advisor to learn what you may be eligible for.</p>
+      </div>
+
+      <div class="aid-card">
+        <div class="aid-title">Military &amp; VA Benefits</div>
+        <p class="aid-text">Active duty, veterans, and reservists can use VA education benefits including the GI Bill&reg; and military tuition assistance. Full-time advisors at Tidewater Tech support military students and dependents from enrollment through graduation — keeping you on track every step of the way.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAMPUSES ===== -->
+<section class="section campus-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Campus Locations</div>
+    <h2 class="section-title">Two Campuses in Norfolk, Virginia</h2>
+    <p class="section-body">Tidewater Tech operates two campus locations in Norfolk. The Main Campus houses welding, auto tech, and maritime programs. The Branch Campus runs HVAC and construction programs in dedicated trade facilities.</p>
+
+    <div class="campus-grid">
+
+      <div class="campus-card">
+        <div class="campus-pin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="campus-name">Main Campus &mdash; Norfolk</div>
+        <div class="campus-addr">4535 E. Princess Anne Rd &middot; Norfolk, VA 23502 &middot; (757) 858-8324</div>
+        <p class="campus-detail">State-of-the-art AWS Accredited Testing Facility with 90+ welding bays and a dedicated testing area — one of only four such facilities in Virginia. Automotive lab features professional vehicle lifts, alignment rack, and modern diagnostic equipment that mirror what you'll use on the job. Facilities also include a Veterans Center, Student Lounge, and Learning Resource Center.</p>
+        <div class="campus-tags">
+          <span class="campus-tag">Combination Welding</span>
+          <span class="campus-tag">Maritime Welding</span>
+          <span class="campus-tag">Auto Technician</span>
+        </div>
+      </div>
+
+      <div class="campus-card">
+        <div class="campus-pin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="campus-name">Branch Campus &mdash; Norfolk</div>
+        <div class="campus-addr">2331 E. Little Creek Rd &middot; Norfolk, VA 23518 &middot; (757) 340-2121</div>
+        <p class="campus-detail">Purpose-built for HVAC and construction trades training, with hands-on labs designed to replicate real job site conditions from day one. HVAC lab covers refrigeration, heating systems, heat pumps, hydronics, and commercial refrigeration. Construction training includes structural, mechanical, and electrical applications in a dedicated facility.</p>
+        <div class="campus-tags">
+          <span class="campus-tag">HVAC</span>
+          <span class="campus-tag">Building &amp; Construction Trades</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section process-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">How to Get Started</div>
+    <h2 class="section-title">Four Steps to Your Trades Career</h2>
+    <p class="section-body">Enrollment at Tidewater Tech is designed to be straightforward. Here's exactly what happens from the moment you reach out to the day you start training.</p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Request Info</div>
+        <p class="step-text">Fill out the form at the top of this page. A Tidewater Tech admissions advisor will reach out to answer your questions about programs, campus schedules, and financial aid — no commitment required to have that conversation.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Career Planning Session</div>
+        <p class="step-text">Come in for a campus visit and career planning session. See the welding facility, auto lab, or HVAC training space in person. Meet instructors, ask questions, and fill out your application on your own timeline.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Meet Your Financial Aid Advisor</div>
+        <p class="step-text">Get your acceptance letter, then sit down with a Financial Aid Advisor to build a payment plan. They'll walk you through every option — federal grants, loans, VA benefits, and scholarships — before you commit to anything.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Start Training</div>
+        <p class="step-text">Attend orientation and start building real, hands-on skills in the lab — the kind Hampton Roads employers are actively looking to hire. Day, evening, and weekend class options mean you can train around your current schedule.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Student Voices</div>
+    <h2 class="section-title">Straight from the People Who've Been Through It</h2>
+    <p class="section-body">Tidewater Tech students come from all different backgrounds. What they share is a desire to learn by doing and get to work fast — without four years of debt hanging over them.</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"My time at Tidewater Tech is definitely enjoyable and worth all my time. I'm new to the HVAC trade, but my teachers and instructors make it very simple and easy — especially when it comes to the hands-on work. So far, my time at Tidewater Tech is worth it and I'd recommend it for anyone interested in HVAC."</p>
+        <div class="t-name">Tidewater Tech Student</div>
+        <div class="t-role">HVAC Program &middot; Branch Campus, Norfolk, VA</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"The school offers programs that lead to real industry certifications — AWS welding certifications that are actually valuable in the job market. Tidewater Tech maintains relationships with local businesses and employers, which gave me a real shot at job placement right after graduation."</p>
+        <div class="t-name">Tidewater Tech Graduate</div>
+        <div class="t-role">Combination Welding Program &middot; Main Campus, Norfolk, VA</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"Hampton Roads is one of the biggest shipping ports in the country — and certified maritime welders are needed here every single day. Tidewater Tech gave me the specific shipbuilding certifications that got me hired at a Norfolk shipyard in less than a year."</p>
+        <div class="t-name">Tidewater Tech Graduate</div>
+        <div class="t-role">Combination Maritime Welding &middot; Main Campus, Norfolk, VA</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOTTOM CTA ===== -->
+<div class="bottom-cta">
+  <h2 class="cta-title">Ready to Train for a <span>Real Career?</span></h2>
+  <p class="cta-sub">Fill out the form above — an admissions advisor will follow up within one business day. No pressure, no commitment.</p>
+  <a class="cta-btn" href="#lead-form">Get Program Info Now</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>
+    <strong>Tidewater Tech</strong> &nbsp;&middot;&nbsp;
+    Main Campus: 4535 E. Princess Anne Rd, Norfolk, VA 23502 &nbsp;&middot;&nbsp; (757) 858-8324
+    &nbsp;&middot;&nbsp;
+    Branch Campus: 2331 E. Little Creek Rd, Norfolk, VA 23518 &nbsp;&middot;&nbsp; (757) 340-2121
+  </p>
+  <p style="margin-top:8px">
+    Administrative Offices: 4455 South Blvd., Virginia Beach, VA 23452
+    &nbsp;&middot;&nbsp; Accredited by the Commission of the Council on Occupational Education (COE)
+    &nbsp;&middot;&nbsp; Certified to Operate by SCHEV &nbsp;&middot;&nbsp; VA Benefits Accepted
+    &nbsp;&middot;&nbsp; Certified by U.S. Dept. of Education for Federal Title IV Programs
+  </p>
+  <p style="margin-top:8px">
+    Tidewater Tech does not guarantee employment or salary upon completion of any program.
+    Program availability and scheduling may vary by campus. Financial aid available for those who qualify.
+    For information about graduation rates, median debt of students who have completed programs, and other
+    important consumer information, please visit
+    <a href="https://tidewatertechtrades.edu/about-tidewater-tech/consumer-information/" target="_blank">tidewatertechtrades.edu/consumer-information</a>.
+  </p>
+  <p style="margin-top:8px">
+    <a href="https://tidewatertechtrades.edu/about-tidewater-tech/consumer-information/" target="_blank">Consumer Information</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://tidewatertechtrades.edu/admissions/tuition/" target="_blank">Tuition &amp; Fees</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://tidewatertechtrades.edu/admissions/tuition/financial-aid/" target="_blank">Financial Aid</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://tidewatertechtrades.edu/about-tidewater-tech/privacy/" target="_blank">Privacy Policy</a>
+  </p>
+  <p style="margin-top:14px; font-size: 0.67rem; color: #3a3a3a;">
+    This page is operated by DegreeFlex / Lightning Bolt Media. DegreeFlex is a lead generation platform connecting prospective students with educational institutions. Submission of this form constitutes consent for Tidewater Tech to contact you regarding enrollment information.
+  </p>
+</footer>
+
+<script>
+  function handleSubmit() {
+    var first = document.getElementById('first_name').value.trim();
+    var last  = document.getElementById('last_name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var zip   = document.getElementById('zip').value.trim();
+    var prog  = document.getElementById('program_interest').value;
+
+    if (!first || !last || !email || !phone || !zip || !prog) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+
+    document.getElementById('form-fields-wrap').style.display = 'none';
+    document.getElementById('form-success').style.display     = 'block';
+  }
+
+  // Smooth scroll for CTA links
+  document.querySelectorAll('a[href="#lead-form"]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+</script>
+
+</body>
+</html>
