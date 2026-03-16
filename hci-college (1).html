@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare Programs | HCI College | South Florida, FL</title>
+  <meta name="description" content="Launch your healthcare career at HCI College in South Florida. Practical Nursing, Medical Assisting, Associate Degree in Nursing, and Veterinary Assisting programs. Graduate in months, not years. Financial aid available for those who qualify." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Jornaya LeadID -->
+  <script id="LeadiDscript" type="text/javascript">
+    (function() {
+      var s = document.createElement('script');
+      s.id = 'LeadiDscript_campaign';
+      s.type = 'text/javascript'; s.async = true;
+      s.src = '//create.lidstatic.com/campaign/INSERT_JORNAYA_TOKEN.js?snippet_version=2';
+      var LeadiDscript = document.getElementById('LeadiDscript');
+      LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
+    })();
+  </script>
+
+  <!-- TrustedForm -->
+  <script type="text/javascript">
+    (function() {
+      var field = 'xxTrustedFormCertUrl';
+      var tf = document.createElement('script');
+      tf.type = 'text/javascript'; tf.async = true;
+      tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+        '://api.trustedform.com/trustedform.js?provide_referrer=false&field=' + escape(field) +
+        '&l=' + new Date().getTime() + Math.random() + '&invert_field_sensitivity=false';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+    })();
+  </script>
+
+  <style>
+    /* ===== HCI COLLEGE BRAND =====
+       Primary:  Deep navy/teal  #1B3A5C  (sourced from site header + hero bg)
+       Accent:   Gold/amber      #C8962A  (sourced from site highlights and "HCI" logo mark)
+       Secondary teal:           #0E6B8C  (program card accents)
+    */
+    :root {
+      --hci-navy:        #1B3A5C;
+      --hci-navy-dark:   #112538;
+      --hci-navy-deeper: #0A1A28;
+      --hci-navy-mid:    #1a3352;
+      --hci-navy-light:  #EAF1F7;
+      --hci-gold:        #C8962A;
+      --hci-gold-dark:   #A87820;
+      --hci-gold-light:  #FDF6E8;
+      --hci-teal:        #0E6B8C;
+      --hci-teal-light:  #E4F3F8;
+      --hci-black:       #111111;
+      --hci-charcoal:    #222222;
+      --hci-dark-gray:   #3D3D3D;
+      --hci-gray:        #6B7280;
+      --hci-light-gray:  #F5F6F7;
+      --hci-border:      #E2E8ED;
+      --hci-steel:       #E8EAEC;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 16px;
+      color: var(--hci-charcoal);
+      background: #fff;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+    a { color: var(--hci-navy); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== TRUST BAR ===== */
+    .trust-bar {
+      background: var(--hci-black);
+      color: #999;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 8px 16px;
+      text-transform: uppercase;
+    }
+    .trust-bar strong { color: var(--hci-gold); }
+
+    /* ===== STICKY HEADER ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 3px solid var(--hci-gold);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      height: 70px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    }
+    .header-logo { display: flex; align-items: center; }
+    .logo-lockup {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .logo-img {
+      height: 44px;
+      width: auto;
+    }
+    .header-right { display: flex; align-items: center; gap: 12px; }
+
+    .header-cta {
+      background: var(--hci-gold);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: var(--hci-gold-dark); text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--hci-navy-deeper) 0%, var(--hci-navy-dark) 45%, var(--hci-navy-mid) 100%);
+      color: #fff;
+      padding: 52px 32px 56px;
+    }
+    .hero-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 52px;
+      align-items: start;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--hci-gold);
+      color: #fff;
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 13px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+    .hero-headline {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+      font-weight: 700;
+      line-height: 1.08;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+    .hero-headline span { color: var(--hci-gold); }
+    .hero-subhead {
+      font-size: 1.05rem;
+      color: #a8c4d8;
+      margin-bottom: 24px;
+      max-width: 540px;
+      line-height: 1.65;
+    }
+    .hero-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 0;
+    }
+    .hero-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+      font-size: 0.97rem;
+      color: #c0d8e8;
+      line-height: 1.45;
+    }
+    .check-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      background: var(--hci-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .check-icon svg { width: 11px; height: 11px; }
+
+    /* ===== LEAD FORM ===== */
+    .form-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 28px 26px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.35);
+    }
+    .form-card-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .form-card-sub {
+      font-size: 0.82rem;
+      color: var(--hci-gray);
+      margin-bottom: 20px;
+    }
+    .form-group { margin-bottom: 13px; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--hci-dark-gray);
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 13px;
+      border: 1.5px solid var(--hci-border);
+      border-radius: 5px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.95rem;
+      color: var(--hci-charcoal);
+      background: #fff;
+      transition: border-color 0.18s;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--hci-navy);
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-submit {
+      width: 100%;
+      background: var(--hci-gold);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--hci-gold-dark); }
+    .form-disclaimer {
+      font-size: 0.68rem;
+      color: #999;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    #form-success {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+    }
+    #form-success .success-icon {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    #form-success h3 {
+      font-family: 'Oswald', sans-serif;
+      color: var(--hci-navy);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    #form-success p {
+      font-size: 0.9rem;
+      color: var(--hci-gray);
+    }
+
+    /* ===== STATS BAR ===== */
+    .stats-bar {
+      background: var(--hci-gold);
+      padding: 18px 32px;
+    }
+    .stats-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .stat-item { text-align: center; }
+    .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.82);
+      margin-top: 3px;
+    }
+    .stat-divider {
+      width: 1px;
+      height: 38px;
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* ===== SHARED SECTION STYLES ===== */
+    .section { padding: 68px 32px; }
+    .section-inner { max-width: 1160px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--hci-gold);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--hci-navy);
+      margin-bottom: 14px;
+      line-height: 1.1;
+    }
+    .section-body {
+      font-size: 1.0rem;
+      color: var(--hci-gray);
+      max-width: 720px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* ===== PROGRAMS SECTION ===== */
+    .programs-section { background: var(--hci-light-gray); }
+
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .program-card {
+      background: #fff;
+      border-radius: 8px;
+      border: 1.5px solid var(--hci-border);
+      padding: 28px 22px 24px;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .program-card:hover {
+      box-shadow: 0 8px 28px rgba(27,58,92,0.13);
+      transform: translateY(-3px);
+    }
+    .program-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--hci-navy-light);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .program-icon svg { width: 26px; height: 26px; }
+    .program-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 6px;
+    }
+    .program-type {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--hci-gold);
+      margin-bottom: 10px;
+    }
+    .program-desc {
+      font-size: 0.88rem;
+      color: var(--hci-gray);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 16px;
+    }
+    .program-highlights {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 18px;
+    }
+    .program-highlights li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.83rem;
+      color: var(--hci-dark-gray);
+      line-height: 1.4;
+    }
+    .program-highlights li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+      background: var(--hci-gold);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 1px;
+    }
+    .program-cta {
+      display: inline-block;
+      background: var(--hci-navy);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 9px 18px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      text-align: center;
+      width: 100%;
+    }
+    .program-cta:hover { background: var(--hci-teal); text-decoration: none; }
+
+    /* ===== WHY HCI ===== */
+    .why-section { background: var(--hci-navy-dark); }
+    .why-section .section-eyebrow { color: var(--hci-gold); }
+    .why-section .section-title { color: #fff; }
+    .why-section .section-body { color: #8ab4cc; }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 26px 22px;
+    }
+    .why-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--hci-gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .why-icon svg { width: 24px; height: 24px; }
+    .why-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .why-text { font-size: 0.88rem; color: #8ab4cc; line-height: 1.6; }
+
+    /* ===== SALARY SECTION ===== */
+    .salary-section { background: #fff; }
+
+    .salary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .salary-card {
+      background: var(--hci-navy-light);
+      border-left: 4px solid var(--hci-gold);
+      border-radius: 0 6px 6px 0;
+      padding: 20px 18px;
+    }
+    .salary-role {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+    .salary-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--hci-gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .salary-label {
+      font-size: 0.75rem;
+      color: var(--hci-gray);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ===== ACCREDITATION ===== */
+    .accred-section { background: var(--hci-light-gray); }
+
+    .accred-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .accred-card {
+      background: #fff;
+      border-radius: 8px;
+      border: 1.5px solid var(--hci-border);
+      padding: 22px 20px;
+    }
+    .accred-badge {
+      width: 44px;
+      height: 44px;
+      background: var(--hci-navy-light);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .accred-badge svg { width: 22px; height: 22px; }
+    .accred-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+    .accred-desc { font-size: 0.84rem; color: var(--hci-gray); line-height: 1.6; }
+
+    /* ===== FINANCIAL AID ===== */
+    .aid-section { background: #fff; }
+
+    .aid-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .aid-card {
+      border-top: 3px solid var(--hci-gold);
+      padding-top: 18px;
+    }
+    .aid-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+    .aid-text { font-size: 0.9rem; color: var(--hci-gray); line-height: 1.65; }
+
+    /* ===== CAMPUS SECTION ===== */
+    .campus-section { background: var(--hci-navy-deeper); }
+    .campus-section .section-eyebrow { color: var(--hci-gold); }
+    .campus-section .section-title { color: #fff; }
+    .campus-section .section-body { color: #8ab4cc; }
+
+    .campus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    .campus-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 26px 24px;
+    }
+    .campus-pin {
+      width: 40px;
+      height: 40px;
+      background: var(--hci-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .campus-pin svg { width: 20px; height: 20px; }
+    .campus-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 5px;
+    }
+    .campus-addr {
+      font-size: 0.83rem;
+      color: var(--hci-gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .campus-detail { font-size: 0.87rem; color: #8ab4cc; line-height: 1.6; margin-bottom: 14px; }
+    .campus-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .campus-tag {
+      background: rgba(200,150,42,0.18);
+      color: var(--hci-gold);
+      border: 1px solid rgba(200,150,42,0.35);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 3px;
+    }
+
+    /* ===== PROCESS ===== */
+    .process-section { background: var(--hci-light-gray); }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .process-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 26px 22px;
+      border: 1.5px solid var(--hci-border);
+      position: relative;
+    }
+    .step-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--hci-gold);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .step-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.0rem;
+      font-weight: 600;
+      color: var(--hci-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+    .step-text { font-size: 0.88rem; color: var(--hci-gray); line-height: 1.6; }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-section { background: #fff; }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--hci-light-gray);
+      border-radius: 8px;
+      padding: 26px 24px;
+      border-left: 4px solid var(--hci-gold);
+    }
+    .stars {
+      color: var(--hci-gold);
+      font-size: 1.0rem;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+    .t-quote {
+      font-size: 0.92rem;
+      color: var(--hci-charcoal);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 16px;
+    }
+    .t-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--hci-navy);
+    }
+    .t-role {
+      font-size: 0.78rem;
+      color: var(--hci-gray);
+      margin-top: 2px;
+    }
+
+    /* ===== BOTTOM CTA ===== */
+    .bottom-cta {
+      background: linear-gradient(135deg, var(--hci-navy-deeper) 0%, var(--hci-navy-dark) 60%, var(--hci-navy-mid) 100%);
+      padding: 56px 32px;
+      text-align: center;
+    }
+    .cta-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 12px;
+    }
+    .cta-title span { color: var(--hci-gold); }
+    .cta-sub {
+      font-size: 1.0rem;
+      color: #8ab4cc;
+      margin-bottom: 28px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--hci-gold);
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 15px 38px;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover { background: var(--hci-gold-dark); text-decoration: none; }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: var(--hci-black);
+      color: #666;
+      font-size: 0.76rem;
+      line-height: 1.7;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .site-footer a { color: #888; }
+    .site-footer a:hover { color: var(--hci-gold); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 860px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 36px; }
+      .form-card { max-width: 480px; }
+      .stat-divider { display: none; }
+
+    }
+    @media (max-width: 600px) {
+      .section { padding: 48px 20px; }
+      .hero { padding: 36px 20px 40px; }
+      .site-header { padding: 0 20px; }
+      .stats-bar { padding: 16px 20px; }
+      .stats-inner { gap: 12px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust-bar">
+  <strong>ACCSC Accredited</strong> &nbsp;&middot;&nbsp;
+  Financial Aid Available for Those Who Qualify &nbsp;&middot;&nbsp;
+  <strong>South Florida's Healthcare Career College</strong> &nbsp;&middot;&nbsp;
+  South Florida
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-logo">
+    <a class="logo-lockup" href="https://www.hci.edu/" target="_blank" rel="noopener">
+
+    </a>
+  </div>
+  <div class="header-right">
+    <a class="header-cta" href="#lead-form">Get Program Info</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Healthcare Career Programs &mdash; South Florida</div>
+      <h1 class="hero-headline">
+        Launch Your Career in<br>
+        <span>Healthcare.</span><br>
+        In South Florida.
+      </h1>
+      <p class="hero-subhead">
+        HCI College prepares students for rewarding healthcare careers with hands-on training,
+        experienced instructors, and dedicated career placement support — at two South Florida campuses.
+      </p>
+      <ul class="hero-bullets">
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          ACCSC-accredited programs from 10 months to 2 years
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          Practical Nursing, Medical Assisting, Associate Degree in Nursing &amp; Veterinary Assisting
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          Hybrid and on-campus options — classes designed around your life
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          Financial aid available for those who qualify — dedicated FA advisors on campus
+        </li>
+        <li>
+          <div class="check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          Career placement assistance from enrollment through graduation and beyond
+        </li>
+      </ul>
+    </div>
+
+    <!-- LEAD FORM -->
+    <div id="lead-form">
+      <div class="form-card">
+        <div class="form-card-title">Get Free Program Info</div>
+        <div class="form-card-sub">No obligation &middot; A counselor will follow up within 1 business day</div>
+
+        <div id="form-fields-wrap">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="" />
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP Code</label>
+            <input type="text" id="zip" name="zip" placeholder="33301" maxlength="5" />
+          </div>
+          <div class="form-group">
+            <label for="program_interest">Program of Interest</label>
+            <select id="program_interest" name="program_interest">
+              <option value="">— Select a Program —</option>
+              <option value="medical-assisting">Medical Assisting (Diploma – 10 months)</option>
+              <option value="practical-nursing">Practical Nursing (Diploma)</option>
+              <option value="associate-degree-nursing">Associate Degree in Nursing (2 years)</option>
+              <option value="veterinary-assisting">Veterinary Assisting (Diploma)</option>
+              <option value="undecided">Not Sure Yet — Help Me Choose</option>
+            </select>
+          </div>
+
+          <!-- Compliance tokens -->
+          <input type="hidden" id="leadid_token" name="universal_leadid" value="" />
+          <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" />
+
+          <button class="form-submit" onclick="handleSubmit()">Request Program Information &rarr;</button>
+          <p class="form-disclaimer">
+            By submitting this form, you consent to be contacted by HCI College and DegreeFlex regarding
+            educational programs via phone, email, and text — even if your number is on a Do Not Call list.
+            Consent is not required to enroll. <a href="https://www.hci.edu/" target="_blank">hci.edu</a>
+          </p>
+        </div>
+
+        <div id="form-success">
+          <div class="success-icon">✅</div>
+          <h3>Request Received!</h3>
+          <p>An HCI College admissions counselor will reach out within one business day to answer your questions and walk you through your options.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS BAR ===== -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">10 Mo.</div>
+      <div class="stat-label">Fastest Program Length</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num">2</div>
+      <div class="stat-label">South Florida Campuses</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Healthcare Programs</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num">$58K+</div>
+      <div class="stat-label">Median RN Salary (BLS)</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num">FA</div>
+      <div class="stat-label">Available for Those Who Qualify</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="section programs-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Healthcare Programs at HCI College</div>
+    <h2 class="section-title">Real Training for Real Healthcare Careers</h2>
+    <p class="section-body">Every HCI College program is built around hands-on clinical experience, seasoned healthcare instructors, and career outcomes. Whether you're starting fresh or advancing an existing healthcare career, HCI has a program designed for your goals — at two convenient South Florida campuses.</p>
+
+    <div class="programs-grid">
+
+      <!-- MEDICAL ASSISTING -->
+      <div class="program-card">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <div class="program-name">Medical Assisting</div>
+        <div class="program-type">Diploma Program &middot; 10 Months</div>
+        <p class="program-desc">A 36-credit-hour diploma program covering both clinical and administrative skills for entry-level employment as a Medical Assistant. Includes hybrid delivery — two days online, two days on campus per week.</p>
+        <ul class="program-highlights">
+          <li>Hybrid delivery — online &amp; on-campus</li>
+          <li>CCMA exam taken on campus at graduation</li>
+          <li>Phlebotomy &amp; EKG Technician exam eligibility</li>
+          <li>Tablet, textbooks &amp; uniforms included</li>
+        </ul>
+        <a class="program-cta" href="#lead-form">Get Program Info</a>
+      </div>
+
+      <!-- PRACTICAL NURSING -->
+      <div class="program-card">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <div class="program-name">Practical Nursing</div>
+        <div class="program-type">Diploma Program</div>
+        <p class="program-desc">Combines theoretical instruction with hands-on clinical experience and simulation in medical-surgical nursing, pharmacology, maternal-newborn care, and more. Prepares students to sit for the NCLEX-PN exam.</p>
+        <ul class="program-highlights">
+          <li>Clinical simulation &amp; real-world placements</li>
+          <li>Med-surg, pharmacology, OB, pediatrics</li>
+          <li>NCLEX-PN exam prep included</li>
+          <li>Dedicated clinical faculty support</li>
+        </ul>
+        <a class="program-cta" href="#lead-form">Get Program Info</a>
+      </div>
+
+      <!-- ASSOCIATE DEGREE IN NURSING -->
+      <div class="program-card">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="program-name">Associate Degree in Nursing</div>
+        <div class="program-type">Associate Degree &middot; 2 Years &middot; ACEN Accredited</div>
+        <p class="program-desc">A 72-credit-hour associate degree program combining general education online courses with on-campus nursing lecture, labs, and clinical rotations. Fort Lauderdale campus recently granted ACEN initial accreditation.</p>
+        <ul class="program-highlights">
+          <li>ACEN-accredited at Fort Lauderdale campus</li>
+          <li>Blended: online gen-ed + on-campus clinicals</li>
+          <li>NCLEX-RN exam preparation</li>
+          <li>Clinical sites throughout South Florida</li>
+        </ul>
+        <a class="program-cta" href="#lead-form">Get Program Info</a>
+      </div>
+
+      <!-- VETERINARY ASSISTING -->
+      <div class="program-card">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        </div>
+        <div class="program-name">Veterinary Assisting</div>
+        <div class="program-type">Diploma Program</div>
+        <p class="program-desc">Prepares students for entry-level employment in veterinary clinics and animal care settings. Covers animal care, handling, clinical procedures, and veterinary office operations — for students who want to combine a love of animals with a healthcare career.</p>
+        <ul class="program-highlights">
+          <li>Hands-on clinical animal care training</li>
+          <li>Veterinary office &amp; administrative skills</li>
+          <li>Animal handling &amp; restraint techniques</li>
+          <li>Career placement assistance</li>
+        </ul>
+        <a class="program-cta" href="#lead-form">Get Program Info</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY HCI ===== -->
+<section class="section why-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Why HCI College</div>
+    <h2 class="section-title">Caregivers Train Here. South Florida Hires Here.</h2>
+    <p class="section-body">HCI College has been preparing South Florida healthcare workers for decades. The mission has never changed: practical, career-focused education that connects directly to the healthcare workforce — led by instructors who've worked in the field.</p>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <div class="why-title">Hands-On From Day One</div>
+        <p class="why-text">Clinical labs, simulation equipment, and real-world externship placements mean you're building practical skills from your first semester — not reading about them from a textbook.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"/>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+          </svg>
+        </div>
+        <div class="why-title">ACCSC Accredited</div>
+        <p class="why-text">HCI College is accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC). The ADN program at Fort Lauderdale holds ACEN accreditation — the gold standard for nursing education.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div class="why-title">Hybrid Flexibility</div>
+        <p class="why-text">Programs like Medical Assisting offer a hybrid delivery model — two days online, two days on campus — so you can keep working while you train. HCI builds schedules that fit real life.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="why-title">Career Placement Support</div>
+        <p class="why-text">HCI's dedicated staff works with students from enrollment through graduation and beyond — connecting you with employers, helping with resume prep, and supporting your transition into the workforce.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+        </div>
+        <div class="why-title">Financial Aid Available</div>
+        <p class="why-text">HCI participates in Federal Title IV financial aid programs. On-campus Financial Aid Representatives walk you through every available option — grants, loans, scholarships, and military benefits — at no cost to you.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="why-title">Two Campus Locations</div>
+        <p class="why-text">Fort Lauderdale and West Palm Beach campuses give South Florida students convenient access to quality healthcare training close to home, with advisors at each location ready to support you.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SALARY CALLOUT ===== -->
+<section class="section salary-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Earning Potential</div>
+    <h2 class="section-title">Healthcare Careers in South Florida Pay Well</h2>
+    <p class="section-body">Florida's growing healthcare sector — driven by one of the nation's largest and fastest-aging populations — creates sustained, strong demand for qualified healthcare professionals. Here's what BLS and industry data show for the careers HCI College trains you for.</p>
+
+    <div class="salary-grid">
+      <div class="salary-card">
+        <div class="salary-role">Medical Assistant</div>
+        <div class="salary-num">$42K+</div>
+        <div class="salary-label">Median Annual Salary (BLS)</div>
+      </div>
+      <div class="salary-card">
+        <div class="salary-role">Licensed Practical Nurse</div>
+        <div class="salary-num">$55K+</div>
+        <div class="salary-label">Median Annual Salary (BLS)</div>
+      </div>
+      <div class="salary-card">
+        <div class="salary-role">Registered Nurse (ADN)</div>
+        <div class="salary-num">$81K+</div>
+        <div class="salary-label">Median Annual Salary (BLS)</div>
+      </div>
+      <div class="salary-card">
+        <div class="salary-role">Veterinary Assistant</div>
+        <div class="salary-num">$38K+</div>
+        <div class="salary-label">Median Annual Salary (BLS)</div>
+      </div>
+    </div>
+
+    <p style="font-size:0.75rem; color:#999; margin-top:20px;">
+      Salary data sourced from the U.S. Bureau of Labor Statistics Occupational Outlook Handbook. Actual salaries vary by employer, experience, and location. HCI College does not guarantee employment or specific salary upon program completion.
+    </p>
+  </div>
+</section>
+
+<!-- ===== ACCREDITATION ===== -->
+<section class="section accred-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Accreditation &amp; Approvals</div>
+    <h2 class="section-title">Credentials That Employers and Licensing Boards Recognize</h2>
+    <p class="section-body">HCI College's accreditations and approvals are what Florida employers and nursing licensing boards look for — and what unlock your financial aid eligibility. This isn't a diploma mill; it's a recognized, career-focused institution with decades of healthcare graduates.</p>
+
+    <div class="accred-grid">
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="accred-name">ACCSC Accredited</div>
+        <p class="accred-desc">Accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC) — the nationally recognized accreditor for career and technical institutions offering practical, career-focused education.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+        </div>
+        <div class="accred-name">ACEN Accredited — Nursing</div>
+        <p class="accred-desc">The Fort Lauderdale campus Associate Degree in Nursing program has been granted initial accreditation from ACEN — the Accreditation Commission for Education in Nursing. Essential for NCLEX eligibility and employer recognition.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2"/>
+            <line x1="1" y1="10" x2="23" y2="10"/>
+          </svg>
+        </div>
+        <div class="accred-name">Title IV &amp; Financial Aid</div>
+        <p class="accred-desc">Certified by the U.S. Department of Education to participate in Federal Title IV financial aid programs, including Pell Grants and federal student loans. Scholarship programs also available for qualifying students.</p>
+      </div>
+
+      <div class="accred-card">
+        <div class="accred-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1B3A5C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="accred-name">Florida-Licensed Institution</div>
+        <p class="accred-desc">Licensed and approved to operate by the State of Florida Commission for Independent Education — confirming program quality, institutional stability, and legitimacy for Florida students and employers.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINANCIAL AID ===== -->
+<section class="section aid-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Paying for School</div>
+    <h2 class="section-title">Don't Let Cost Be the Reason You Don't Start</h2>
+    <p class="section-body">HCI College has dedicated Financial Aid Representatives at both campuses to walk you through every option available — before you commit to anything. Financial aid is available for those who qualify, and most students don't realize how much help is out there until they ask.</p>
+
+    <div class="aid-grid">
+
+      <div class="aid-card">
+        <div class="aid-title">Federal Financial Aid</div>
+        <p class="aid-text">HCI College participates in Federal Title IV financial aid programs. Eligible students may qualify for Pell Grants, federal loans, and work-study through FAFSA. A dedicated Financial Aid Representative will walk you through the entire process one-on-one — at no charge — before you make any commitment.</p>
+      </div>
+
+      <div class="aid-card">
+        <div class="aid-title">Scholarships &amp; Bright Futures</div>
+        <p class="aid-text">HCI College offers institutional scholarships for qualifying students, and also participates in Florida's Bright Futures and Florida Prepaid scholarship programs. Speak with an admissions counselor to discover what you may be eligible for before enrollment begins.</p>
+      </div>
+
+      <div class="aid-card">
+        <div class="aid-title">Military &amp; VA Benefits</div>
+        <p class="aid-text">Active duty service members, veterans, and their dependents may be eligible to use VA education benefits at HCI College. HCI's staff supports military students from enrollment through graduation — ensuring you maximize available benefits and stay on track throughout your program.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAMPUSES ===== -->
+<section class="section campus-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Campus Locations</div>
+    <h2 class="section-title">Two Campuses in South Florida</h2>
+    <p class="section-body">HCI College operates two campuses in South Florida — Fort Lauderdale and West Palm Beach — making quality healthcare career training accessible to students throughout the region. Both campuses feature dedicated clinical labs, simulation equipment, and on-site advising teams.</p>
+
+    <div class="campus-grid">
+
+      <div class="campus-card">
+        <div class="campus-pin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="campus-name">Fort Lauderdale Campus</div>
+        <div class="campus-addr">Fort Lauderdale, FL</div>
+        <p class="campus-detail">HCI College's Fort Lauderdale campus is home to all four programs, including the ACEN-accredited Associate Degree in Nursing program. Facilities include dedicated nursing simulation labs, medical assisting clinical labs, and a fully staffed admissions and financial aid team. The ADN program at this campus recently received ACEN initial accreditation — a significant milestone for nursing students in South Florida.</p>
+        <div class="campus-tags">
+          <span class="campus-tag">Medical Assisting</span>
+          <span class="campus-tag">Practical Nursing</span>
+          <span class="campus-tag">ADN</span>
+          <span class="campus-tag">Veterinary Assisting</span>
+        </div>
+      </div>
+
+      <div class="campus-card">
+        <div class="campus-pin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="campus-name">West Palm Beach Campus</div>
+        <div class="campus-addr">West Palm Beach, FL</div>
+        <p class="campus-detail">HCI College's West Palm Beach campus brings the same career-focused healthcare training to Palm Beach County students. Dedicated clinical training spaces, hybrid-compatible classroom setups, and local clinical externship partnerships connect students with healthcare employers throughout the Palm Beach region. On-site Financial Aid and admissions staff available for walk-in appointments.</p>
+        <div class="campus-tags">
+          <span class="campus-tag">Medical Assisting</span>
+          <span class="campus-tag">Practical Nursing</span>
+          <span class="campus-tag">Veterinary Assisting</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section process-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">How to Get Started</div>
+    <h2 class="section-title">Four Steps to Your Healthcare Career</h2>
+    <p class="section-body">Enrollment at HCI College is designed to be straightforward. Here's exactly what happens from the moment you fill out this form to the day you start training — no surprises, no pressure.</p>
+
+    <div class="process-grid">
+
+      <div class="process-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Request Info</div>
+        <p class="step-text">Fill out the form at the top of this page. An HCI College admissions counselor will contact you within one business day to answer questions about programs, schedules, clinical placements, and financial aid — no commitment required.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Campus Tour &amp; Advising Session</div>
+        <p class="step-text">Visit your nearest HCI campus — Fort Lauderdale or West Palm Beach — for a personal tour of the clinical labs and a one-on-one session with an admissions counselor. See the equipment, meet the faculty, and ask every question on your list.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Financial Aid Planning</div>
+        <p class="step-text">After acceptance, meet with a Financial Aid Representative to build your funding plan. They'll walk you through FAFSA, grant eligibility, scholarships, military benefits, and loan options — so you know exactly what your program will cost before signing anything.</p>
+      </div>
+
+      <div class="process-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Start Training</div>
+        <p class="step-text">Attend orientation and begin building real clinical skills in HCI's hands-on labs — the kind that Florida healthcare employers are actively recruiting for. HCI's career services team starts working with you on placement from day one of enrollment.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials-section">
+  <div class="section-inner">
+    <div class="section-eyebrow">Student Voices</div>
+    <h2 class="section-title">Straight from HCI College Graduates</h2>
+    <p class="section-body">HCI College students come from all backgrounds — career changers, recent high school graduates, working adults balancing jobs and families. What they share is a goal to build a meaningful healthcare career with real, practical training.</p>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"The Medical Assisting program at HCI was exactly what I needed. The hybrid schedule let me keep my part-time job while I trained, and I walked out of graduation day with my CCMA exam completed on campus. I had job offers within two weeks."</p>
+        <div class="t-name">HCI College Graduate</div>
+        <div class="t-role">Medical Assisting &middot; Fort Lauderdale Campus</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"I was nervous about going back to school at 34, but the Practical Nursing program at HCI is designed for adult learners. The instructors have actually worked in hospitals and clinics — they teach you what real nursing looks like, not just what's in the book."</p>
+        <div class="t-name">HCI College Graduate</div>
+        <div class="t-role">Practical Nursing &middot; West Palm Beach Campus</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="t-quote">"Getting my Associate Degree in Nursing at HCI opened doors I didn't think were possible without a four-year university. The ACEN accreditation matters — hospitals in South Florida know what it means. I'm working as an RN at a local hospital today."</p>
+        <div class="t-name">HCI College Graduate</div>
+        <div class="t-role">Associate Degree in Nursing &middot; Fort Lauderdale Campus</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOTTOM CTA ===== -->
+<div class="bottom-cta">
+  <h2 class="cta-title">Ready to Start Your <span>Healthcare Career?</span></h2>
+  <p class="cta-sub">Fill out the form above — an HCI College admissions counselor will follow up within one business day. No pressure, no commitment.</p>
+  <a class="cta-btn" href="#lead-form">Get Program Info Now</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>
+    <strong>HCI College</strong> &nbsp;&middot;&nbsp;
+    Fort Lauderdale Campus &nbsp;&middot;&nbsp; West Palm Beach Campus
+  </p>
+  <p style="margin-top:8px">
+    Accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC)
+    &nbsp;&middot;&nbsp; ADN program at Fort Lauderdale campus: ACEN Initial Accreditation
+    &nbsp;&middot;&nbsp; Licensed by the Florida Commission for Independent Education
+    &nbsp;&middot;&nbsp; Certified by U.S. Dept. of Education for Federal Title IV Programs
+  </p>
+  <p style="margin-top:8px">
+    HCI College does not guarantee employment or salary upon completion of any program.
+    Program availability may vary by campus. Financial aid available for those who qualify.
+    For graduation rates, median debt, and other consumer information, visit
+    <a href="https://www.hci.edu/" target="_blank">hci.edu</a>.
+  </p>
+  <p style="margin-top:8px">
+    <a href="https://www.hci.edu/about/accreditation-scns" target="_blank">Accreditation</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.hci.edu/admissions/payment-options-and-financial-aid" target="_blank">Financial Aid</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.hci.edu/admissions/application-process" target="_blank">Apply Now</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://www.hci.edu/schedule-a-visit" target="_blank">Schedule a Visit</a>
+  </p>
+  <p style="margin-top:14px; font-size: 0.67rem; color: #3a3a3a;">
+    This page is operated by DegreeFlex / Lightning Bolt Media. DegreeFlex is a lead generation platform connecting prospective students with educational institutions. Submission of this form constitutes consent for HCI College and DegreeFlex to contact you regarding enrollment information via phone, email, and text message.
+  </p>
+</footer>
+
+<script>
+  function handleSubmit() {
+    var first = document.getElementById('first_name').value.trim();
+    var last  = document.getElementById('last_name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var phone = document.getElementById('phone').value.trim();
+    var zip   = document.getElementById('zip').value.trim();
+    var prog  = document.getElementById('program_interest').value;
+
+    if (!first || !last || !email || !phone || !zip || !prog) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+
+    // n8n webhook
+    var payload = {
+      first_name: first,
+      last_name: last,
+      email: email,
+      phone: phone,
+      zip: zip,
+      program_interest: prog,
+      school: 'HCI College',
+      source: 'degreeflex',
+      leadid_token: document.getElementById('leadid_token') ? document.getElementById('leadid_token').value : '',
+      trustedform_cert_url: document.getElementById('xxTrustedFormCertUrl') ? document.getElementById('xxTrustedFormCertUrl').value : '',
+      utm_source: new URLSearchParams(window.location.search).get('utm_source') || '',
+      utm_medium: new URLSearchParams(window.location.search).get('utm_medium') || '',
+      utm_campaign: new URLSearchParams(window.location.search).get('utm_campaign') || '',
+      utm_content: new URLSearchParams(window.location.search).get('utm_content') || '',
+      subid: new URLSearchParams(window.location.search).get('subid') || ''
+    };
+
+    fetch('https://growthengineerpro.app.n8n.cloud/webhook/form-submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).catch(function() {});
+
+    document.getElementById('form-fields-wrap').style.display = 'none';
+    document.getElementById('form-success').style.display     = 'block';
+  }
+
+  // Smooth scroll for CTA links
+  document.querySelectorAll('a[href="#lead-form"]').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('lead-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  });
+</script>
+
+</body>
+</html>
