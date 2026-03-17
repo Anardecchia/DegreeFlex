@@ -18,9 +18,9 @@
     --font: 'DM Sans', sans-serif;
     --mono: 'DM Mono', monospace;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   body {
     font-family: var(--font);
     background: var(--df-light);
@@ -28,7 +28,7 @@
     padding: 40px 32px;
     min-height: 100vh;
   }
-
+ 
   /* ── HEADER ── */
   .header {
     display: flex;
@@ -67,14 +67,14 @@
     color: var(--df-orange);
   }
   .df-logo svg { width: 32px; height: 32px; }
-
+ 
   /* ── FLOW WRAPPER ── */
   .flow {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
+ 
   /* ── STAGE ROW ── */
   .stage-row {
     display: grid;
@@ -82,7 +82,7 @@
     gap: 0;
     position: relative;
   }
-
+ 
   /* ── STAGE LABEL ── */
   .stage-label {
     display: flex;
@@ -103,7 +103,7 @@
   }
   .stage-number.orange { background: var(--df-orange); color: var(--df-navy); }
   .stage-number.green { background: var(--df-green); color: var(--df-white); }
-
+ 
   .stage-line {
     width: 2px;
     flex: 1;
@@ -112,7 +112,7 @@
     min-height: 40px;
   }
   .stage-line.last { display: none; }
-
+ 
   .stage-name {
     font-size: 0.65rem;
     font-weight: 600;
@@ -123,12 +123,12 @@
     text-align: center;
     line-height: 1.3;
   }
-
+ 
   /* ── STAGE CONTENT ── */
   .stage-content {
     padding: 20px 0 28px 0;
   }
-
+ 
   /* ── CARDS ── */
   .cards {
     display: flex;
@@ -177,7 +177,7 @@
   .card-tag.orange { background: #FFF8E6; border-color: #F5D07A; color: var(--df-orange-dark); }
   .card-tag.green { background: #EEF5EA; border-color: #A5C990; color: var(--df-green); }
   .card-tag.navy { background: #EEF0F5; border-color: #B0B8CE; color: var(--df-navy); }
-
+ 
   .card.highlight {
     border-color: var(--df-orange);
     border-width: 2px;
@@ -190,7 +190,7 @@
     background: var(--df-orange);
     border-radius: 10px 10px 0 0;
   }
-
+ 
   /* ── FORM STEPS BLOCK ── */
   .form-steps {
     display: grid;
@@ -250,7 +250,7 @@
     background: var(--df-border);
     flex-shrink: 0;
   }
-
+ 
   /* ── UTM / TRACKING BLOCK ── */
   .tracking-block {
     background: var(--df-white);
@@ -292,7 +292,7 @@
     color: var(--df-gray);
     line-height: 1.4;
   }
-
+ 
   /* ── DESTINATION BLOCK ── */
   .destination-block {
     background: var(--df-navy);
@@ -328,7 +328,7 @@
     background: rgba(255,255,255,0.1);
     align-self: stretch;
   }
-
+ 
   /* ── ARROW CONNECTOR ── */
   .connector {
     display: flex;
@@ -356,7 +356,7 @@
     font-size: 1rem;
     line-height: 1;
   }
-
+ 
   /* ── COMPLIANCE ROW ── */
   .compliance-row {
     display: flex;
@@ -389,7 +389,7 @@
     color: var(--df-gray);
     margin-top: 1px;
   }
-
+ 
   /* ── SECTION HEADER ── */
   .section-header {
     font-size: 0.65rem;
@@ -401,7 +401,7 @@
     padding-bottom: 6px;
     border-bottom: 1px solid var(--df-border);
   }
-
+ 
   /* ── FOOTER ── */
   .footer {
     margin-top: 40px;
@@ -420,7 +420,7 @@
     font-size: 0.68rem;
     color: var(--df-gray);
   }
-
+ 
   /* ── LEGEND ── */
   .legend {
     display: flex;
@@ -447,7 +447,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- HEADER -->
 <div class="header">
   <div class="header-left">
@@ -464,18 +464,19 @@
     DEGREEFLEX
   </div>
 </div>
-
+ 
 <!-- LEGEND -->
 <div class="legend">
   <div class="legend-item"><div class="legend-dot" style="background:#1A2440"></div> Paid Channel</div>
   <div class="legend-item"><div class="legend-dot" style="background:#F5A800"></div> DegreeFlex Asset</div>
   <div class="legend-item"><div class="legend-dot" style="background:#5B8C3E"></div> Compliance / Tracking</div>
   <div class="legend-item"><div class="legend-dot" style="background:#6B7280"></div> Backend / Delivery</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#E8392A"></div> Rejected Lead Reactivation</div>
 </div>
-
+ 
 <!-- FLOW -->
 <div class="flow">
-
+ 
   <!-- ── STAGE 1: AD CHANNELS ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -510,17 +511,29 @@
           <div class="card-desc">Community + display placements targeting trade & vocational interest servers.</div>
           <div class="card-tag navy">Display</div>
         </div>
+        <div class="card">
+          <span class="card-icon">🟠</span>
+          <div class="card-title">Reddit</div>
+          <div class="card-desc">Promoted posts in trade, military, and career subreddits. Native text ads blend into feed — high-intent, research-mode audience.</div>
+          <div class="card-tag navy">Social</div>
+        </div>
+        <div class="card">
+          <span class="card-icon">🟣</span>
+          <div class="card-title">Twitch</div>
+          <div class="card-desc">Display & mid-roll video ads. Reaches 18–34 demographic during live streams — strong overlap with trades and tech program audience.</div>
+          <div class="card-tag navy">Display / Video</div>
+        </div>
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">UTMs fired on click</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 2: UTM PARAMETERS ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -535,7 +548,7 @@
         <div class="tracking-grid">
           <div class="tracking-item">
             <div class="tracking-item-label">utm_source</div>
-            <div class="tracking-item-desc">Ad platform — tiktok, google, youtube, discord</div>
+            <div class="tracking-item-desc">Ad platform — tiktok, google, youtube, discord, reddit, twitch</div>
           </div>
           <div class="tracking-item">
             <div class="tracking-item-label">utm_medium</div>
@@ -561,14 +574,14 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">User lands on page</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 3: LANDING PAGE ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -577,31 +590,37 @@
       <div class="stage-line"></div>
     </div>
     <div class="stage-content">
-      <div class="section-header">School-specific page — hosted on DegreeFlex / GitHub Pages</div>
+      <div class="section-header">Three landing page types — each optimized for traffic source and intent</div>
       <div class="cards" style="margin-bottom:12px;">
-        <div class="card">
+        <div class="card highlight">
           <span class="card-icon">🏫</span>
-          <div class="card-title">School Landing Pages</div>
-          <div class="card-desc">AIM Aviation, ATA College, Berkeley College + 15 more in pipeline. Each page: hero, programs, salary data, accreditation, form.</div>
+          <div class="card-title">School-Specific Landing Page</div>
+          <div class="card-desc">Dedicated page per partner school — AIM Aviation, ATA College, Berkeley College, Miller-Motte + more. Hero, programs, salary data, accreditation, compliance form. Lives on degreeflex.growthengineer.pro.</div>
           <div class="card-tag orange">School-Specific</div>
         </div>
+        <div class="card highlight">
+          <span class="card-icon">📚</span>
+          <div class="card-title">DegreeFlex Program-Specific Landing Page</div>
+          <div class="card-desc">Program-level pages (e.g. HVAC, Nursing, Welding) surfacing multiple matching schools. Wider top-of-funnel catch — routes user to the best school match based on interest + zip.</div>
+          <div class="card-tag orange">Program-Specific</div>
+        </div>
         <div class="card">
-          <span class="card-icon">🌐</span>
-          <div class="card-title">DegreeFlex Main Site</div>
-          <div class="card-desc">General traffic lands here. Multi-step form matches users to schools based on interests and location.</div>
-          <div class="card-tag navy">degreeflex.com</div>
+          <span class="card-icon">📝</span>
+          <div class="card-title">DegreeFlex Relevant Blog Landing Page</div>
+          <div class="card-desc">SEO and content traffic lands on blog posts covering career outcomes, salary data, and program comparisons. In-content CTA and embedded form capture the lead mid-read — highest organic intent signal.</div>
+          <div class="card-tag navy">Blog / Content</div>
         </div>
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">User fills out form</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 4: FORM ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -656,14 +675,14 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">On submit — compliance tokens captured</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 5: COMPLIANCE ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -698,14 +717,14 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">Webhook fires to n8n</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 6: n8n WORKFLOW ── -->
   <div class="stage-row">
     <div class="stage-label">
@@ -737,20 +756,20 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- CONNECTOR -->
   <div class="connector">
     <div class="connector-line"></div>
     <div class="connector-label">School receives lead</div>
     <div class="connector-arrow">↓</div>
   </div>
-
+ 
   <!-- ── STAGE 7: SCHOOL DELIVERY ── -->
   <div class="stage-row">
     <div class="stage-label">
       <div class="stage-number green">7</div>
       <div class="stage-name">School<br>Delivery</div>
-      <div class="stage-line last"></div>
+      <div class="stage-line"></div>
     </div>
     <div class="stage-content">
       <div class="section-header">Lead delivered + acceptance status fed back for optimization</div>
@@ -764,7 +783,7 @@
         <div class="dest-item">
           <div class="dest-item-label">Feedback Loop</div>
           <div class="dest-item-title">Accept / Reject Status</div>
-          <div class="dest-item-desc">leadHOOP webhook fires status back to n8n → written to Supabase against original utm_content.</div>
+          <div class="dest-item-desc">leadHOOP webhook fires status back to n8n → written to Supabase against original utm_content. Rejected leads trigger reactivation flow (see Stage 8).</div>
         </div>
         <div class="dest-divider"></div>
         <div class="dest-item">
@@ -775,14 +794,79 @@
       </div>
     </div>
   </div>
-
+ 
+  <!-- CONNECTOR — rejection path -->
+  <div class="connector">
+    <div class="connector-line"></div>
+    <div class="connector-label" style="color:#E8392A;">Lead rejected in leadHOOP → reactivation triggered</div>
+    <div class="connector-arrow" style="color:#E8392A;">↓</div>
+  </div>
+ 
+  <!-- ── STAGE 8: REJECTED LEAD REACTIVATION ── -->
+  <div class="stage-row">
+    <div class="stage-label">
+      <div class="stage-number" style="background:#E8392A;">8</div>
+      <div class="stage-name">Rejected<br>Lead<br>Reactivation</div>
+      <div class="stage-line last"></div>
+    </div>
+    <div class="stage-content">
+      <div class="section-header">Rejected leads are reactivated via SMS → redirected to capture fresh compliance tokens</div>
+      <div class="cards" style="margin-bottom:14px;">
+        <div class="card" style="border-color:#E8392A20;">
+          <span class="card-icon">🔔</span>
+          <div class="card-title">Rejection Detected</div>
+          <div class="card-desc">n8n receives leadHOOP rejection code. Lead record in Supabase is flagged. Reactivation sequence is triggered automatically — no manual intervention needed.</div>
+          <div class="card-tag" style="background:#FEF0EE;border-color:#E8392A40;color:#C42D20;">n8n Trigger</div>
+        </div>
+        <div class="card" style="border-color:#E8392A20;">
+          <span class="card-icon">💬</span>
+          <div class="card-title">SMS Reactivation Message</div>
+          <div class="card-desc">Personalized SMS sent to the lead's cell number. Message references their program of interest and surfaces a direct link to the program-specific landing page. Copy is non-aggressive — positioned as a helpful follow-up.</div>
+          <div class="card-tag" style="background:#FEF0EE;border-color:#E8392A40;color:#C42D20;">SMS via n8n</div>
+        </div>
+        <div class="card" style="border-color:#F5A80040;">
+          <span class="card-icon">🔗</span>
+          <div class="card-title">Redirect to Program-Specific Page</div>
+          <div class="card-desc">SMS link routes user to the DegreeFlex program-specific landing page — not the school page. This ensures a fresh page load fires a new Jornaya LeadID session and TrustedForm certificate, creating new valid compliance tokens.</div>
+          <div class="card-tag orange">Fresh Token Capture</div>
+        </div>
+        <div class="card highlight">
+          <span class="card-icon">✅</span>
+          <div class="card-title">Re-submission → leadHOOP</div>
+          <div class="card-desc">User re-fills form on the program page. New Jornaya + TrustedForm tokens are captured at submit. n8n posts the refreshed lead back to leadHOOP — now with valid compliance credentials and potentially a different school match.</div>
+          <div class="card-tag green">Resubmitted</div>
+        </div>
+      </div>
+ 
+      <!-- Compliance note -->
+      <div class="tracking-block" style="border-color:#5B8C3E40;">
+        <div class="tracking-title"><span>🛡️</span> Why Fresh Tokens Are Required</div>
+        <div class="tracking-grid">
+          <div class="tracking-item">
+            <div class="tracking-item-label">Jornaya LeadID</div>
+            <div class="tracking-item-desc">Token is session-bound to the original form fill. A rejected lead's token is stale — schools won't accept it. A new page load generates a new valid session.</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">TrustedForm Cert</div>
+            <div class="tracking-item-desc">Certificate records the specific session where consent was given. Reactivation requires the user to actively re-submit — passive redirect alone does not create a valid cert.</div>
+          </div>
+          <div class="tracking-item">
+            <div class="tracking-item-label">TCPA Compliance</div>
+            <div class="tracking-item-desc">Re-submission on the program page re-captures TCPA consent language at the point of the new form fill — keeping the lead legally contactable by the receiving school.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
 </div>
-
+ 
 <!-- FOOTER -->
 <div class="footer">
   <div class="footer-note">DegreeFlex · Lightning Bolt Media · Confidential</div>
   <div class="footer-date">March 2026</div>
 </div>
-
+ 
 </body>
 </html>
+ 
