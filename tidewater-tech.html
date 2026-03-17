@@ -37,19 +37,19 @@
  
   <style>
     /* ===== TIDEWATER TECH BRAND =====
-       Primary: Deep teal/navy #1C5162
-       Accent:  Burnt orange #F47920
+       Primary: Black #111111
+       Accent:  Red #E8392A
        Sourced from site header, button, and icon colors
     */
     :root {
-      --tt-teal:         #1C5162;
-      --tt-teal-dark:    #123240;
-      --tt-teal-deeper:  #0D2530;
-      --tt-teal-mid:     #1a4455;
-      --tt-teal-light:   #E8F2F5;
-      --tt-orange:       #F47920;
-      --tt-orange-dark:  #D4641A;
-      --tt-orange-light: #FEF2E8;
+      --tt-teal:         #111111;
+      --tt-teal-dark:    #1A1A1A;
+      --tt-teal-deeper:  #0A0A0A;
+      --tt-teal-mid:     #222222;
+      --tt-teal-light:   #F5F5F5;
+      --tt-orange:       #E8392A;
+      --tt-orange-dark:  #C42D20;
+      --tt-orange-light: #FEF0EE;
       --tt-black:        #111111;
       --tt-charcoal:     #222222;
       --tt-dark-gray:    #3D3D3D;
@@ -241,7 +241,7 @@
       appearance: none;
     }
     .form-group input:focus,
-    .form-group select:focus { outline: none; border-color: var(--tt-orange); box-shadow: 0 0 0 3px rgba(244,121,32,0.1); }
+    .form-group select:focus { outline: none; border-color: var(--tt-orange); box-shadow: 0 0 0 3px rgba(232,57,42,0.1); }
     .form-submit {
       width: 100%;
       padding: 14px;
@@ -401,14 +401,14 @@
       border-radius: 20px;
     }
     .chip-gray { background: var(--tt-steel); color: var(--tt-dark-gray); border: 1px solid var(--tt-border); }
-    .chip-teal { background: var(--tt-teal-light); color: var(--tt-teal-dark); border: 1px solid #b5d2db; }
+    .chip-teal { background: var(--tt-teal-light); color: var(--tt-teal-dark); border: 1px solid #cccccc; }
     .chip-orange { background: var(--tt-orange-light); color: var(--tt-orange-dark); border: 1px solid #f5c8a0; }
  
     /* ===== WHY TIDEWATER TECH ===== */
     .why-section { background: var(--tt-teal-dark); }
     .why-section .section-eyebrow { color: var(--tt-orange); }
     .why-section .section-title { color: #fff; }
-    .why-section .section-body { color: #8fbfcc; }
+    .why-section .section-body { color: #aaaaaa; }
     .why-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -545,7 +545,7 @@
     .campus-section { background: var(--tt-teal-deeper); }
     .campus-section .section-eyebrow { color: var(--tt-orange); }
     .campus-section .section-title { color: #fff; }
-    .campus-section .section-body { color: #8fbfcc; }
+    .campus-section .section-body { color: #aaaaaa; }
     .campus-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -574,7 +574,7 @@
       margin-bottom: 5px;
     }
     .campus-addr { font-size: 0.83rem; color: var(--tt-orange); font-weight: 700; margin-bottom: 12px; }
-    .campus-detail { font-size: 0.87rem; color: #8fbfcc; line-height: 1.65; }
+    .campus-detail { font-size: 0.87rem; color: #aaaaaa; line-height: 1.65; }
     .campus-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
     .campus-tag {
       font-size: 0.7rem;
@@ -669,7 +669,7 @@
       margin-bottom: 10px;
     }
     .cta-title span { color: var(--tt-orange); }
-    .cta-sub { font-size: 1.05rem; color: #8fbfcc; margin-bottom: 30px; }
+    .cta-sub { font-size: 1.05rem; color: #aaaaaa; margin-bottom: 30px; }
     .cta-btn {
       display: inline-block;
       background: var(--tt-orange);
@@ -737,9 +737,7 @@
  
 <!-- ===== HEADER ===== -->
 <header class="site-header">
-  <div class="header-logo">
-    <img src="data:image/png;base64,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" alt="Tidewater Tech" class="logo-svg" style="height:52px;width:auto;" />
-  </div>
+  <div class="header-logo"><a href="https://tidewatertechtrades.edu/" target="_blank" rel="noopener" style="display:flex;align-items:center;"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Layer_1" style="height:44px;width:auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"   viewBox="0 0 300 46" style="enable-background:new 0 0 300 46;" xml:space="preserve"> <style type="text/css">  .st0{fill:#1A1A1A;} </style> <g>  <polygon class="st0" points="26.2,44.1 13.8,44.1 13.8,14.1 2,14.1 4,1.9 26.2,1.9  "/>  <polygon class="st0" points="28.8,1.9 50.9,1.9 52.9,14.1 41.2,14.1 41.2,44.1 28.8,44.1  "/>  <g>   <path class="st0" d="M99.7,12.1h5.1v4.3h-5.1V12.1z M99.8,18.3h4.9v17.8h-4.9V18.3z"/>   <path class="st0" d="M107.4,27.5V27c0-6.1,3.4-9,7.1-9c2.5,0,3.9,1.3,5,2.6v-8.5h4.9v24h-4.9v-2.5c-1.1,1.5-2.6,2.8-5,2.8    C110.8,36.5,107.4,33.6,107.4,27.5z M119.6,27.4v-0.3c0-3-1.6-5-3.6-5c-2,0-3.6,1.9-3.6,5v0.3c0,3,1.6,5,3.6,5    C118,32.4,119.6,30.4,119.6,27.4z"/>   <path class="st0" d="M126.7,27.4v-0.3c0-5.3,3.4-9.1,8.1-9.1c5.3,0,7.9,4.2,7.9,9.5c0,0.3,0,0.8,0,1.5h-11.1    c0.4,2.4,1.9,3.6,4,3.6c1.5,0,2.7-0.7,3.9-1.8l2.5,2.9c-1.7,1.8-3.8,2.9-6.6,2.9C130.5,36.5,126.7,33,126.7,27.4z M138,25.9    c-0.2-2.5-1.3-4-3.1-4c-1.8,0-3,1.5-3.3,4H138z"/>   <path class="st0" d="M143.2,18.3h4.9l2.5,10.5l2.9-10.6h4.2l2.9,10.6l2.6-10.6h4.9l-5,18h-4.5l-2.9-10.6l-3,10.6h-4.5L143.2,18.3z    "/>   <path class="st0" d="M168.4,31.1v-0.2c0-3.9,2.7-5.7,6.5-5.7c1.6,0,2.7,0.3,3.9,0.7v-0.5c0-2.1-1.3-3.1-3.5-3.1    c-1.7,0-3.1,0.5-4.3,1l-1.3-3.7c1.8-0.9,3.7-1.4,6.3-1.4c2.5,0,4.4,0.7,5.6,1.8c1.3,1.2,1.9,3.1,1.9,5.4v10.8h-4.8v-1.9    c-1.1,1.4-2.6,2.3-4.8,2.3C170.9,36.5,168.4,34.5,168.4,31.1z M178.8,30.3v-1.5c-0.7-0.3-1.7-0.6-2.7-0.6c-1.8,0-2.9,0.9-2.9,2.5    v0.1c0,1.5,1,2.2,2.4,2.2C177.4,33.1,178.8,31.9,178.8,30.3z"/>   <path class="st0" d="M187.1,31.7v-9.4h-1.9v-4h1.9v-4.6h4.9v4.6h3.7v4H192v8.4c0,1,0.5,1.5,1.5,1.5c0.8,0,1.5-0.2,2.1-0.5v3.8    c-1,0.5-2.1,0.9-3.6,0.9C189.1,36.4,187.1,35.4,187.1,31.7z"/>   <path class="st0" d="M196.8,27.4v-0.3c0-5.3,3.4-9.1,8.1-9.1c5.3,0,7.9,4.2,7.9,9.5c0,0.3,0,0.8,0,1.5h-11.1    c0.4,2.4,1.9,3.6,4,3.6c1.5,0,2.7-0.7,3.9-1.8l2.5,2.9c-1.7,1.8-3.8,2.9-6.6,2.9C200.6,36.5,196.8,33,196.8,27.4z M208,25.9    c-0.2-2.5-1.3-4-3.2-4c-1.8,0-3,1.5-3.3,4H208z"/>   <path class="st0" d="M215.2,18.3h4.9v3.2c0.9-2.2,2.4-3.6,5-3.5v5.1h-0.2c-3,0-4.8,1.8-4.8,5.5v7.5h-4.9V18.3z"/>   <path class="st0" d="M248.6,27.4v-0.3c0-5.3,3.4-9.1,8.1-9.1c5.3,0,7.9,4.2,7.9,9.5c0,0.3,0,0.8,0,1.5h-11.1    c0.4,2.4,1.9,3.6,4,3.6c1.5,0,2.7-0.7,3.9-1.8l2.5,2.9c-1.7,1.8-3.8,2.9-6.6,2.9C252.3,36.5,248.6,33,248.6,27.4z M259.8,25.9    c-0.2-2.5-1.3-4-3.1-4c-1.8,0-3,1.5-3.3,4H259.8z"/>   <path class="st0" d="M266.2,27.5v-0.4c0-5.3,3.6-9.1,8.6-9.1c2.7,0,4.5,0.9,6.1,2.4l-2.7,3.4c-0.9-0.9-1.8-1.6-3.3-1.6    c-2.2,0-3.8,2.1-3.8,5v0.1c0,3,1.4,5,3.9,5c1.5,0,2.4-0.7,3.4-1.6l2.6,3.1c-1.5,1.6-3.4,2.7-6.3,2.7    C269.7,36.5,266.2,32.8,266.2,27.5z"/>   <path class="st0" d="M282.8,12.1h4.9v8.6c1.1-1.4,2.4-2.7,4.8-2.7c3.5,0,5.5,2.3,5.5,6v12.1h-4.9V25.4c0-2.1-1-3.2-2.6-3.2    c-1.6,0-2.7,1.1-2.7,3.2v10.7h-4.9V12.1z"/>  </g>  <path class="st0" d="M87,16.5h-5.7l0.9-4.4h14.4l0.9,4.4h-5.7v19.6H87V16.5z"/>  <path class="st0" d="M240.1,16.5h-5.7l0.9-4.4h14.4l0.9,4.4h-5.7v19.6h-4.7V16.5z"/>  <rect x="66.8" y="1.9" class="st0" width="0.2" height="42.2"/> </g> </svg></a></div>
   <div class="header-right">
     <a class="header-cta" href="#lead-form">Get Program Info</a>
   </div>
@@ -828,7 +826,7 @@
           <input type="hidden" name="xxTrustedFormCertUrl" id="xxTrustedFormCertUrl" />
           <button class="form-submit" type="button" onclick="handleSubmit()">Request Program Info &rarr;</button>
           <p class="form-legal">
-            By submitting, I give consent to Tidewater Tech and their agents to contact me by email or telephone (mobile and home, including pre-recorded and/or auto-dialers) regarding programs and offers. Consent is not required to enroll. I may call (757) 858-8324 instead. &nbsp;<a href="https://tidewatertechtrades.edu/about-tidewater-tech/privacy/" target="_blank">Privacy Policy</a>
+            By submitting, I give consent to Tidewater Tech and their agents to contact me by email or telephone (mobile and home, including pre-recorded and/or auto-dialers) regarding programs and offers. Consent is not required to enroll. &nbsp;<a href="https://tidewatertechtrades.edu/about-tidewater-tech/privacy/" target="_blank">Privacy Policy</a>
           </p>
         </div>
         <div class="form-success" id="form-success">
@@ -1108,7 +1106,7 @@
  
       <div class="accred-card">
         <div class="accred-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
           </svg>
         </div>
@@ -1118,7 +1116,7 @@
  
       <div class="accred-card">
         <div class="accred-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
             <path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
@@ -1129,7 +1127,7 @@
  
       <div class="accred-card">
         <div class="accred-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
           </svg>
         </div>
@@ -1139,7 +1137,7 @@
  
       <div class="accred-card">
         <div class="accred-badge">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#1C5162" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="1" y="4" width="22" height="16" rx="2"/>
             <line x1="1" y1="10" x2="23" y2="10"/>
           </svg>
@@ -1197,7 +1195,7 @@
           </svg>
         </div>
         <div class="campus-name">Main Campus &mdash; Norfolk</div>
-        <div class="campus-addr">4535 E. Princess Anne Rd &middot; Norfolk, VA 23502 &middot; (757) 858-8324</div>
+        <div class="campus-addr">4535 E. Princess Anne Rd &middot; Norfolk, VA 23502</div>
         <p class="campus-detail">State-of-the-art AWS Accredited Testing Facility with 90+ welding bays and a dedicated testing area — one of only four such facilities in Virginia. Automotive lab features professional vehicle lifts, alignment rack, and modern diagnostic equipment that mirror what you'll use on the job. Facilities also include a Veterans Center, Student Lounge, and Learning Resource Center.</p>
         <div class="campus-tags">
           <span class="campus-tag">Combination Welding</span>
@@ -1214,7 +1212,7 @@
           </svg>
         </div>
         <div class="campus-name">Branch Campus &mdash; Norfolk</div>
-        <div class="campus-addr">2331 E. Little Creek Rd &middot; Norfolk, VA 23518 &middot; (757) 340-2121</div>
+        <div class="campus-addr">2331 E. Little Creek Rd &middot; Norfolk, VA 23518</div>
         <p class="campus-detail">Purpose-built for HVAC and construction trades training, with hands-on labs designed to replicate real job site conditions from day one. HVAC lab covers refrigeration, heating systems, heat pumps, hydronics, and commercial refrigeration. Construction training includes structural, mechanical, and electrical applications in a dedicated facility.</p>
         <div class="campus-tags">
           <span class="campus-tag">HVAC</span>
@@ -1308,9 +1306,9 @@
 <footer class="site-footer">
   <p>
     <strong>Tidewater Tech</strong> &nbsp;&middot;&nbsp;
-    Main Campus: 4535 E. Princess Anne Rd, Norfolk, VA 23502 &nbsp;&middot;&nbsp; (757) 858-8324
+    Main Campus: 4535 E. Princess Anne Rd, Norfolk, VA 23502
     &nbsp;&middot;&nbsp;
-    Branch Campus: 2331 E. Little Creek Rd, Norfolk, VA 23518 &nbsp;&middot;&nbsp; (757) 340-2121
+    Branch Campus: 2331 E. Little Creek Rd, Norfolk, VA 23518
   </p>
   <p style="margin-top:8px">
     Administrative Offices: 4455 South Blvd., Virginia Beach, VA 23452
