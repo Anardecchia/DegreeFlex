@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
+ 
   <!-- Jornaya LeadID -->
   <script id="LeadiDscript" type="text/javascript">
     (function() {
@@ -20,7 +20,7 @@
       LeadiDscript.parentNode.insertBefore(s, LeadiDscript);
     })();
   </script>
-
+ 
   <!-- TrustedForm -->
   <script type="text/javascript">
     (function() {
@@ -33,7 +33,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
     })();
   </script>
-
+ 
   <style>
     /* ===== BERKS TECHNICAL INSTITUTE BRAND =====
        Navy:   #2D3561  (primary dark)
@@ -57,7 +57,7 @@
     html { scroll-behavior: smooth; }
     body { font-family: var(--font); color: var(--bti-black); background: #fff; font-size: 16px; line-height: 1.6; }
     a { color: inherit; text-decoration: none; }
-
+ 
     /* HEADER */
     .site-header {
       position: sticky; top: 0; z-index: 100;
@@ -80,8 +80,8 @@
       transition: background 0.2s; white-space: nowrap;
     }
     .header-cta:hover { background: var(--bti-green-dark); }
-    .header-phone { font-size: 0.9rem; font-weight: 600; color: var(--bti-navy); }
-
+    
+ 
     /* NAV STRIP */
     .nav-strip {
       background: var(--bti-navy);
@@ -89,7 +89,7 @@
       font-size: 0.8rem; color: rgba(255,255,255,0.85);
     }
     .nav-strip strong { color: #fff; }
-
+ 
     /* HERO */
     .hero {
       background: linear-gradient(135deg, var(--bti-navy-deeper) 0%, var(--bti-navy-dark) 45%, var(--bti-navy-mid) 100%);
@@ -123,9 +123,11 @@
       transition: background 0.2s;
     }
     .hero-cta:hover { background: var(--bti-green-dark); }
-
+ 
     /* FORM CARD */
+    .hero-content { order: 1; }
     .form-card {
+      order: 2;
       background: #fff; border-radius: 8px;
       padding: 30px 28px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.25);
@@ -172,7 +174,7 @@
     }
     .form-success h3 { color: var(--bti-navy); font-size: 1.1rem; margin-bottom: 6px; }
     .form-success p { font-size: 0.85rem; color: #555; }
-
+ 
     /* STATS BAR */
     .stats-bar { background: var(--bti-green); padding: 18px 32px; }
     .stats-inner {
@@ -184,7 +186,7 @@
     .stat-number { font-size: 2rem; font-weight: 800; color: #fff; line-height: 1; }
     .stat-label { font-size: 0.72rem; color: rgba(255,255,255,0.9); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 3px; }
     .stat-divider { width: 1px; height: 38px; background: rgba(255,255,255,0.3); }
-
+ 
     /* PROGRAMS SECTION */
     .programs-section { background: var(--bti-light-gray); padding: 64px 32px; }
     .section-inner { max-width: 1140px; margin: 0 auto; }
@@ -240,7 +242,7 @@
       transition: background 0.2s; text-align: center; width: 100%;
     }
     .program-cta:hover { background: var(--bti-green); }
-
+ 
     /* WHY SECTION */
     .why-section { background: var(--bti-navy-dark); padding: 64px 32px; }
     .why-grid {
@@ -258,7 +260,7 @@
     }
     .why-title { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
     .why-desc { font-size: 0.82rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
-
+ 
     /* CAMPUSES */
     .campuses-section { background: #fff; padding: 64px 32px; }
     .campuses-grid {
@@ -272,7 +274,7 @@
     .campus-name { font-size: 1rem; font-weight: 800; color: var(--bti-navy); margin-bottom: 6px; text-transform: uppercase; }
     .campus-addr { font-size: 0.83rem; color: #555; margin-bottom: 10px; line-height: 1.4; }
     .campus-phone { font-size: 0.83rem; font-weight: 600; color: var(--bti-green); }
-
+ 
     /* PROCESS */
     .process-section { background: var(--bti-light-gray); padding: 64px 32px; }
     .process-steps {
@@ -293,7 +295,7 @@
     }
     .step-title { font-size: 0.88rem; font-weight: 700; color: var(--bti-navy); margin-bottom: 4px; }
     .step-desc { font-size: 0.78rem; color: #666; line-height: 1.4; }
-
+ 
     /* BOTTOM CTA */
     .bottom-cta {
       background: var(--bti-green); padding: 56px 32px; text-align: center;
@@ -307,17 +309,17 @@
       transition: background 0.2s;
     }
     .bottom-cta a:hover { background: var(--bti-navy-light); }
-
+ 
     /* FOOTER */
     footer {
       background: var(--bti-navy-deeper); color: rgba(255,255,255,0.6);
       padding: 28px 32px; text-align: center; font-size: 0.8rem;
     }
     footer strong { color: rgba(255,255,255,0.85); }
-
+ 
     /* TOAST */
     .form-error { color: #c0392b; font-size: 0.78rem; margin-top: 4px; }
-
+ 
     @media (max-width: 860px) {
       .hero-inner { grid-template-columns: 1fr; }
       .form-card { margin-top: 24px; }
@@ -329,7 +331,7 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- HEADER -->
 <header class="site-header">
   <div class="header-logo">
@@ -338,18 +340,17 @@
     </a>
   </div>
   <div class="header-right">
-    <span class="header-phone">(610) 816-0655</span>
     <a href="#form" class="header-cta">Get Program Info</a>
   </div>
 </header>
-
+ 
 <!-- NAV STRIP -->
 <div class="nav-strip">
   <span>&#128197; <strong>Flexible scheduling</strong> — Day, evening &amp; weekend classes</span>
   <span>&#127891; <strong>Financial aid</strong> available for those who qualify</span>
   <span>&#128205; 3 PA campuses: Allentown, Lewisburg &amp; Wyomissing</span>
 </div>
-
+ 
 <!-- HERO -->
 <section class="hero" id="form">
   <div class="hero-inner">
@@ -359,7 +360,7 @@
       <p class="hero-sub">Looking for a job that lets you work with your hands? BTI's trades programs teach the skills for a career that isn't behind a desk — flexible, affordable, and fast.</p>
       <a href="#form" class="hero-cta">Explore Programs &rarr;</a>
     </div>
-
+ 
     <!-- FORM -->
     <div class="form-card">
       <div class="form-fields">
@@ -379,15 +380,13 @@
           <label for="email">Email Address *</label>
           <input type="email" id="email" placeholder="your@email.com" required />
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="phone">Phone Number *</label>
-            <input type="tel" id="phone" placeholder="(555) 000-0000" required />
-          </div>
-          <div class="form-group">
-            <label for="zip">Zip Code</label>
-            <input type="text" id="zip" placeholder="ZIP" maxlength="5" />
-          </div>
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" placeholder="(555) 000-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" placeholder="ZIP" maxlength="5" />
         </div>
         <div class="form-group">
           <label for="program">Program of Interest</label>
@@ -413,7 +412,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stats-inner">
@@ -432,7 +431,7 @@
         </div>
   </div>
 </div>
-
+ 
 <!-- PROGRAMS -->
 <section class="programs-section">
   <div class="section-inner">
@@ -486,7 +485,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- WHY BTI -->
 <section class="why-section">
   <div class="section-inner">
@@ -551,7 +550,7 @@
         </div>
   </div>
 </section>
-
+ 
 <!-- CAMPUSES -->
 <section class="campuses-section">
   <div class="section-inner">
@@ -561,22 +560,19 @@
       <div class="campus-card">
         <div class="campus-name">&#128205; Allentown</div>
         <div class="campus-addr">2205 Irving Street, Allentown, PA 18103</div>
-        <div class="campus-phone">(484) 322-6600</div>
       </div>
       <div class="campus-card">
         <div class="campus-name">&#128205; Lewisburg</div>
         <div class="campus-addr">7425 Westbranch Highway, Lewisburg, PA 17837</div>
-        <div class="campus-phone">(570) 522-1200</div>
       </div>
       <div class="campus-card">
         <div class="campus-name">&#128205; Wyomissing</div>
         <div class="campus-addr">2205 Ridgewood Road Suite 100, Wyomissing, PA 19610</div>
-        <div class="campus-phone">(610) 816-0655</div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- PROCESS -->
 <section class="process-section">
   <div class="section-inner">
@@ -606,21 +602,21 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- BOTTOM CTA -->
 <section class="bottom-cta">
   <h2>Ready to Take the First Step?</h2>
   <p>Connect with a BTI advisor today and discover which program is right for you.</p>
   <a href="#form">Get Program Information</a>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <strong>Berks Technical Institute</strong> &mdash; Allentown | Lewisburg | Wyomissing &nbsp;&bull;&nbsp;
   &copy; 2025 Berks Technical Institute. All rights reserved. &nbsp;&bull;&nbsp;
   <a href="https://www.berks.edu/privacy-policy/" style="color:rgba(255,255,255,0.5)">Privacy Policy</a>
 </footer>
-
+ 
 <script>
   async function handleSubmit() {
     const fname   = document.getElementById('fname').value.trim();
@@ -629,14 +625,14 @@
     const phone   = document.getElementById('phone').value.trim();
     const zip     = document.getElementById('zip').value.trim();
     const program = document.getElementById('program').value;
-
+ 
     if (!fname || !lname || !email || !phone) {
       alert('Please fill in all required fields.');
       return;
     }
-
+ 
     const params = new URLSearchParams(window.location.search);
-
+ 
     const payload = {
       first_name:           fname,
       last_name:            lname,
@@ -654,22 +650,22 @@
       utm_content:          params.get('utm_content')  || '',
       subid:                params.get('subid')        || ''
     };
-
+ 
     try {
       const btn = document.querySelector('.form-submit');
       btn.textContent = 'Sending…';
       btn.disabled = true;
-
+ 
       await fetch('https://growthengineerpro.app.n8n.cloud/webhook/form-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-
+ 
       document.querySelector('.form-fields').style.display = 'none';
       document.querySelector('.form-success').style.display = 'block';
     } catch(e) {
-      alert('Something went wrong. Please try again or call us directly.');
+      alert('Something went wrong. Please try again.');
       const btn = document.querySelector('.form-submit');
       btn.textContent = 'Request Program Information →';
       btn.disabled = false;
