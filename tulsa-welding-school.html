@@ -744,12 +744,13 @@
         <div class="hero-badge">Training Welders Since 1949 · 5 Campus Locations</div>
         <div class="hero-tagline">Weld Your<br><span>Future.</span><br>Start in 7 Months.</div>
         <p class="hero-subhead">
-          Tulsa Welding School has delivered hands-on, real-world welding training for over 75 years. From entry-level certification to advanced degree programs — we build welders employers actually hire.
+          Start your welding career with our 7-month Professional Welding program — then keep going with advanced degree paths for students who want inspection, quality management, or technical leadership roles. All built on 75+ years of real-world training.
         </p>
         <ul class="hero-bullets">
           <li>Hands-on welding booth training from day one — not just classroom hours</li>
           <li>AWS Certified Welder testing facility on campus (Jacksonville)</li>
           <li>SMAW, MIG, TIG, Flux-Core, Pipe, Structural & Pipefitting processes</li>
+          <li>Graduates initially employed in all 50 states<sup style="font-size:0.7em;">*</sup></li>
           <li>Morning, afternoon & evening classes — flexible scheduling available</li>
           <li>Financial aid available · Military benefits · GI Bill® accepted for those who qualify</li>
         </ul>
@@ -770,10 +771,6 @@
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required />
             </div>
             <div class="form-group">
               <label for="program_interest">Program of Interest</label>
@@ -1096,7 +1093,7 @@
         <div class="process-step">
           <div class="step-num">1</div>
           <div class="step-title">Request Info</div>
-          <p class="step-text">Fill out the form above. A TWS admissions advisor will follow up within a few hours to answer your questions and walk you through program options.</p>
+          <p class="step-text">Fill out the form above. A TWS admissions advisor typically follows up within a few minutes during business hours to answer your questions and walk you through program options.</p>
         </div>
         <div class="process-step">
           <div class="step-num">2</div>
@@ -1161,7 +1158,7 @@
       <a href="https://www.tws.edu">www.tws.edu</a>
     </p>
     <p style="margin-top:12px">
-      Tulsa Welding School is accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC). Texas campuses are approved and regulated by the Texas Workforce Commission. TWS does not guarantee employment or a starting salary upon graduation, completion, or withdrawal. Past student outcomes are not indicative of future results. Salaries and job outlook data sourced from the American Welding Society (AWS), Bureau of Labor Statistics (BLS), and Salary.com and do not reflect entry-level positions or TWS graduate outcomes specifically. GI Bill® is a registered trademark of the U.S. Department of Veterans Affairs. Financial aid available for those who qualify.
+      *Graduates initially employed in all 50 states according to ACCSC Annual Report data for reports dated 7/1/18 – 7/1/23. Tulsa Welding School is accredited by the Accrediting Commission of Career Schools and Colleges (ACCSC). Texas campuses are approved and regulated by the Texas Workforce Commission. TWS does not guarantee employment or a starting salary upon graduation, completion, or withdrawal. Past student outcomes are not indicative of future results. Salaries and job outlook data sourced from the American Welding Society (AWS), Bureau of Labor Statistics (BLS), and Salary.com and do not reflect entry-level positions or TWS graduate outcomes specifically. GI Bill® is a registered trademark of the U.S. Department of Veterans Affairs. Financial aid available for those who qualify.
     </p>
   </footer>
  
@@ -1171,12 +1168,11 @@
       const firstName  = document.getElementById('first_name').value.trim();
       const lastName   = document.getElementById('last_name').value.trim();
       const email      = document.getElementById('email').value.trim();
-      const phone      = document.getElementById('phone').value.trim();
       const program    = document.getElementById('program_interest').value;
       const leadid     = document.getElementById('leadid_token')?.value || '';
       const trustedform = document.getElementById('xxTrustedFormCertUrl')?.value || '';
  
-      if (!firstName || !lastName || !email || !phone || !program) {
+      if (!firstName || !lastName || !email || !program) {
         alert('Please fill in all fields before submitting.');
         return;
       }
@@ -1185,7 +1181,6 @@
         first_name:           firstName,
         last_name:            lastName,
         email:                email,
-        phone:                phone,
         program_interest:     program,
         school:               'Tulsa Welding School',
         program:              'Welding Programs',
