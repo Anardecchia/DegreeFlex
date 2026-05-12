@@ -5,8 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Healthcare & Nursing Degrees | South University</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
+ 
+/* Mencken Std Bold — self-hosted font */
+@font-face {
+  font-family: 'Mencken Std';
+  src: url('fonts/MenckenStd-Bold.woff2') format('woff2'),
+       url('fonts/MenckenStd-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -19,7 +29,7 @@ body {
  
 /* ─── TOP BAR ─── */
 .topbar {
-    background: #002855;
+    background: #1b365d;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -41,9 +51,9 @@ body {
  
 /* ─── HEADER LOGO BAR ─── */
 .header {
-    background: #002855;
+    background: #1b365d;
     padding: 16px 0 20px;
-    border-bottom: 3px solid #D4841F;
+    border-bottom: 3px solid #c5a572;
 }
 .header__inner {
     max-width: 1200px;
@@ -60,8 +70,8 @@ body {
     display: block;
 }
 .header__cta {
-    background: #D4841F;
-    color: #002855;
+    background: #c5a572;
+    color: #1b365d;
     padding: 12px 24px;
     border-radius: 4px;
     text-decoration: none;
@@ -71,12 +81,12 @@ body {
     text-transform: uppercase;
     transition: background 0.2s;
 }
-.header__cta:hover { background: #E8961F; }
+.header__cta:hover { background: #d9bf8f; }
  
 /* ─── HERO ─── */
 .hero {
     background:
-        linear-gradient(135deg, rgba(0,40,85,0.94) 0%, rgba(0,62,126,0.92) 100%),
+        linear-gradient(135deg, rgba(27,54,93,0.94) 0%, rgba(42,74,120,0.92) 100%),
         url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover;
     color: #fff;
     padding: 60px 0 80px;
@@ -91,18 +101,18 @@ body {
     align-items: start;
 }
 .hero__left h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 60px;
     font-weight: 800;
     line-height: 1;
     margin-bottom: 24px;
     letter-spacing: -0.5px;
 }
-.hero__left h1 .accent { color: #D4841F; display: block; }
+.hero__left h1 .accent { color: #c5a572; display: block; }
 .hero__left > p {
     font-size: 17px;
     line-height: 1.65;
-    color: #E0E8F3;
+    color: #e5ecf5;
     margin-bottom: 28px;
     max-width: 520px;
 }
@@ -115,7 +125,7 @@ body {
 .hero__badge {
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(197,165,114,0.5);
-    color: #D4841F;
+    color: #c5a572;
     padding: 6px 14px;
     border-radius: 3px;
     font-size: 12px;
@@ -133,11 +143,11 @@ body {
     gap: 10px;
     margin-bottom: 10px;
     font-size: 15px;
-    color: #E0E8F3;
+    color: #e5ecf5;
 }
 .hero__trust li::before {
     content: "✓";
-    color: #D4841F;
+    color: #c5a572;
     font-weight: 900;
     flex-shrink: 0;
     margin-top: 1px;
@@ -155,26 +165,26 @@ body {
     text-align: center;
     margin-bottom: 22px;
     padding-bottom: 18px;
-    border-bottom: 2px solid #FBF6F0;
+    border-bottom: 2px solid #f7f3ed;
 }
 .form-card__header h2 {
     font-size: 22px;
     font-weight: 800;
-    color: #002855;
+    color: #1b365d;
     margin-bottom: 4px;
 }
-.form-card__header p { font-size: 13px; color: #4A5D73; }
+.form-card__header p { font-size: 13px; color: #5a6b80; }
  
 .progress {
     height: 4px;
-    background: #ECE5D9;
+    background: #e9e4da;
     border-radius: 2px;
     overflow: hidden;
     margin-bottom: 22px;
 }
 .progress__bar {
     height: 100%;
-    background: #D4841F;
+    background: #c5a572;
     width: 33%;
     transition: width 0.3s;
 }
@@ -185,7 +195,7 @@ body {
     display: block;
     font-size: 13px;
     font-weight: 700;
-    color: #002855;
+    color: #1b365d;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     margin-bottom: 6px;
@@ -194,7 +204,7 @@ body {
 .form-group select {
     width: 100%;
     padding: 11px 12px;
-    border: 1.5px solid #D8D0C2;
+    border: 1.5px solid #d5cfc3;
     border-radius: 4px;
     font-family: inherit;
     font-size: 15px;
@@ -204,7 +214,7 @@ body {
 .form-group input:focus,
 .form-group select:focus {
     outline: none;
-    border-color: #002855;
+    border-color: #1b365d;
 }
 .form-group.error input,
 .form-group.error select {
@@ -223,7 +233,7 @@ body {
     align-items: flex-start;
     gap: 10px;
     font-size: 11px;
-    color: #4A5D73;
+    color: #5a6b80;
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 14px;
@@ -233,14 +243,14 @@ body {
     margin-top: 3px;
     width: 15px;
     height: 15px;
-    accent-color: #002855;
+    accent-color: #1b365d;
 }
-.consent a { color: #002855; text-decoration: underline; }
+.consent a { color: #1b365d; text-decoration: underline; }
  
 .form-btn {
     width: 100%;
-    background: #D4841F;
-    color: #002855;
+    background: #c5a572;
+    color: #1b365d;
     border: none;
     padding: 14px;
     border-radius: 4px;
@@ -252,19 +262,19 @@ body {
     cursor: pointer;
     transition: background 0.2s;
 }
-.form-btn:hover { background: #E8961F; }
-.form-btn:disabled { background: #B8AFA2; cursor: not-allowed; }
+.form-btn:hover { background: #d9bf8f; }
+.form-btn:disabled { background: #b5b0a4; cursor: not-allowed; }
  
 .step { display: none; }
 .step.active { display: block; }
  
 .form-step-indicator {
     font-size: 12px;
-    color: #4A5D73;
+    color: #5a6b80;
     text-align: center;
     margin-top: 10px;
 }
-.form-step-indicator strong { color: #002855; }
+.form-step-indicator strong { color: #1b365d; }
  
 .form-success {
     display: none;
@@ -272,19 +282,19 @@ body {
     padding: 32px 16px;
 }
 .form-success h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 26px;
-    color: #002855;
+    color: #1b365d;
     margin-bottom: 10px;
 }
-.form-success p { color: #4A5D73; }
+.form-success p { color: #5a6b80; }
  
 /* ─── PROGRAMS SECTION ─── */
 .section {
     padding: 80px 0;
 }
-.section--cream { background: #FBF6F0; }
-.section--navy { background: #002855; color: #fff; }
+.section--cream { background: #f7f3ed; }
+.section--navy { background: #1b365d; color: #fff; }
 .section__inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -294,29 +304,29 @@ body {
     display: inline-block;
     font-size: 12px;
     font-weight: 800;
-    color: #D4841F;
+    color: #c5a572;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
 .section__heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 42px;
     font-weight: 800;
     line-height: 1.1;
-    color: #002855;
+    color: #1b365d;
     margin-bottom: 16px;
     letter-spacing: -0.5px;
 }
 .section--navy .section__heading { color: #fff; }
 .section__sub {
     font-size: 17px;
-    color: #4A5D73;
+    color: #5a6b80;
     max-width: 720px;
     margin-bottom: 40px;
     line-height: 1.65;
 }
-.section--navy .section__sub { color: #C8D2E1; }
+.section--navy .section__sub { color: #cdd6e3; }
  
 .programs-grid {
     display: grid;
@@ -327,32 +337,32 @@ body {
     background: #fff;
     padding: 28px 28px 24px;
     border-radius: 6px;
-    border: 1px solid #E7E0D1;
+    border: 1px solid #e4dfd2;
     position: relative;
 }
 .program-card__accent {
     width: 36px;
     height: 4px;
-    background: #D4841F;
+    background: #c5a572;
     margin-bottom: 16px;
 }
 .program-card__title {
     font-size: 19px;
     font-weight: 800;
-    color: #002855;
+    color: #1b365d;
     margin-bottom: 10px;
     letter-spacing: 0.3px;
 }
 .program-card__sub {
     font-size: 15px;
-    color: #4A5D73;
+    color: #5a6b80;
     line-height: 1.6;
     margin-bottom: 16px;
 }
 .program-card__tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .tag {
-    background: #FBF6F0;
-    color: #002855;
+    background: #f7f3ed;
+    color: #1b365d;
     padding: 4px 10px;
     border-radius: 3px;
     font-size: 11px;
@@ -362,7 +372,7 @@ body {
  
 /* ─── STATS STRIP ─── */
 .stats-strip {
-    background: #003E7E;
+    background: #2a4a78;
     color: #fff;
     padding: 36px 0;
 }
@@ -376,10 +386,10 @@ body {
     text-align: center;
 }
 .stat__num {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 38px;
     font-weight: 800;
-    color: #D4841F;
+    color: #c5a572;
     display: block;
 }
 .stat__label {
@@ -387,7 +397,7 @@ body {
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #C8D2E1;
+    color: #cdd6e3;
     margin-top: 6px;
     display: block;
 }
@@ -408,19 +418,19 @@ body {
 .outcome-card__title {
     font-size: 14px;
     font-weight: 800;
-    color: #D4841F;
+    color: #c5a572;
     letter-spacing: 0.8px;
     margin-bottom: 10px;
 }
 .outcome-card__desc {
     font-size: 14px;
     line-height: 1.55;
-    color: #D8E1EE;
+    color: #dde5f0;
 }
  
 /* ─── SALARY CARD ─── */
 .salary-wrap {
-    background: #002855;
+    background: #1b365d;
     color: #fff;
     border-radius: 8px;
     padding: 40px;
@@ -432,22 +442,22 @@ body {
     margin: 0 auto;
 }
 .salary__figure {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 64px;
     font-weight: 800;
-    color: #D4841F;
+    color: #c5a572;
     line-height: 1;
     margin-bottom: 6px;
 }
 .salary__sub {
     font-size: 14px;
     font-weight: 700;
-    color: #C8D2E1;
+    color: #cdd6e3;
     margin-bottom: 6px;
 }
 .salary__source {
     font-size: 11px;
-    color: #8E9DB5;
+    color: #9aa8bd;
     font-style: italic;
 }
 .salary-table {
@@ -461,13 +471,13 @@ body {
 .salary-label {
     padding: 12px 0;
     font-size: 14px;
-    color: #D8E1EE;
+    color: #dde5f0;
 }
 .salary-range {
     padding: 12px 0;
     font-size: 14px;
     font-weight: 800;
-    color: #D4841F;
+    color: #c5a572;
     text-align: right;
     white-space: nowrap;
 }
@@ -482,7 +492,7 @@ body {
 }
 .path__step {
     background: #fff;
-    border: 1px solid #E7E0D1;
+    border: 1px solid #e4dfd2;
     padding: 28px 20px;
     border-radius: 6px;
     text-align: center;
@@ -495,8 +505,8 @@ body {
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: #002855;
-    color: #D4841F;
+    background: #1b365d;
+    color: #c5a572;
     font-weight: 800;
     font-size: 18px;
     margin-bottom: 14px;
@@ -504,29 +514,29 @@ body {
 .path__title {
     font-size: 14px;
     font-weight: 800;
-    color: #002855;
+    color: #1b365d;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
 .path__desc {
     font-size: 13px;
-    color: #4A5D73;
+    color: #5a6b80;
     line-height: 1.5;
 }
  
 /* ─── FINAL CTA ─── */
 .final-cta {
-    background: #002855;
+    background: #1b365d;
     padding: 60px 0;
     text-align: center;
     color: #fff;
-    border-top: 3px solid #D4841F;
-    border-bottom: 3px solid #D4841F;
+    border-top: 3px solid #c5a572;
+    border-bottom: 3px solid #c5a572;
 }
 .final-cta__inner { max-width: 720px; margin: 0 auto; padding: 0 24px; }
 .final-cta h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Mencken Std', 'Playfair Display', Georgia, serif; font-weight: 700;
     font-size: 38px;
     font-weight: 800;
     margin-bottom: 12px;
@@ -534,13 +544,13 @@ body {
 }
 .final-cta p {
     font-size: 16px;
-    color: #C8D2E1;
+    color: #cdd6e3;
     margin-bottom: 24px;
 }
 .final-cta__btn {
     display: inline-block;
-    background: #D4841F;
-    color: #002855;
+    background: #c5a572;
+    color: #1b365d;
     padding: 16px 44px;
     border-radius: 4px;
     text-decoration: none;
@@ -549,12 +559,12 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
-.final-cta__btn:hover { background: #E8961F; }
+.final-cta__btn:hover { background: #d9bf8f; }
  
 /* ─── FOOTER ─── */
 .footer {
-    background: #001A3A;
-    color: #8495AD;
+    background: #0f1f36;
+    color: #8fa0b8;
     padding: 32px 0;
     text-align: center;
     font-size: 12px;
@@ -565,9 +575,9 @@ body {
     margin: 0 auto;
     padding: 0 24px;
 }
-.footer a { color: #C8D2E1; text-decoration: none; margin: 0 10px; }
-.footer a:hover { color: #D4841F; }
-.footer hr { border: none; border-top: 1px solid #001F47; margin: 16px 0; }
+.footer a { color: #cdd6e3; text-decoration: none; margin: 0 10px; }
+.footer a:hover { color: #c5a572; }
+.footer hr { border: none; border-top: 1px solid #22324d; margin: 16px 0; }
  
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
@@ -857,7 +867,7 @@ body {
 <!-- ─── SALARY ─── -->
 <section class="section">
     <div class="section__inner">
-        <span class="section__eyebrow" style="color:#D4841F;">THE FINANCIAL CASE</span>
+        <span class="section__eyebrow" style="color:#c5a572;">THE FINANCIAL CASE</span>
         <h2 class="section__heading">HEALTHCARE EARNINGS BY ROLE</h2>
         <p class="section__sub">Healthcare wages vary significantly by role and credential level. Advanced practice nurses and PAs are among the highest-paid professions in the field.</p>
         <div class="salary-wrap">
@@ -937,7 +947,7 @@ body {
             <a href="/terms-and-conditions/">Terms &amp; Conditions</a> ·
             <a href="/opt-out/">Do Not Sell My Lead</a>
         </p>
-        <p style="margin-top:12px;font-size:11px;color:#6B7D95;">
+        <p style="margin-top:12px;font-size:11px;color:#7585a0;">
             Financial aid is available for those who qualify. Program availability varies by campus location. Salary figures are based on U.S. Bureau of Labor Statistics data and may vary by location, experience, and employer.
         </p>
     </div>
